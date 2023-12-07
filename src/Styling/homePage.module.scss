@@ -1,0 +1,74 @@
+.good{
+    color: wheat;
+    font-size: 100px;
+    font-family: 'Unbounded';
+}
+.swiperFoto{
+    width:100%;
+    height:auto;
+    object-fit: contain;
+}
+.homePageSwiperFoto1{
+    width:100%;
+ 
+      height:100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../Assets/Images/HomePageImages/HomePageSwiperDesctopFoto1.svg');
+}
+.startSectionContainer{
+    max-height: 100%;
+}
+.headerContainer{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 20%;
+    z-index: 5;
+    padding: 3.8% 6.66% 0px 6.66%;
+    display: flex;
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+        padding: 2.1% 6.66% 0px 6.66%;
+        height: 30%;
+      }
+    &__logo{
+       width:23.6%;
+       height:auto;
+       margin-right: 16%;
+       @media screen and (max-width: 768px) {
+        margin-right: 0;
+        width: 43%;
+        height: 30%;
+      }
+    }
+    &__navigation{
+        width:51%;
+        height:68%;
+        background-color: white;
+        border-radius: 50px;
+        padding: 0px 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+    }
+    &__navigationItem{
+        font-size: 1.1vw;
+        font-family: 'Unbounded';
+        font-weight: 400;
+        transition-duration: 0.7s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    &__navigationItem:hover{
+       color: #5566B7;
+    }
+}
