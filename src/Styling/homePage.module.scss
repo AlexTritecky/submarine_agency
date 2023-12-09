@@ -1,74 +1,294 @@
-.good{
-    color: wheat;
-    font-size: 100px;
-    font-family: 'Unbounded';
+.good {
+  color: wheat;
+  font-size: 100px;
+  font-family: "Unbounded";
 }
-.swiperFoto{
-    width:100%;
-    height:auto;
-    object-fit: contain;
+.swiperFoto {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
-.homePageSwiperFoto1{
-    width:100%;
- 
-      height:100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url('../Assets/Images/HomePageImages/HomePageSwiperDesctopFoto1.svg');
+.homePageSwiperFoto1 {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../Assets/Images/HomePageImages/HomePageSwiperDesctopFoto1.png");
 }
-.startSectionContainer{
-    max-height: 100%;
+.startSectionContainer {
+  max-height: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 2.6vw;
+  border-bottom-right-radius: 2.6vw;
+  @media screen and (max-width: 1024px) {
+    border-bottom-left-radius: 6.5vw;
+    border-bottom-right-radius: 6.5vw;
+  }
+  @media screen and (max-width: 480px) {
+    max-height: 83vw;
+    border-bottom-left-radius: 13.8vw;
+    border-bottom-right-radius: 13.8vw;
+  }
 }
-.headerContainer{
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height: 20%;
-    z-index: 5;
-    padding: 3.8% 6.66% 0px 6.66%;
+.headerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  z-index: 5;
+  padding: 3.8% 6.66% 0px 6.66%;
+  display: flex;
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+    padding: 2.1% 6.66% 0px 6.66%;
+    height: 30%;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 12.1% 6.66% 0px 6.66%;
+    height: 38%;
+  }
+  &__logo {
+    width: 23.6%;
+    height: auto;
+    margin-right: 16%;
+    @media screen and (max-width: 1024px) {
+      margin-right: 0;
+      width: 43%;
+      height: 30%;
+    }
+  }
+  &__navigation {
+    width: 51%;
+    height: 68%;
+    background-color: white;
+    border-radius: 50px;
+    padding: 0px 3%;
     display: flex;
-    @media screen and (max-width: 768px) {
-        justify-content: center;
-        padding: 2.1% 6.66% 0px 6.66%;
-        height: 30%;
-      }
-    &__logo{
-       width:23.6%;
-       height:auto;
-       margin-right: 16%;
-       @media screen and (max-width: 768px) {
-        margin-right: 0;
-        width: 43%;
-        height: 30%;
-      }
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+      display: none;
     }
-    &__navigation{
-        width:51%;
-        height:68%;
-        background-color: white;
-        border-radius: 50px;
-        padding: 0px 3%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @media screen and (max-width: 768px) {
-          display: none;
-        }
-    }
-    &__navigationItem{
-        font-size: 1.1vw;
-        font-family: 'Unbounded';
-        font-weight: 400;
-        transition-duration: 0.7s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        
-    }
-    &__navigationItem:hover{
-       color: #5566B7;
-    }
+  }
+  &__navigationItem {
+    font-size: 1.1vw;
+    font-family: "Unbounded";
+    font-weight: 400;
+    transition-duration: 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+  &__navigationItem:hover {
+    color: #5566b7;
+  }
 }
+.becomeClientButton {
+  width: 22vw;
+  height: 4.6vw;
+  border-radius: 2.6vw;
+  display: flex;
+  align-items: center;
+  font-family: "Unbounded-Medium";
+  justify-content: center;
+  position: absolute;
+  background-color: #a967dd;
+  color: white;
+  z-index: 5;
+  font-size: 1.25vw;
+  bottom: 5.5vw;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  transition-duration: 1s;
+  border: none;
+  outline: none;
+  animation: unPressButtonAnimation 0.5s forwards;
+  font-weight: 700;
+  cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+  @media screen and (max-width: 1024px) {
+    width: 55.2vw;
+    height: 11vw;
+    border-radius: 6.5vw;
+    font-size: 3.125vw;
+    bottom: 7.5vw;
+  }
+  @media screen and (max-width: 480px) {
+    width: 48vw;
+    height: 10vw;
+    border-radius: 13.8vw;
+    font-size: 3vw;
+    bottom: 9.5vw;
+  }
+  &__plus {
+    margin-right: 2.3%;
+    width: 4.7%;
+    animation: rotateAnimationOut 1s forwards;
+    @media screen and (max-width: 1024px) {
+      width: 4.75%;
+      height: auto;
+    }
+  }
+}
+.becomeClientButtonPressed {
+  animation: pressButtonAnimation 0.5s forwards;
+}
+@keyframes pressButtonAnimation {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+
+  30% {
+    transform: translateX(-50%) scale(1.03);
+  }
+
+  100% {
+    transform: translateX(-50%) scale(0.95);
+  }
+}
+@keyframes unPressButtonAnimation {
+  0% {
+    transform: translateX(-50%) scale(0.95);
+  }
+  30% {
+    transform: translateX(-50%) scale(0.93);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotateAnimationOut {
+  0% {
+    transform: rotate(90deg);
+  }
+
+  30% {
+    transform: rotate(120deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.becomeClientButton:hover .becomeClientButton__plus {
+  animation: rotateAnimation 1s forwards;
+}
+
+.burgerContainer {
+  width: 5.6vw;
+  height: 5.6vw;
+  min-width: 5.6vw;
+  min-height: 5.6vw;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  transition-duration: 0.5s;
+  margin-left: 100px;
+  &__lineOne {
+    height: 12%;
+    width: 32%;
+    background-color: #a967dd;
+    border-radius: 93vw;
+    position: absolute;
+    right: 16%;
+    transform: rotate(15deg);
+    top: 25.5%;
+    transition-duration: 0.5s;
+  }
+  &__lineOneHide {
+    width: 0%;
+    height: 0%;
+  }
+  &__lineTwo {
+    height: 12%;
+    width: 50%;
+    background-color: #a967dd;
+    border-radius: 93vw;
+    position: absolute;
+    right: 16%;
+    top: 44%;
+  }
+  &__lineTwoMoved {
+    top: 50%;
+    left: 50%;
+    width:68%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: white;
+  }
+  &__lineThree {
+    height: 12%;
+    width: 68%;
+    background-color: #a967dd;
+    border-radius: 93vw;
+    position: absolute;
+    top: 60%;
+    left: 17%;
+    transition-duration: 0.5s;
+  }
+  &__lineThreeMoved {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: white;
+  }
+}
+.burgerContainerOpened {
+  transform: rotate(90deg);
+  background-color: #5566b7;
+}
+// .burgerContainer:hover .burgerContainer__lineOne {
+//   transform: rotate(0deg);
+// }
+// .burgerContainer:hover .burgerContainer__lineTwo {
+//   transform: rotate(0deg);
+// }
+// @keyframes rotateLineThree {
+//   0% {
+//     top: 60%;
+//     left: 17%;
+//   }
+
+//   100% {
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%) rotate(45deg);
+//   }
+// }
+
+// @keyframes reverseRotateLineThree {
+//   0% {
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%) rotate(45deg);
+//   }
+
+//   100% {
+//     top: 60%;
+//     left: 17%;
+//   }
+// }
+// .burgerContainer:hover .burgerContainer__lineThree {
+//   animation: rotateLineThree 0.5s forwards;
+// }
+// .burgerContainer:not(:hover) .burgerContainer__lineThree {
+//   animation: reverseRotateLineThree 0.5s forwards;
+// }

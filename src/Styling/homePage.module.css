@@ -17,11 +17,29 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../Assets/Images/HomePageImages/HomePageSwiperDesctopFoto1.svg");
+  background-image: url("../Assets/Images/HomePageImages/HomePageSwiperDesctopFoto1.png");
 }
 
 .startSectionContainer {
   max-height: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 2.6vw;
+  border-bottom-right-radius: 2.6vw;
+}
+@media screen and (max-width: 1024px) {
+  .startSectionContainer {
+    border-bottom-left-radius: 6.5vw;
+    border-bottom-right-radius: 6.5vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .startSectionContainer {
+    max-height: 83vw;
+    border-bottom-left-radius: 13.8vw;
+    border-bottom-right-radius: 13.8vw;
+  }
 }
 
 .headerContainer {
@@ -34,11 +52,17 @@
   padding: 3.8% 6.66% 0px 6.66%;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .headerContainer {
     justify-content: center;
     padding: 2.1% 6.66% 0px 6.66%;
     height: 30%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .headerContainer {
+    padding: 12.1% 6.66% 0px 6.66%;
+    height: 38%;
   }
 }
 .headerContainer__logo {
@@ -46,7 +70,7 @@
   height: auto;
   margin-right: 16%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .headerContainer__logo {
     margin-right: 0;
     width: 43%;
@@ -63,7 +87,7 @@
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .headerContainer__navigation {
     display: none;
   }
@@ -77,7 +101,226 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 100%;
 }
 .headerContainer__navigationItem:hover {
-  color: #5566B7;
+  color: #5566b7;
+}
+
+.becomeClientButton {
+  width: 22vw;
+  height: 4.6vw;
+  border-radius: 2.6vw;
+  display: flex;
+  align-items: center;
+  font-family: "Unbounded-Medium";
+  justify-content: center;
+  position: absolute;
+  background-color: #a967dd;
+  color: white;
+  z-index: 5;
+  font-size: 1.25vw;
+  bottom: 5.5vw;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  transition-duration: 1s;
+  border: none;
+  outline: none;
+  -webkit-animation: unPressButtonAnimation 0.5s forwards;
+          animation: unPressButtonAnimation 0.5s forwards;
+  font-weight: 700;
+  cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+}
+@media screen and (max-width: 1024px) {
+  .becomeClientButton {
+    width: 55.2vw;
+    height: 11vw;
+    border-radius: 6.5vw;
+    font-size: 3.125vw;
+    bottom: 7.5vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .becomeClientButton {
+    width: 48vw;
+    height: 10vw;
+    border-radius: 13.8vw;
+    font-size: 3vw;
+    bottom: 9.5vw;
+  }
+}
+.becomeClientButton__plus {
+  margin-right: 2.3%;
+  width: 4.7%;
+  -webkit-animation: rotateAnimationOut 1s forwards;
+          animation: rotateAnimationOut 1s forwards;
+}
+@media screen and (max-width: 1024px) {
+  .becomeClientButton__plus {
+    width: 4.75%;
+    height: auto;
+  }
+}
+
+.becomeClientButtonPressed {
+  -webkit-animation: pressButtonAnimation 0.5s forwards;
+          animation: pressButtonAnimation 0.5s forwards;
+}
+
+@-webkit-keyframes pressButtonAnimation {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  30% {
+    transform: translateX(-50%) scale(1.03);
+  }
+  100% {
+    transform: translateX(-50%) scale(0.95);
+  }
+}
+
+@keyframes pressButtonAnimation {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  30% {
+    transform: translateX(-50%) scale(1.03);
+  }
+  100% {
+    transform: translateX(-50%) scale(0.95);
+  }
+}
+@-webkit-keyframes unPressButtonAnimation {
+  0% {
+    transform: translateX(-50%) scale(0.95);
+  }
+  30% {
+    transform: translateX(-50%) scale(0.93);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+@keyframes unPressButtonAnimation {
+  0% {
+    transform: translateX(-50%) scale(0.95);
+  }
+  30% {
+    transform: translateX(-50%) scale(0.93);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+@-webkit-keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@-webkit-keyframes rotateAnimationOut {
+  0% {
+    transform: rotate(90deg);
+  }
+  30% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotateAnimationOut {
+  0% {
+    transform: rotate(90deg);
+  }
+  30% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.becomeClientButton:hover .becomeClientButton__plus {
+  -webkit-animation: rotateAnimation 1s forwards;
+          animation: rotateAnimation 1s forwards;
+}
+
+.burgerContainer {
+  width: 5.6vw;
+  height: 5.6vw;
+  min-width: 5.6vw;
+  min-height: 5.6vw;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  transition-duration: 0.5s;
+  margin-left: 100px;
+}
+.burgerContainer__lineOne {
+  height: 12%;
+  width: 32%;
+  background-color: #a967dd;
+  border-radius: 93vw;
+  position: absolute;
+  right: 16%;
+  transform: rotate(15deg);
+  top: 25.5%;
+  transition-duration: 0.5s;
+}
+.burgerContainer__lineOneHide {
+  width: 0%;
+  height: 0%;
+}
+.burgerContainer__lineTwo {
+  height: 12%;
+  width: 50%;
+  background-color: #a967dd;
+  border-radius: 93vw;
+  position: absolute;
+  right: 16%;
+  top: 44%;
+}
+.burgerContainer__lineTwoMoved {
+  top: 50%;
+  left: 50%;
+  width: 68%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: white;
+}
+.burgerContainer__lineThree {
+  height: 12%;
+  width: 68%;
+  background-color: #a967dd;
+  border-radius: 93vw;
+  position: absolute;
+  top: 60%;
+  left: 17%;
+  transition-duration: 0.5s;
+}
+.burgerContainer__lineThreeMoved {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: white;
+}
+
+.burgerContainerOpened {
+  transform: rotate(90deg);
+  background-color: #5566b7;
 }/*# sourceMappingURL=homePage.module.css.map */
