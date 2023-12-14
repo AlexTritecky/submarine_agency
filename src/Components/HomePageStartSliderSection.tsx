@@ -15,50 +15,12 @@ import Logo from "../Assets/Images/HomePageImages/ProjectLogo.svg";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import BecomeClientButton from "./BecomeClientButton";
-import MenuBurger from "./MenuBurgerComponent";
 
 function HomePageSlider() {
-  const [screenWidth, setScreenWidth] = useState(0);
-  useEffect(() => {
-    const handleResize = () => setScreenWidth(window.innerWidth);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  const getSwiperFoto1 = () => {
-    if (screenWidth > 1024) {
-      return SwiperDesctopFoto1;
-    } else if (screenWidth <= 1024 && screenWidth > 480) {
-      return SwiperTabletFoto1;
-    } else {
-      return SwiperMobileFoto1;
-    }
-  };
-  const getSwiperFoto2 = () => {
-    if (screenWidth > 1024) {
-      return SwiperDesctopFoto2;
-    } else if (screenWidth <= 1024 && screenWidth > 480) {
-      return SwiperTabletFoto2;
-    } else {
-      return SwiperMobileFoto2;
-    }
-  };
-  const getSwiperFoto3 = () => {
-    if (screenWidth > 1024) {
-      return SwiperDesctopFoto3;
-    } else if (screenWidth <= 1024 && screenWidth > 480) {
-      return SwiperTabletFoto3;
-    } else {
-      return SwiperMobileFoto3;
-    }
-  };
 
   return (
-    <div className={styles.startSectionContainer}>
+    <section className={styles.startSectionContainer}>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         slidesPerView={1}
@@ -67,13 +29,13 @@ function HomePageSlider() {
         scrollbar={{ draggable: true }}
         loop={true}
       >
-        <div className={styles.headerContainer}>
+        <header className={styles.headerContainer}>
           <Image
             className={styles.headerContainer__logo}
             src={Logo}
-            alt="ssd"
+            alt="logo"
           />
-          <div className={styles.headerContainer__navigation}>
+          <nav className={styles.headerContainer__navigation}>
             <div className={styles.headerContainer__navigationItem}>
               Про нас
             </div>
@@ -89,33 +51,62 @@ function HomePageSlider() {
             <div className={styles.headerContainer__navigationItem}>
               Співпраця
             </div>
-          </div>
-              <MenuBurger />
-        </div>
+          </nav>
+        </header>
         <SwiperSlide>
           <Image
-            className={styles.swiperFoto}
-            src={getSwiperFoto1()}
+            className={styles.swiperFotoDesctop}
+            src={SwiperDesctopFoto1}
+            alt="firstSliderImage"
+          />
+          <Image
+            className={styles.swiperFotoTablet}
+            src={SwiperTabletFoto1}
+            alt="firstSliderImage"
+          />
+          <Image
+            className={styles.swiperFotoMobile}
+            src={SwiperMobileFoto1}
             alt="firstSliderImage"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            className={styles.swiperFoto}
-            src={getSwiperFoto2()}
-            alt="secondSliderImage"
+            className={styles.swiperFotoDesctop}
+            src={SwiperDesctopFoto2}
+            alt="firstSliderImage"
+          />
+          <Image
+            className={styles.swiperFotoTablet}
+            src={SwiperTabletFoto2}
+            alt="firstSliderImage"
+          />
+          <Image
+            className={styles.swiperFotoMobile}
+            src={SwiperMobileFoto2}
+            alt="firstSliderImage"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            className={styles.swiperFoto}
-            src={getSwiperFoto3()}
-            alt="thirdSliderImage"
+            className={styles.swiperFotoDesctop}
+            src={SwiperDesctopFoto3}
+            alt="firstSliderImage"
+          />
+          <Image
+            className={styles.swiperFotoTablet}
+            src={SwiperTabletFoto3}
+            alt="firstSliderImage"
+          />
+          <Image
+            className={styles.swiperFotoMobile}
+            src={SwiperMobileFoto3}
+            alt="firstSliderImage"
           />
         </SwiperSlide>
       </Swiper>
       <BecomeClientButton />
-    </div>
+    </section>
   );
 }
 

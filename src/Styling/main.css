@@ -15,6 +15,10 @@
   src: url("../Assets/Fonts/Unbounded-Bold.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Unbounded-Blond";
+  src: url("../Assets/Fonts/Unbounded-Blond.ttf") format("truetype");
+}
+@font-face {
   font-family: "Gilroy";
   src: url("../Assets/Fonts/Gilroy-Regular.ttf") format("truetype");
 }
@@ -38,7 +42,6 @@
 
 html {
   cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
-  background-color: grey;
 }
 
 .swiper {
