@@ -45,7 +45,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../Assets/Images/HomePageImages/HomePageSwiperDesctopFoto1.png");
+  background-image: url("../Assets/Images/HomePageImages/HomePageSwiperDesctopFoto1.webp");
 }
 .startSectionContainer {
   max-height: 100%;
@@ -442,6 +442,66 @@
       letter-spacing: 0.066vw;
     }
   }
+}
+.servicesContainer {
+  width: 100vw;
+  height: 80vw;
+  background-color: white;
+  padding: 6.6vw 6.6vw 0 6.6vw;
+  color: #5566b7;
+  position: relative;
+  @media screen and (max-width: 1024px) {
+    padding: 12.3vw 6.25vw 0 6.25vw;
+    height: 105vw;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 13.5vw 4.4vw 0 4.4vw;
+    height: 102vw;
+  }
+  &__header {
+    font-size: 5vw;
+    font-family: Gilroy-SemiBold;
+  }
+  &__service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:7.7vw;
+    border-bottom: 0.15vw solid #5566b7;
+  }
+  &__serviceIcon {
+      width: 1.92vw;
+      height: 1.92vw;
+      min-width: 1.92vw;
+      min-height: 1.92vw;
+      border-radius: 50%;
+      margin-right: 0.41vw;
+      object-fit: contain;
+
+  }
+  &__serviceTitle {
+    display: flex;
+    align-items: center;
+    font-family: Gilroy-SemiBold;
+    font-size: 3.3vw;
+  }
+  &__infoList{
+    display: flex;
+    flex-direction: column;
+    color:black;
+    font-family: Unbounded;
+  }
+  &__infoListItem{
+    text-align: right;
+    font-size: 1.25vw;
+    width: 25vw;
+  }
+}
+.servicesContainer >:nth-child(2) {
+  border-top: 0.15vw solid #5566b7;
+}
+.servicesContainer__service:hover .servicesContainer__serviceIcon {
+  transform: rotate(15deg);
 }
 
 // .burgerContainer:hover .burgerContainer__lineTwo {

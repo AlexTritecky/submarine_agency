@@ -1,4 +1,5 @@
 import AboutUsSection from "@/Components/HomePageAboutUs";
+import ServicesSection from "@/Components/HomePageServicesSection";
 import HomePageSlider from "@/Components/HomePageStartSliderSection";
 import MenuBurger from "@/Components/MenuBurgerComponent";
 
@@ -14,6 +15,7 @@ function HomePage() {
       <MenuBurger />
       <HomePageSlider />
       <AboutUsSection />
+      <ServicesSection />
     </div>
   );
 }
