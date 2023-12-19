@@ -10,18 +10,14 @@ function BecomeClientButton() {
     <button
       onMouseEnter={() => {
         setIsHovered(true);
-        console.log("зайшов");
       }}
       onMouseLeave={() => {
         setIsHovered(false);
-        console.log("вийшов");
       }}
       onMouseUp={() => {
-        console.log("настиснув");
         setIsPressed(false);
       }}
       onMouseDown={() => {
-        console.log("відтиснув");
         setIsPressed(true);
       }}
       className={`${styles.becomeClientButton} ${

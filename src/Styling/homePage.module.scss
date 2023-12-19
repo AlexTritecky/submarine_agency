@@ -213,6 +213,7 @@
   color: white;
   z-index: 5;
   font-size: 1.25vw;
+  position: absolute;
   left: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -222,6 +223,7 @@
   font-weight: 700;
   line-height: 100%;
   margin-top: 3vw;
+  animation: unPressButtonAnimation 0.5s forwards;
   cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
   @media screen and (max-width: 1024px) {
     width: 57vw;
@@ -257,6 +259,9 @@
 }
 .comeBackButton:hover .comeBackButton__arrow {
   transform: rotate(90deg);
+}
+.comeBackButtonPressed {
+  animation: pressButtonAnimation 0.5s forwards;
 }
 @keyframes pressButtonAnimation {
   0% {
@@ -531,11 +536,11 @@
   position: relative;
   @media screen and (max-width: 1024px) {
     padding: 11.4vw 6.25vw 0 6.25vw;
-    height: 211vw;
+    height: 218vw;
   }
   @media screen and (max-width: 480px) {
     padding: 13.5vw 4.4vw 0 4.4vw;
-    height: 165vw;
+    height: 178vw;
   }
   &__header {
     font-size: 5vw;
@@ -980,38 +985,46 @@
     }
   }
 }
-
-// .burgerContainer:hover .burgerContainer__lineTwo {
-//   transform: rotate(0deg);
-// }
-// @keyframes rotateLineThree {
-//   0% {
-//     top: 60%;
-//     left: 17%;
-//   }
-
-//   100% {
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%) rotate(45deg);
-//   }
-// }
-
-// @keyframes reverseRotateLineThree {
-//   0% {
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%) rotate(45deg);
-//   }
-
-//   100% {
-//     top: 60%;
-//     left: 17%;
-//   }
-// }
-// .burgerContainer:hover .burgerContainer__lineThree {
-//   animation: rotateLineThree 0.5s forwards;
-// }
-// .burgerContainer:not(:hover) .burgerContainer__lineThree {
-//   animation: reverseRotateLineThree 0.5s forwards;
-// }
+.casesContainer {
+  padding: 0 6.6vw 14vw 6.6vw;
+  position: relative;
+  @media screen and (max-width: 1024px) {
+    padding: 0 6.25vw 30vw 6.25vw;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 0 4.4vw 0 4.4vw;
+  }
+  &__title {
+    font-family: Gilroy-SemiBold;
+    color: #5566b7;
+    font-size: 5vw;
+    line-height: 5.2vw;
+    margin-bottom: 3vw;
+    @media screen and (max-width: 1024px) {
+      font-size: 12.5vw;
+      line-height: 13vw;
+    }
+  }
+  &__imageContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__image {
+    background-image: url(../Assets/Images/HomePageImages/DuckCase.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 27vw;
+    height: 32vw;
+    @media screen and (max-width: 1024px) {
+      background-image: url(../Assets/Images/HomePageImages/DuckCaseTablet.png);
+      width:87vw;
+      height:82vw;
+      margin-bottom: 6vw;
+    }
+  }
+}
