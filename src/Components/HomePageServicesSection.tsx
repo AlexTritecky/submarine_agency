@@ -1,14 +1,62 @@
+import * as React from "react";
 import styles from "../Styling/homePage.module.css";
-import Image from 'next/image';
+import Image from "next/image";
 import LinkArrow from "../Assets/Images/HomePageImages/ServiceArrow.svg";
+import Backdrop from "@mui/material/Backdrop";
+import Modal from "@mui/material/Modal";
+import TransitionsModal from "./HomePageServicesPopUp";
+import {
+  BRAND,
+  COMMUNICATION_STRATEGY,
+  DESIGN,
+  PRODUCTION,
+  PROMOTION,
+  SMM,
+  SMM_STRATEGY,
+} from "@/Interfaces/interfaces";
+import BecomeClientButton from "./BecomeClientButton";
 
 function ServicesSection() {
+  const [open, setOpen] = React.useState(false);
+  const [modalName, setModalName] = React.useState("");
+  const handleOpen = (name: any) => {
+    setModalName(name);
+    setOpen(true);
+  };
+  const handleClose = () => setOpen(false);
   return (
     <section className={styles.servicesContainer}>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        slots={{ backdrop: Backdrop }}
+        slotProps={{
+          backdrop: {
+            timeout: 500,
+          },
+        }}
+        className={styles.modalContainer}
+      >
+        <TransitionsModal
+          open={open}
+          modalName={modalName}
+          handleClose={() => setOpen(false)}
+        />
+      </Modal>
       <div className={styles.servicesContainer__header}>ПОСЛУГИ</div>
-      <div className={styles.servicesContainer__service}>
+      <div
+        className={styles.servicesContainer__service}
+        onClick={() => handleOpen(COMMUNICATION_STRATEGY)}
+      >
         <div className={styles.servicesContainer__serviceTitle}>
-          <Image alt="arrow" src={LinkArrow} className={styles.servicesContainer__serviceIcon} />
+          <Image
+            alt="arrow"
+            src={LinkArrow}
+            className={styles.servicesContainer__serviceIcon}
+          />
           КОМУНІКАЦІЙНА СТРАТЕГІЯ
         </div>
         <div className={styles.servicesContainer__infoList}>
@@ -17,9 +65,16 @@ function ServicesSection() {
           </div>
         </div>
       </div>
-      <div className={styles.servicesContainer__service}>
+      <div
+        className={styles.servicesContainer__service}
+        onClick={() => handleOpen(SMM_STRATEGY)}
+      >
         <div className={styles.servicesContainer__serviceTitle}>
-        <Image alt="arrow" src={LinkArrow} className={styles.servicesContainer__serviceIcon} />
+          <Image
+            alt="arrow"
+            src={LinkArrow}
+            className={styles.servicesContainer__serviceIcon}
+          />
           SMM-СТРАТЕГІЯ
         </div>
         <div className={styles.servicesContainer__infoList}>
@@ -28,9 +83,17 @@ function ServicesSection() {
           </div>
         </div>
       </div>
-      <div className={styles.servicesContainer__service}>
+      <div
+        className={styles.servicesContainer__service}
+        onClick={() => handleOpen(SMM)}
+      >
         <div className={styles.servicesContainer__serviceTitle}>
-        <Image alt="arrow" src={LinkArrow} className={styles.servicesContainer__serviceIcon} />SMM
+          <Image
+            alt="arrow"
+            src={LinkArrow}
+            className={styles.servicesContainer__serviceIcon}
+          />
+          SMM
         </div>
         <div className={styles.servicesContainer__infoList}>
           <div className={styles.servicesContainer__infoListItem}>
@@ -38,9 +101,16 @@ function ServicesSection() {
           </div>
         </div>
       </div>
-      <div className={styles.servicesContainer__service}>
+      <div
+        className={styles.servicesContainer__service}
+        onClick={() => handleOpen(BRAND)}
+      >
         <div className={styles.servicesContainer__serviceTitle}>
-        <Image alt="arrow" src={LinkArrow} className={styles.servicesContainer__serviceIcon} />
+          <Image
+            alt="arrow"
+            src={LinkArrow}
+            className={styles.servicesContainer__serviceIcon}
+          />
           БРЕНДІНГ
         </div>
         <div className={styles.servicesContainer__infoList}>
@@ -49,9 +119,16 @@ function ServicesSection() {
           <div className={styles.servicesContainer__infoListItem}>Брендбук</div>
         </div>
       </div>
-      <div className={styles.servicesContainer__service}>
+      <div
+        className={styles.servicesContainer__service}
+        onClick={() => handleOpen(DESIGN)}
+      >
         <div className={styles.servicesContainer__serviceTitle}>
-        <Image alt="arrow" src={LinkArrow} className={styles.servicesContainer__serviceIcon} />
+          <Image
+            alt="arrow"
+            src={LinkArrow}
+            className={styles.servicesContainer__serviceIcon}
+          />
           ВЕБДИЗАЙН
         </div>
         <div className={styles.servicesContainer__infoList}>
@@ -63,9 +140,16 @@ function ServicesSection() {
           </div>
         </div>
       </div>
-      <div className={styles.servicesContainer__service}>
+      <div
+        className={styles.servicesContainer__service}
+        onClick={() => handleOpen(PROMOTION)}
+      >
         <div className={styles.servicesContainer__serviceTitle}>
-        <Image alt="arrow" src={LinkArrow} className={styles.servicesContainer__serviceIcon} />
+          <Image
+            alt="arrow"
+            src={LinkArrow}
+            className={styles.servicesContainer__serviceIcon}
+          />
           ПРОМОУШН
         </div>
         <div className={styles.servicesContainer__infoList}>
@@ -83,9 +167,16 @@ function ServicesSection() {
           </div>
         </div>
       </div>
-      <div className={styles.servicesContainer__service}>
+      <div
+        className={styles.servicesContainer__service}
+        onClick={() => handleOpen(PRODUCTION)}
+      >
         <div className={styles.servicesContainer__serviceTitle}>
-        <Image alt="arrow" src={LinkArrow} className={styles.servicesContainer__serviceIcon} />
+          <Image
+            alt="arrow"
+            src={LinkArrow}
+            className={styles.servicesContainer__serviceIcon}
+          />
           ПРОДАКШН
         </div>
         <div className={styles.servicesContainer__infoList}>
@@ -97,6 +188,7 @@ function ServicesSection() {
           </div>
         </div>
       </div>
+      <BecomeClientButton />
     </section>
   );
 }

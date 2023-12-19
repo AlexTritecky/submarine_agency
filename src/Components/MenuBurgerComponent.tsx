@@ -1,5 +1,5 @@
 import styles from "../Styling/menuBurger.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Logo from "../Assets/Images/HomePageImages/ProjectLogo.svg";
 import LinkArrow from "../Assets/Images/BurgerMenuImages/ArrowLink.svg";
@@ -11,6 +11,13 @@ function MenuBurger() {
   const [rotateBurger, setRotateBurger] = useState(false);
   const [moveBurgerLines, setMoveBurgerLines] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
+  useEffect(() => {
+    if (openMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [openMenu]);
   const handleBurgerOpen = () => {
     if (!openMenu && !rotateBurger && !moveBurgerLines) {
       setTimeout(() => {
@@ -125,11 +132,18 @@ function MenuBurger() {
             !rotateBurger ? styles.socialMediaLinksTabletContainerHide : ""
           }`}
         >
-          
-          <a><Image src={TikTokHyper } alt='link to tik tok' /></a>
-          <a><Image src={InstagramHyper } alt='link to instagram' /></a>
-          <a><Image src={FaceBookHyper} alt='link to facebook' /></a>
-          <a><Image src={LinkedinHyper} alt='link to linkedin' /></a>
+          <a>
+            <Image src={TikTokHyper} alt="link to tik tok" />
+          </a>
+          <a>
+            <Image src={InstagramHyper} alt="link to instagram" />
+          </a>
+          <a>
+            <Image src={FaceBookHyper} alt="link to facebook" />
+          </a>
+          <a>
+            <Image src={LinkedinHyper} alt="link to linkedin" />
+          </a>
         </div>
         <div
           className={`${styles.waterMarkContainer} ${

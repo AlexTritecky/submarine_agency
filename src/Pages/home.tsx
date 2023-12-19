@@ -1,3 +1,4 @@
+import CasesSection from "@/Components/CasesSection";
 import AboutUsSection from "@/Components/HomePageAboutUs";
 import ServicesSection from "@/Components/HomePageServicesSection";
 import HomePageSlider from "@/Components/HomePageStartSliderSection";
@@ -16,6 +17,7 @@ function HomePage() {
       <HomePageSlider />
       <AboutUsSection />
       <ServicesSection />
+      <CasesSection />
     </div>
   );
 }

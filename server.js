@@ -12,9 +12,6 @@ app.prepare().then(() => {
     return app.render(req, res, '/home')
   })
 
-  server.get('/products', (req, res) => {
-    return app.render(req, res, '/products')
-  })
 
   server.all('*', (req, res) => {
     return handle(req, res)
