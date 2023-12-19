@@ -3,7 +3,7 @@ import Arrow from "../Assets/Images/HomePageImages/PopUp/ComeBackArrow.svg";
 import Image from "next/image";
 import { useState } from "react";
 
-function ComeBackButton({ onClose }: any) {
+function ArrowTypeButton({ onClose,header }: any) {
   const [isPressed, setIsPressed] = useState(false);
   return (
     <button
@@ -15,10 +15,10 @@ function ComeBackButton({ onClose }: any) {
       }`}
       tabIndex={0}
     >
-      <div>Повернутися назад</div>
+      <div>{header}</div>
       <Image className={styles.comeBackButton__arrow} src={Arrow} alt="arrow" />
     </button>
   );
 }
 
-export default ComeBackButton;
+export default ArrowTypeButton;

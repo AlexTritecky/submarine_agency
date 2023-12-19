@@ -4,7 +4,7 @@
     min-width: 5.6vw;
     min-height: 5.6vw;
     border-radius: 50%;
-    background-color: white;
+    background-color: #a967dd;
     position: relative;
     transition-duration: 0.25s;
     position: fixed;
@@ -16,23 +16,23 @@
         width: 14vw;
         height: 14vw;
         min-width: 14vw;
-        min-height: 14vw; 
-        top:14vw;
-        right:unset;
+        min-height: 14vw;
+        top: 14vw;
+        right: unset;
         left: 50%;
         transform: translateX(-50%);
     }
     @media screen and (max-width: 480px) {
-        top:17.7vw;
+        top: 17.7vw;
         width: 12.2vw;
         height: 12.2vw;
-        min-width:  12.2vw;
-        min-height:  12.2vw;
+        min-width: 12.2vw;
+        min-height: 12.2vw;
     }
     &__lineOne {
         height: 12%;
         width: 32%;
-        background-color: #a967dd;
+        background-color: white;
         border-radius: 93vw;
         position: absolute;
         right: 16%;
@@ -47,7 +47,7 @@
     &__lineTwo {
         height: 12%;
         width: 50%;
-        background-color: #a967dd;
+        background-color: white;
         border-radius: 93vw;
         position: absolute;
         right: 16%;
@@ -66,7 +66,7 @@
     &__lineThree {
         height: 12%;
         width: 68%;
-        background-color: #a967dd;
+        background-color: white;
         border-radius: 93vw;
         position: absolute;
         top: 60%;
@@ -92,17 +92,17 @@
             width: 14vw;
             height: 14vw;
             min-width: 14vw;
-            min-height: 14vw; 
-            right:unset;
+            min-height: 14vw;
+            right: unset;
             left: 50%;
             transform: translateX(-50%);
         }
         @media screen and (max-width: 480px) {
             width: 12.2vw;
             height: 12.2vw;
-            min-width:  12.2vw;
-            min-height:  12.2vw;
-            top:17.7vw;
+            min-width: 12.2vw;
+            min-height: 12.2vw;
+            top: 17.7vw;
         }
     }
 }
@@ -205,12 +205,12 @@
     left: 32vw;
     z-index: 31;
     @media screen and (max-width: 1024px) {
-        top:31.5vw;
-        left:6.25vw;
+        top: 31.5vw;
+        left: 6.25vw;
     }
     @media screen and (max-width: 480px) {
-        top:41vw;
-        left:4.4vw;
+        top: 41vw;
+        left: 4.4vw;
     }
     &__navigationHeader {
         color: #5566b7;
@@ -285,7 +285,7 @@
         left: 50%;
         transform: translate(-50%);
         font-size: 2.6vw;
-        width:100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -307,19 +307,19 @@
     transition-duration: 0.5s;
 
     @media screen and (max-width: 1024px) {
-        top:2vw;
+        top: 2vw;
         left: 50%;
         transform: translate(-50%);
-        width:36vw;
-        height:8.2vw;
+        width: 36vw;
+        height: 8.2vw;
     }
     @media screen and (max-width: 480px) {
-        width:27.2vw;
-        top:8.5vw;
+        width: 27.2vw;
+        top: 8.5vw;
     }
 }
 .burgerMenuLogoHide {
-   display: none;
+    display: none;
 }
 .socialMediaLinksContainer {
     position: absolute;
@@ -362,7 +362,7 @@
     animation-delay: 0ms;
     color: #5566b7;
     display: none;
-    img{
+    img {
         display: none;
     }
 }
@@ -373,16 +373,16 @@
     bottom: 13.6vw;
     left: 50%;
     transform: translateX(-50%);
-    width:60vw;
+    width: 60vw;
     animation-delay: 500ms;
     display: none;
     @media screen and (max-width: 1024px) {
-      display: flex;
-      justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
     }
-    img{
-        width:10.4vw;
-        height:10.4vw;
+    img {
+        width: 10.4vw;
+        height: 10.4vw;
     }
 }
 .socialMediaLinksTabletContainerHide {

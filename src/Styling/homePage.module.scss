@@ -167,6 +167,27 @@
     margin-right: 2.3%;
     width: 4.7%;
     animation: rotateAnimationOut 1s forwards;
+    transition-duration: 0.5s;
+    @media screen and (max-width: 1024px) {
+      width: 4.75%;
+      height: auto;
+    }
+  }
+  &__plusHovered {
+    margin-right: 2.3%;
+    width: 4.7%;
+    animation: rotateAnimation 1s forwards;
+    transition-duration: 0.5s;
+    @media screen and (max-width: 1024px) {
+      width: 4.75%;
+      height: auto;
+    }
+  }
+  &__plusClicked {
+    margin-right: 2.3%;
+    width: 4.7%;
+    animation: rotateAnimationOut 0.5s forwards;
+    transition-duration: 0.5s;
     @media screen and (max-width: 1024px) {
       width: 4.75%;
       height: auto;
@@ -176,6 +197,10 @@
 .becomeClientButtonPressed {
   animation: pressButtonAnimation 0.5s forwards;
 }
+
+// .becomeClientButton:hover .becomeClientButton__plus {
+//   animation: rotateAnimation 1s forwards;
+// }
 .comeBackButton {
   width: 24.4vw;
   height: 5.2vw;
@@ -284,9 +309,6 @@
   }
 }
 
-.becomeClientButton:hover .becomeClientButton__plus {
-  animation: rotateAnimation 1s forwards;
-}
 .aboutUsContainer {
   width: 100vw;
   height: 56vw;
@@ -424,7 +446,7 @@
       font-size: 2.3vw;
       line-height: 2.7vw;
       letter-spacing: 0.066vw;
-      padding: 7.6vw 3.5vw 2vw 3vw
+      padding: 7.6vw 3.5vw 2vw 3vw;
     }
   }
   &__infoItem3 {
@@ -461,7 +483,7 @@
       font-size: 2.3vw;
       line-height: 2.7vw;
       letter-spacing: 0.066vw;
-      padding: 7.5vw 3.5vw 3vw 7.5vw
+      padding: 7.5vw 3.5vw 3vw 7.5vw;
     }
   }
   &__infoItem4 {

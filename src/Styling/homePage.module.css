@@ -206,9 +206,36 @@
   width: 4.7%;
   -webkit-animation: rotateAnimationOut 1s forwards;
           animation: rotateAnimationOut 1s forwards;
+  transition-duration: 0.5s;
 }
 @media screen and (max-width: 1024px) {
   .becomeClientButton__plus {
+    width: 4.75%;
+    height: auto;
+  }
+}
+.becomeClientButton__plusHovered {
+  margin-right: 2.3%;
+  width: 4.7%;
+  -webkit-animation: rotateAnimation 1s forwards;
+          animation: rotateAnimation 1s forwards;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 1024px) {
+  .becomeClientButton__plusHovered {
+    width: 4.75%;
+    height: auto;
+  }
+}
+.becomeClientButton__plusClicked {
+  margin-right: 2.3%;
+  width: 4.7%;
+  -webkit-animation: rotateAnimationOut 0.5s forwards;
+          animation: rotateAnimationOut 0.5s forwards;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 1024px) {
+  .becomeClientButton__plusClicked {
     width: 4.75%;
     height: auto;
   }
@@ -375,11 +402,6 @@
     transform: rotate(0deg);
   }
 }
-.becomeClientButton:hover .becomeClientButton__plus {
-  -webkit-animation: rotateAnimation 1s forwards;
-          animation: rotateAnimation 1s forwards;
-}
-
 .aboutUsContainer {
   width: 100vw;
   height: 56vw;

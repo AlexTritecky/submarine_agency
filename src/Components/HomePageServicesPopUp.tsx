@@ -11,9 +11,7 @@ import {
   SMM,
   SMM_STRATEGY,
 } from "@/Interfaces/interfaces";
-import PopUpArrow from "../Assets/Images/HomePageImages/PopUp/PopUpArrow.svg";
-import Image from "next/image";
-import ComeBackButton from "./ComeBackButton";
+import ArrowTypeButton from "./ArrowTypeButton";
 
 export default function TransitionsModal({
   open,
@@ -541,7 +539,7 @@ export default function TransitionsModal({
             )}
           </div>
         </div>
-        <ComeBackButton onClose={handleClose} />
+        <ArrowTypeButton header={'Повернутися назад'} onClose={handleClose} />
       </Box>
     </Fade>
   );

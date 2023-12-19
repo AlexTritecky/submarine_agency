@@ -1,5 +1,5 @@
 import styles from "../Styling/homePage.module.css";
-import ComeBackButton from "./ComeBackButton";
+import ArrowTypeButton from "./ArrowTypeButton";
 
 function CasesSection() {
   return (
@@ -10,7 +10,7 @@ function CasesSection() {
         <div className={styles.casesContainer__image}></div>
         <div className={styles.casesContainer__image}></div>
       </div>
-      <ComeBackButton />
+      <ArrowTypeButton header={'Переглянути всі кейси'} />
     </section>
   );
 }

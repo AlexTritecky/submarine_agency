@@ -4,7 +4,7 @@
   min-width: 5.6vw;
   min-height: 5.6vw;
   border-radius: 50%;
-  background-color: white;
+  background-color: #a967dd;
   position: relative;
   transition-duration: 0.25s;
   position: fixed;
@@ -37,7 +37,7 @@
 .burgerContainer__lineOne {
   height: 12%;
   width: 32%;
-  background-color: #a967dd;
+  background-color: white;
   border-radius: 93vw;
   position: absolute;
   right: 16%;
@@ -52,7 +52,7 @@
 .burgerContainer__lineTwo {
   height: 12%;
   width: 50%;
-  background-color: #a967dd;
+  background-color: white;
   border-radius: 93vw;
   position: absolute;
   right: 16%;
@@ -73,7 +73,7 @@
 .burgerContainer__lineThree {
   height: 12%;
   width: 68%;
-  background-color: #a967dd;
+  background-color: white;
   border-radius: 93vw;
   position: absolute;
   top: 60%;
