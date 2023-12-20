@@ -1,5 +1,6 @@
 import CasesSection from "@/Components/CasesSection";
 import CooperationSection from "@/Components/CooperationSection";
+import FooterSection from "@/Components/Footer";
 import AboutUsSection from "@/Components/HomePageAboutUs";
 import ServicesSection from "@/Components/HomePageServicesSection";
 import HomePageSlider from "@/Components/HomePageStartSliderSection";
@@ -7,7 +8,6 @@ import MenuBurger from "@/Components/MenuBurgerComponent";
 import PartnerSection from "@/Components/PartnerSection";
 
 function HomePage() {
-
   return (
     <div>
       {/* home
@@ -22,6 +22,7 @@ function HomePage() {
       <CasesSection />
       <PartnerSection />
       <CooperationSection />
+      <FooterSection />
     </div>
   );
 }

@@ -1130,6 +1130,7 @@
   &__slider {
     display: none !important;
     @media screen and (max-width: 1024px) {
+      display: block !important;
       width: 50vw !important;
       height: 40vw;
       transition: transform 0.3s ease;
@@ -1226,5 +1227,8 @@
 }
 
 .cooperationContainer__sliderItem:hover {
+  transform: rotate(-8deg);
+}
+.cooperationContainer__slider .cooperationContainer__sliderItem:hover {
   transform: rotate(-8deg);
 }
