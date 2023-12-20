@@ -178,8 +178,8 @@
   transition-duration: 1s;
   border: none;
   outline: none;
-  -webkit-animation: unPressButtonAnimation 0.5s forwards;
-          animation: unPressButtonAnimation 0.5s forwards;
+  -webkit-animation: unPressPlusButtonAnimation 0.5s forwards;
+          animation: unPressPlusButtonAnimation 0.5s forwards;
   font-weight: 700;
   cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
 }
@@ -242,8 +242,8 @@
 }
 
 .becomeClientButtonPressed {
-  -webkit-animation: pressButtonAnimation 0.5s forwards;
-          animation: pressButtonAnimation 0.5s forwards;
+  -webkit-animation: pressPlusButtonAnimation 0.5s forwards;
+          animation: pressPlusButtonAnimation 0.5s forwards;
 }
 
 .comeBackButton {
@@ -258,7 +258,6 @@
   color: white;
   z-index: 5;
   font-size: 1.25vw;
-  position: absolute;
   left: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -323,17 +322,50 @@
 
 @-webkit-keyframes pressButtonAnimation {
   0% {
-    transform: translateX(-50%) scale(1);
+    transform: scale(1);
   }
   30% {
-    transform: translateX(-50%) scale(1.03);
+    transform: scale(1.03);
   }
   100% {
-    transform: translateX(-50%) scale(0.95);
+    transform: scale(0.95);
   }
 }
 
 @keyframes pressButtonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+@-webkit-keyframes unPressButtonAnimation {
+  0% {
+    transform: scale(0.95);
+  }
+  30% {
+    transform: scale(0.93);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes unPressButtonAnimation {
+  0% {
+    transform: scale(0.95);
+  }
+  30% {
+    transform: scale(0.93);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes pressPlusButtonAnimation {
   0% {
     transform: translateX(-50%) scale(1);
   }
@@ -344,7 +376,18 @@
     transform: translateX(-50%) scale(0.95);
   }
 }
-@-webkit-keyframes unPressButtonAnimation {
+@keyframes pressPlusButtonAnimation {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  30% {
+    transform: translateX(-50%) scale(1.03);
+  }
+  100% {
+    transform: translateX(-50%) scale(0.95);
+  }
+}
+@-webkit-keyframes unPressPlusButtonAnimation {
   0% {
     transform: translateX(-50%) scale(0.95);
   }
@@ -355,7 +398,7 @@
     transform: translateX(-50%) scale(1);
   }
 }
-@keyframes unPressButtonAnimation {
+@keyframes unPressPlusButtonAnimation {
   0% {
     transform: translateX(-50%) scale(0.95);
   }
@@ -853,6 +896,7 @@
 }
 .modalPopUp__infoSection {
   display: flex;
+  position: relative;
 }
 @media screen and (max-width: 1024px) {
   .modalPopUp__infoSection {
