@@ -1231,17 +1231,17 @@
 }
 
 .casesContainer {
-  padding: 0 6.6vw 14vw 6.6vw;
+  padding: 0 6.6vw 6.6vw 6.6vw;
   position: relative;
 }
 @media screen and (max-width: 1024px) {
   .casesContainer {
-    padding: 0 6.25vw 30vw 6.25vw;
+    padding: 0 6.25vw 11.4vw 6.25vw;
   }
 }
 @media screen and (max-width: 480px) {
   .casesContainer {
-    padding: 0 4.4vw 13.5vw 4.4vw;
+    padding: 0 4.4vw 6.6vw 4.4vw;
   }
 }
 .casesContainer__title {
@@ -1296,5 +1296,41 @@
     width: 80vw;
     height: 94vw;
     margin-bottom: 4vw;
+  }
+}
+
+.partnerContainer {
+  padding: 0 6.6vw 15vw 6.6vw;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .partnerContainer {
+    padding: 0 6.25vw 29vw 6.25vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .partnerContainer {
+    padding: 0 4.4vw 0 4.4vw;
+  }
+}
+.partnerContainer__imageContainer {
+  height: 92.6vw;
+  width: 86vw;
+  background-image: url(../Assets/Images/HomePageImages/PartnerDesctop.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 1024px) {
+  .partnerContainer__imageContainer {
+    background-image: url(../Assets/Images/HomePageImages/PartnerTablet.webp);
+    height: 197vw;
+    width: 87.5vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .partnerContainer__imageContainer {
+    background-image: url(../Assets/Images/HomePageImages/PartnerMobile.webp);
+    height: 200vw;
+    width: 87.5vw;
   }
 }/*# sourceMappingURL=homePage.module.css.map */

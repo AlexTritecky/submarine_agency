@@ -1011,13 +1011,13 @@
   }
 }
 .casesContainer {
-  padding: 0 6.6vw 14vw 6.6vw;
+  padding: 0 6.6vw 6.6vw 6.6vw;
   position: relative;
   @media screen and (max-width: 1024px) {
-    padding: 0 6.25vw 30vw 6.25vw;
+    padding: 0 6.25vw 11.4vw 6.25vw;
   }
   @media screen and (max-width: 480px) {
-    padding: 0 4.4vw 13.5vw 4.4vw;
+    padding: 0 4.4vw 6.6vw 4.4vw;
   }
   &__title {
     font-family: Gilroy-SemiBold;
@@ -1052,15 +1052,43 @@
     height: 32vw;
     @media screen and (max-width: 1024px) {
       background-image: url(../Assets/Images/HomePageImages/DuckCaseTablet.png);
-      width:87vw;
-      height:82vw;
+      width: 87vw;
+      height: 82vw;
       margin-bottom: 6vw;
     }
     @media screen and (max-width: 480px) {
       background-image: url(../Assets/Images/HomePageImages/DuckCaseMobile.png);
-      width:80vw;
-      height:94vw;
+      width: 80vw;
+      height: 94vw;
       margin-bottom: 4vw;
     }
+  }
+}
+.partnerContainer {
+  padding: 0 6.6vw 15vw 6.6vw;
+  position: relative;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 6.25vw 29vw 6.25vw;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 0 4.4vw 0 4.4vw;
+  }
+  &__imageContainer {
+    height: 92.6vw;
+    width: 86vw;
+    background-image: url(../Assets/Images/HomePageImages/PartnerDesctop.webp);
+    @media screen and (max-width: 1024px) {
+      background-image: url(../Assets/Images/HomePageImages/PartnerTablet.webp);
+      height: 197vw;
+      width: 87.5vw;
+    }
+    @media screen and (max-width: 480px) {
+      background-image: url(../Assets/Images/HomePageImages/PartnerMobile.webp);
+      height: 200vw;
+      width: 87.5vw;
+    }
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }

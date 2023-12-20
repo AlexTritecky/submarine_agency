@@ -3,6 +3,7 @@ import AboutUsSection from "@/Components/HomePageAboutUs";
 import ServicesSection from "@/Components/HomePageServicesSection";
 import HomePageSlider from "@/Components/HomePageStartSliderSection";
 import MenuBurger from "@/Components/MenuBurgerComponent";
+import PartnerSection from "@/Components/PartnerSection";
 
 function HomePage() {
 
@@ -18,6 +19,7 @@ function HomePage() {
       <AboutUsSection />
       <ServicesSection />
       <CasesSection />
+      <PartnerSection />
     </div>
   );
 }
