@@ -1241,7 +1241,7 @@
 }
 @media screen and (max-width: 480px) {
   .casesContainer {
-    padding: 0 4.4vw 0 4.4vw;
+    padding: 0 4.4vw 13.5vw 4.4vw;
   }
 }
 .casesContainer__title {
@@ -1255,6 +1255,13 @@
   .casesContainer__title {
     font-size: 12.5vw;
     line-height: 13vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .casesContainer__title {
+    font-size: 5.5vw;
+    line-height: 5.5vw;
+    margin-bottom: 6.6vw;
   }
 }
 .casesContainer__imageContainer {
@@ -1281,5 +1288,13 @@
     width: 87vw;
     height: 82vw;
     margin-bottom: 6vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .casesContainer__image {
+    background-image: url(../Assets/Images/HomePageImages/DuckCaseMobile.png);
+    width: 80vw;
+    height: 94vw;
+    margin-bottom: 4vw;
   }
 }/*# sourceMappingURL=homePage.module.css.map */

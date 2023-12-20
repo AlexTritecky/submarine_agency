@@ -1017,7 +1017,7 @@
     padding: 0 6.25vw 30vw 6.25vw;
   }
   @media screen and (max-width: 480px) {
-    padding: 0 4.4vw 0 4.4vw;
+    padding: 0 4.4vw 13.5vw 4.4vw;
   }
   &__title {
     font-family: Gilroy-SemiBold;
@@ -1028,6 +1028,11 @@
     @media screen and (max-width: 1024px) {
       font-size: 12.5vw;
       line-height: 13vw;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 5.5vw;
+      line-height: 5.5vw;
+      margin-bottom: 6.6vw;
     }
   }
   &__imageContainer {
@@ -1050,6 +1055,12 @@
       width:87vw;
       height:82vw;
       margin-bottom: 6vw;
+    }
+    @media screen and (max-width: 480px) {
+      background-image: url(../Assets/Images/HomePageImages/DuckCaseMobile.png);
+      width:80vw;
+      height:94vw;
+      margin-bottom: 4vw;
     }
   }
 }
