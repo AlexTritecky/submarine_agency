@@ -1072,7 +1072,7 @@
     padding: 0 6.25vw 29vw 6.25vw;
   }
   @media screen and (max-width: 480px) {
-    padding: 0 4.4vw 0 4.4vw;
+    padding: 0 4.4vw 30vw 4.4vw;
   }
   &__imageContainer {
     height: 92.6vw;
@@ -1085,8 +1085,8 @@
     }
     @media screen and (max-width: 480px) {
       background-image: url(../Assets/Images/HomePageImages/PartnerMobile.webp);
-      height: 200vw;
-      width: 87.5vw;
+      height: 316vw;
+      width: 90vw;
     }
     background-repeat: no-repeat;
     background-size: contain;

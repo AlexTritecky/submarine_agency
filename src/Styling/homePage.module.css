@@ -1310,7 +1310,7 @@
 }
 @media screen and (max-width: 480px) {
   .partnerContainer {
-    padding: 0 4.4vw 0 4.4vw;
+    padding: 0 4.4vw 30vw 4.4vw;
   }
 }
 .partnerContainer__imageContainer {
@@ -1330,7 +1330,7 @@
 @media screen and (max-width: 480px) {
   .partnerContainer__imageContainer {
     background-image: url(../Assets/Images/HomePageImages/PartnerMobile.webp);
-    height: 200vw;
-    width: 87.5vw;
+    height: 316vw;
+    width: 90vw;
   }
 }/*# sourceMappingURL=homePage.module.css.map */
