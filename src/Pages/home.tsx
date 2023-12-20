@@ -1,4 +1,5 @@
 import CasesSection from "@/Components/CasesSection";
+import CooperationSection from "@/Components/CooperationSection";
 import AboutUsSection from "@/Components/HomePageAboutUs";
 import ServicesSection from "@/Components/HomePageServicesSection";
 import HomePageSlider from "@/Components/HomePageStartSliderSection";
@@ -20,6 +21,7 @@ function HomePage() {
       <ServicesSection />
       <CasesSection />
       <PartnerSection />
+      <CooperationSection />
     </div>
   );
 }
