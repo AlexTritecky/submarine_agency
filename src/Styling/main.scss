@@ -44,6 +44,9 @@
 html {
   cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
 }
+body{
+  overflow-y: hidden;
+}
 // .swiper{
 //     width:100% !important;
 //     // max-height: 100% !important;

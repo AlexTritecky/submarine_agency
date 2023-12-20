@@ -1096,6 +1096,7 @@
 .cooperationContainer {
   padding: 0 6.6vw 15vw 6.6vw;
   position: relative;
+  overflow: hidden;
 
   @media screen and (max-width: 1024px) {
     padding: 0 6.25vw 17vw 6.25vw;
@@ -1115,6 +1116,10 @@
       font-size: 12.5vw;
       line-height: 13vw;
       margin-bottom: 6.25vw;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 5.5vw;
+      line-height: 5.5vw;
     }
   }
   &__headerTabletHide {

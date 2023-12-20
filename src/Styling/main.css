@@ -44,6 +44,10 @@ html {
   cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 /* div{
     font-family: 'Unbounded';
 } *//*# sourceMappingURL=main.css.map */

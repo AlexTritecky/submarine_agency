@@ -1,3 +1,123 @@
-.footerContainer{
-    
+.footerContainer {
+    background-color: #5566b7;
+    height: 34.4vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 6.9vw 6.6vw 0 6.6vw;
+    color: white;
+    position: relative;
+    @media screen and (max-width: 1024px) {
+        padding: 0 6.25vw 0 6.25vw;
+    }
+    @media screen and (max-width: 480px) {
+        padding: 0 4.4vw 0 4.4vw;
+    }
+    &__sectionOne {
+        width: 59%;
+    }
+    &__sectionOneHeader {
+        font-family: Gilroy-SemiBold;
+        font-size: 3.3vw;
+        line-height: 3.3vw;
+        margin-bottom: 9.2vw;
+    }
+    &__sectionOneFillForm {
+        font-family: Unbounded;
+        font-size: 1vw;
+        line-height: 1.2vw;
+    }
+    &__sectionOneWriteUs {
+        font-family: Unbounded;
+        font-size: 1vw;
+        line-height: 1.2vw;
+        margin-bottom: 1.25vw;
+    }
+    &__sectionOneEmail {
+        font-family: Unbounded-Medium;
+        font-size: 1vw;
+        line-height: 1.2vw;
+        color: white;
+        text-decoration: none;
+    }
+    &__sectionTwo {
+        width: 25%;
+    }
+    &__sectionTwoMediaHypers{
+     margin-bottom: 3.3vw;
+    }
+    &__sectionTwoContacts {
+    }
+    &__sectionTwoHeader {
+        font-family: Unbounded-Medium;
+        font-size: 1vw;
+        line-height: 1.2vw;
+        margin-bottom: 1.25vw;
+    }
+    &__sectionTwoCity {
+        font-family: Unbounded;
+        font-size: 1vw;
+        line-height: 1.2vw;
+    }
+    &__sectionTwoStreet {
+        font-family: Unbounded;
+        font-size: 1vw;
+        line-height: 1.2vw;
+        margin-bottom: 0.8vw;
+    }
+    &__sectionTwoNumber {
+        font-family: Unbounded-Medium;
+        font-size: 1vw;
+        line-height: 1.2vw;
+        margin-bottom: 0.8vw;
+    }
+    &__sectionTwoMail {
+        font-family: Unbounded-Medium;
+        font-size: 1vw;
+        line-height: 1.2vw;
+        margin-bottom: 3vw;
+    }
+
+    &__rightsSection {
+        position: absolute;
+        font-family: Unbounded;
+        font-size: 1vw;
+        left: 6.6vw;
+        bottom: 0.5vw;
+        width: 23.6vw;
+    }
+    &__sectionTwoGoToStart{
+        font-family: Unbounded-Medium;
+        font-size: 1.25vw;
+        line-height: 1.25vw;
+    }
+    &__stylingElement {
+        position: absolute;
+    }
+}
+
+.socialMediaLinksContainer__link {
+    font-size: 1vw;
+    line-height: 1.25vw;
+    font-family: "Unbounded";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5vw;
+    width: 8.2vw;
+}
+.socialMediaLinksContainer__mobileLink{
+    display: none;
+}
+.socialMediaLinksContainer__header {
+    font-family: Unbounded-Medium;
+    font-size: 1vw;
+    line-height: 1.2vw;
+    margin-bottom: 1vw;
+}
+.socialMediaLinksContainer__link img {
+    transition-duration: 0.5s;
+    width:1vw;
+}
+.socialMediaLinksContainer__link:hover img {
+    transform: rotate(90deg);
 }
