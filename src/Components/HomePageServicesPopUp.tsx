@@ -538,8 +538,8 @@ export default function TransitionsModal({
               </div>
             )}
           </div>
-          <ArrowTypeButton header={'Повернутися назад'} onClose={handleClose} />
         </div>
+        <ArrowTypeButton header={'Повернутися назад'} onClose={handleClose} />
       </Box>
     </Fade>
   );
