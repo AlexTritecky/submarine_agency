@@ -6,8 +6,15 @@ import LinkedinHyper from "../Assets/Images/BurgerMenuImages/LinkedinHyper.svg";
 import TikTokHyper from "../Assets/Images/BurgerMenuImages/TikTokHyper.svg";
 import LinkArrow from "../Assets/Images/BurgerMenuImages/ArrowLink.svg";
 import Image from "next/image";
+import FooterButton from "./FooterButton";
 
 function FooterSection() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <section className={styles.footerContainer}>
       <div className={styles.footerContainer__stylingElement}></div>
@@ -15,7 +22,7 @@ function FooterSection() {
         <div className={styles.footerContainer__sectionOneHeader}>
           БУДУЄМО БРЕНД-КОМУНІКАЦІЮ У СОЦІАЛЬНИХ МЕРЕЖАХ
         </div>
-        <BecomeClientButton />
+        <FooterButton />
         <div className={styles.footerContainer__sectionOneFillForm}>
           Не любите заповнювати форми?
         </div>
@@ -49,7 +56,7 @@ function FooterSection() {
             tik tok
             <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__mobileLink} >
+          <a className={styles.socialMediaLinksContainer__mobileLink}>
             <Image src={TikTokHyper} alt="link to tik tok" />
           </a>
           <a className={styles.socialMediaLinksContainer__mobileLink}>
@@ -79,8 +86,11 @@ function FooterSection() {
             project@submarineagency.com.ua
           </div>
         </div>
-        <div className={styles.footerContainer__sectionTwoGoToStart}>
-          Повернутись догори !
+        <div
+          className={styles.footerContainer__sectionTwoGoToStart}
+          onClick={scrollToTop}
+        >
+          Повернутись догори <Image src={LinkArrow} alt="link" />
         </div>
       </div>
       <div className={styles.footerContainer__rightsSection}>

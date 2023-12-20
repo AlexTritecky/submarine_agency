@@ -246,6 +246,96 @@
           animation: pressPlusButtonAnimation 0.5s forwards;
 }
 
+.footerClientButton {
+  width: 22vw;
+  height: 4.6vw;
+  border-radius: 2.6vw;
+  display: flex;
+  align-items: center;
+  font-family: "Unbounded-Bold";
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  color: #5566b7;
+  z-index: 5;
+  font-size: 1.25vw;
+  bottom: 14.5vw;
+  left: 6.6vw;
+  transform: scale(1);
+  transition-duration: 1s;
+  border: none;
+  outline: none;
+  -webkit-animation: unPressButtonAnimation 0.5s forwards;
+          animation: unPressButtonAnimation 0.5s forwards;
+  font-weight: 700;
+  cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+}
+@media screen and (max-width: 1024px) {
+  .footerClientButton {
+    width: 55.2vw;
+    height: 11vw;
+    border-radius: 6.5vw;
+    font-size: 3.125vw;
+    bottom: unset;
+    top: 33vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footerClientButton {
+    width: 48vw;
+    height: 10vw;
+    border-radius: 13.8vw;
+    font-size: 3vw;
+    bottom: 9.5vw;
+    left: 4.4vw;
+  }
+}
+.footerClientButton__plus {
+  margin-right: 2.3%;
+  width: 4.7%;
+  height: 30%;
+  -webkit-animation: rotateAnimationOut 1s forwards;
+          animation: rotateAnimationOut 1s forwards;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 1024px) {
+  .footerClientButton__plus {
+    width: 4.75%;
+    height: auto;
+  }
+}
+.footerClientButton__plusHovered {
+  margin-right: 2.3%;
+  width: 4.7%;
+  -webkit-animation: rotateAnimation 1s forwards;
+          animation: rotateAnimation 1s forwards;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 1024px) {
+  .footerClientButton__plusHovered {
+    width: 4.75%;
+    height: auto;
+  }
+}
+.footerClientButton__plusClicked {
+  margin-right: 2.3%;
+  width: 4.7%;
+  -webkit-animation: rotateAnimationOut 0.5s forwards;
+          animation: rotateAnimationOut 0.5s forwards;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 1024px) {
+  .footerClientButton__plusClicked {
+    width: 4.75%;
+    height: auto;
+  }
+}
+
+.footerClientButtonPressed {
+  -webkit-animation: pressButtonAnimation 0.5s forwards;
+          animation: pressButtonAnimation 0.5s forwards;
+}
+
 .comeBackButton {
   width: 24.4vw;
   height: 5.2vw;

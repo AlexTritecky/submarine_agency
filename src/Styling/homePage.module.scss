@@ -197,6 +197,79 @@
 .becomeClientButtonPressed {
   animation: pressPlusButtonAnimation 0.5s forwards;
 }
+.footerClientButton {
+  width: 22vw;
+  height: 4.6vw;
+  border-radius: 2.6vw;
+  display: flex;
+  align-items: center;
+  font-family: "Unbounded-Bold";
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  color: #5566b7;
+  z-index: 5;
+  font-size: 1.25vw;
+  bottom: 14.5vw;
+  left: 6.6vw;
+  transform: scale(1);
+  transition-duration: 1s;
+  border: none;
+  outline: none;
+  animation: unPressButtonAnimation 0.5s forwards;
+  font-weight: 700;
+  cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+  @media screen and (max-width: 1024px) {
+    width: 55.2vw;
+    height: 11vw;
+    border-radius: 6.5vw;
+    font-size: 3.125vw;
+    bottom: unset;
+    top:33vw;
+  }
+  @media screen and (max-width: 480px) {
+    width: 48vw;
+    height: 10vw;
+    border-radius: 13.8vw;
+    font-size: 3vw;
+    bottom: 9.5vw;
+    left:4.4vw;
+  }
+  &__plus {
+    margin-right: 2.3%;
+    width: 4.7%;
+    height:30%;
+    animation: rotateAnimationOut 1s forwards;
+    transition-duration: 0.5s;
+    @media screen and (max-width: 1024px) {
+      width: 4.75%;
+      height: auto;
+    }
+  }
+  &__plusHovered {
+    margin-right: 2.3%;
+    width: 4.7%;
+    animation: rotateAnimation 1s forwards;
+    transition-duration: 0.5s;
+    @media screen and (max-width: 1024px) {
+      width: 4.75%;
+      height: auto;
+    }
+  }
+  &__plusClicked {
+    margin-right: 2.3%;
+    width: 4.7%;
+    animation: rotateAnimationOut 0.5s forwards;
+    transition-duration: 0.5s;
+    @media screen and (max-width: 1024px) {
+      width: 4.75%;
+      height: auto;
+    }
+  }
+}
+.footerClientButtonPressed {
+  animation: pressButtonAnimation 0.5s forwards;
+}
 
 // .becomeClientButton:hover .becomeClientButton__plus {
 //   animation: rotateAnimation 1s forwards;
