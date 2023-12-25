@@ -15,6 +15,7 @@ import {
   SMM_STRATEGY,
 } from "@/Interfaces/interfaces";
 import BecomeClientButton from "./BecomeClientButton";
+import { createPortal } from "react-dom";
 
 function ServicesSection() {
   const [open, setOpen] = React.useState(false);
@@ -24,20 +25,16 @@ function ServicesSection() {
     setOpen(true);
   };
   const handleClose = () => setOpen(false);
-  return (
-    <section className={styles.servicesContainer}>
+  const modal =
+    open &&
+    createPortal(
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         open={open}
         onClose={handleClose}
         closeAfterTransition
-        slots={{ backdrop: Backdrop }}
-        slotProps={{
-          backdrop: {
-            timeout: 500,
-          },
-        }}
+        BackdropComponent={Backdrop}
         className={styles.modalContainer}
       >
         <TransitionsModal
@@ -45,7 +42,12 @@ function ServicesSection() {
           modalName={modalName}
           handleClose={() => setOpen(false)}
         />
-      </Modal>
+      </Modal>,
+      document.body
+    );
+  return (
+    <section className={styles.servicesContainer}>
+      {modal}
       <div className={styles.servicesContainer__header}>ПОСЛУГИ</div>
       <div
         className={styles.servicesContainer__service}

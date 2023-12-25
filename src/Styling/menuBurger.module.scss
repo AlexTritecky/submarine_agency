@@ -111,8 +111,10 @@
 }
 .burgerToRightSide {
     left: 87%;
+    top:5vw;
     @media screen and (max-width: 480px) {
         left: 90%;
+        top:5vw;
     }
 }
 .burgerMenuContainer {
