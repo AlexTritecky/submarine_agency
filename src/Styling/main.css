@@ -58,6 +58,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .swiper-pagination {
+    display: none !important;
     margin-bottom: -1.9% !important;
   }
 }
@@ -81,11 +82,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .swiper-pagination-bullet {
-    min-width: 1.3vw !important;
-    min-height: 1.3vw !important;
-    width: 1.3vw !important;
-    height: 1.3vw !important;
-    margin: 0.5vw !important;
+    display: none !important;
   }
 }
 
