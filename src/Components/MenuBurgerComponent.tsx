@@ -117,16 +117,16 @@ function MenuBurger() {
             !rotateBurger ? styles.socialMediaLinksTabletContainerHide : ""
           }`}
         >
-          <a>
+          <a href='https://www.youtube.com'>
             <Image src={TikTokHyper} alt="link to tik tok" />
           </a>
-          <a>
+          <a href='https://www.youtube.com'>
             <Image src={InstagramHyper} alt="link to instagram" />
           </a>
-          <a>
+          <a href='https://www.youtube.com'>
             <Image src={FaceBookHyper} alt="link to facebook" />
           </a>
-          <a>
+          <a href='https://www.youtube.com'>
             <Image src={LinkedinHyper} alt="link to linkedin" />
           </a>
         </div>
