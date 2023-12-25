@@ -77,16 +77,19 @@ function HomePageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto2}
             alt="firstSliderImage"
+            priority={false} 
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto2}
             alt="firstSliderImage"
+            priority={false} 
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto2}
             alt="firstSliderImage"
+            priority={false} 
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -94,16 +97,19 @@ function HomePageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto3}
             alt="firstSliderImage"
+            priority={false} 
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto3}
             alt="firstSliderImage"
+            priority={false} 
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto3}
             alt="firstSliderImage"
+            priority={false} 
           />
         </SwiperSlide>
       </Swiper>
