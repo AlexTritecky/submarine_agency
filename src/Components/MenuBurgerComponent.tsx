@@ -7,6 +7,7 @@ import FaceBookHyper from "../Assets/Images/BurgerMenuImages/FacebookHyper.svg";
 import InstagramHyper from "../Assets/Images/BurgerMenuImages/InstagramHyper.svg";
 import LinkedinHyper from "../Assets/Images/BurgerMenuImages/LinkedinHyper.svg";
 import TikTokHyper from "../Assets/Images/BurgerMenuImages/TikTokHyper.svg";
+import Burger from "./BurgerIcon";
 function MenuBurger() {
   const [rotateBurger, setRotateBurger] = useState(false);
   const [moveBurgerLines, setMoveBurgerLines] = useState(false);
@@ -35,32 +36,16 @@ function MenuBurger() {
   };
   return (
     <>
-      <div
-        onClick={handleBurgerOpen}
-        className={`${styles.burgerContainer} ${
-          rotateBurger ? styles.burgerContainerOpened : ""
-        }`}
-      >
-        <div
-          className={`${styles.burgerContainer__lineOne} ${
-            moveBurgerLines ? styles.burgerContainer__lineOneHide : ""
-          }`}
-        ></div>
-        <div
-          className={`${styles.burgerContainer__lineTwo} ${
-            moveBurgerLines ? styles.burgerContainer__lineTwoMoved : ""
-          }`}
-        ></div>
-        <div
-          className={`${styles.burgerContainer__lineThree} ${
-            moveBurgerLines ? styles.burgerContainer__lineThreeMoved : ""
-          }`}
-        ></div>
-      </div>
+      <Burger
+        handleBurgerOpen={handleBurgerOpen}
+        rotateBurger={rotateBurger}
+        moveBurgerLines={moveBurgerLines}
+      />
       <div
         className={`${styles.burgerMenuContainer} ${
           !openMenu ? styles.none : ""
         }`}
+        
       >
         <nav
           className={`${styles.navigationContainer} ${

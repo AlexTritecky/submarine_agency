@@ -109,6 +109,12 @@
 .burgerContainer:hover .burgerContainer__lineOne {
     transform: rotate(0deg);
 }
+.burgerToRightSide {
+    left: 87%;
+    @media screen and (max-width: 480px) {
+        left: 90%;
+    }
+}
 .burgerMenuContainer {
     width: 100vw;
     height: 100%;
