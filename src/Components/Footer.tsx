@@ -45,28 +45,28 @@ function FooterSection() {
             
             instagram <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__link}>
+          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
             linkedin
             <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__link}>
+          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
             facebook
             <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__link}>
+          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
             tik tok
             <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__mobileLink}>
+          <a className={styles.socialMediaLinksContainer__mobileLink} href='https://www.youtube.com'>
             <Image src={TikTokHyper} alt="link to tik tok" />
           </a>
-          <a className={styles.socialMediaLinksContainer__mobileLink}>
+          <a className={styles.socialMediaLinksContainer__mobileLink} href='https://www.youtube.com'>
             <Image src={InstagramHyper} alt="link to instagram" />
           </a>
-          <a className={styles.socialMediaLinksContainer__mobileLink}>
+          <a className={styles.socialMediaLinksContainer__mobileLink} href='https://www.youtube.com'>
             <Image src={FaceBookHyper} alt="link to facebook" />
           </a>
-          <a className={styles.socialMediaLinksContainer__mobileLink}>
+          <a className={styles.socialMediaLinksContainer__mobileLink} href='https://www.youtube.com'>
             <Image src={LinkedinHyper} alt="link to linkedin" />
           </a>
         </div>
