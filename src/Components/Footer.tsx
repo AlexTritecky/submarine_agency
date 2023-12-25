@@ -41,7 +41,8 @@ function FooterSection() {
           <div className={styles.socialMediaLinksContainer__header}>
             Фоловте нас:
           </div>
-          <a className={styles.socialMediaLinksContainer__link}>
+          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
+            
             instagram <Image src={LinkArrow} alt="link" />
           </a>
           <a className={styles.socialMediaLinksContainer__link}>
