@@ -18,7 +18,6 @@ import Image from "next/image";
 import BecomeClientButton from "./BecomeClientButton";
 
 function HomePageSlider() {
-
   return (
     <section className={styles.startSectionContainer}>
       <Swiper
@@ -58,16 +57,19 @@ function HomePageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto1}
             alt="firstSliderImage"
+            priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto1}
             alt="firstSliderImage"
+            priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto1}
             alt="firstSliderImage"
+            priority
           />
         </SwiperSlide>
         <SwiperSlide>
