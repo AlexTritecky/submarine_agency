@@ -1227,7 +1227,7 @@
 }
 @media screen and (max-width: 480px) {
   .casesContainer__image {
-    background-image: url(../Assets/Images/HomePageImages/DuckCaseMobile.png);
+    background-image: url(../Assets/Images/HomePageImages/DuckCaseMobile.webp);
     width: 80vw;
     height: 94vw;
     margin-bottom: 4vw;
