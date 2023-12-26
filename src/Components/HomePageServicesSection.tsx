@@ -16,6 +16,12 @@ import {
 } from "@/Interfaces/interfaces";
 import BecomeClientButton from "./BecomeClientButton";
 import { createPortal } from "react-dom";
+import Button, {
+  ARROW_BUTTON_TYPE,
+  PLUS_BUTTON_TYPE,
+  VIOLET,
+  WHITE,
+} from "./Button";
 
 function ServicesSection() {
   const [open, setOpen] = React.useState(false);
@@ -190,7 +196,13 @@ function ServicesSection() {
           </div>
         </div>
       </div>
-      <BecomeClientButton />
+      {/* <BecomeClientButton />
+      <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={VIOLET} />
+      <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={WHITE} />
+      <Button type={ARROW_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={VIOLET} /> */}
+      <div className={styles.servicesContainer__buttonContainer}>
+        <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={VIOLET} />
+      </div>
     </section>
   );
 }

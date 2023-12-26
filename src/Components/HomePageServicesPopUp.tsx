@@ -11,7 +11,7 @@ import {
   SMM,
   SMM_STRATEGY,
 } from "@/Interfaces/interfaces";
-import ArrowTypeButton from "./ArrowTypeButton";
+import Button, { ARROW_BUTTON_TYPE, VIOLET } from "./Button";
 
 export default function TransitionsModal({
   open,
@@ -539,7 +539,13 @@ export default function TransitionsModal({
             )}
           </div>
         </div>
-        <ArrowTypeButton header={'Повернутися назад'} onClose={handleClose} />
+        <div>
+          <Button
+            type={ARROW_BUTTON_TYPE}
+            text="Повернутися назад"
+            color={VIOLET}
+          />
+        </div>
       </Box>
     </Fade>
   );

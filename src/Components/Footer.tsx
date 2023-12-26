@@ -1,12 +1,11 @@
 import styles from "../Styling/footer.module.css";
-import BecomeClientButton from "./BecomeClientButton";
 import FaceBookHyper from "../Assets/Images/BurgerMenuImages/FacebookHyper.svg";
 import InstagramHyper from "../Assets/Images/BurgerMenuImages/InstagramHyper.svg";
 import LinkedinHyper from "../Assets/Images/BurgerMenuImages/LinkedinHyper.svg";
 import TikTokHyper from "../Assets/Images/BurgerMenuImages/TikTokHyper.svg";
 import LinkArrow from "../Assets/Images/BurgerMenuImages/ArrowLink.svg";
 import Image from "next/image";
-import FooterButton from "./FooterButton";
+import Button, { PLUS_BUTTON_TYPE, WHITE } from "./Button";
 
 function FooterSection() {
   const scrollToTop = () => {
@@ -22,7 +21,7 @@ function FooterSection() {
         <div className={styles.footerContainer__sectionOneHeader}>
           БУДУЄМО БРЕНД-КОМУНІКАЦІЮ У СОЦІАЛЬНИХ МЕРЕЖАХ
         </div>
-        <FooterButton />
+        <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={WHITE} />
         <div className={styles.footerContainer__sectionOneFillForm}>
           Не любите заповнювати форми?
         </div>

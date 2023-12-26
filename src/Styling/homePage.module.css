@@ -1,16 +1,3 @@
-.good {
-  color: wheat;
-  font-size: 100px;
-  font-family: "Unbounded";
-}
-
-.swiperFoto {
-  width: 100%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .swiperFotoDesctop {
   width: 100%;
   height: auto;
@@ -159,390 +146,6 @@
   color: #5566b7;
 }
 
-.becomeClientButton {
-  width: 22vw;
-  height: 4.6vw;
-  border-radius: 2.6vw;
-  display: flex;
-  align-items: center;
-  font-family: "Unbounded-Medium";
-  justify-content: center;
-  position: absolute;
-  background-color: #a967dd;
-  color: white;
-  z-index: 5;
-  font-size: 1.25vw;
-  bottom: 5.5vw;
-  left: 50%;
-  transform: translateX(-50%) scale(1);
-  transition-duration: 1s;
-  border: none;
-  outline: none;
-  -webkit-animation: unPressPlusButtonAnimation 0.5s forwards;
-          animation: unPressPlusButtonAnimation 0.5s forwards;
-  font-weight: 700;
-  cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
-}
-@media screen and (max-width: 1024px) {
-  .becomeClientButton {
-    width: 55.2vw;
-    height: 11vw;
-    border-radius: 6.5vw;
-    font-size: 3.125vw;
-    bottom: 7.5vw;
-  }
-}
-@media screen and (max-width: 480px) {
-  .becomeClientButton {
-    width: 48vw;
-    height: 10vw;
-    border-radius: 13.8vw;
-    font-size: 3vw;
-    bottom: 9.5vw;
-  }
-}
-.becomeClientButton__plus {
-  margin-right: 2.3%;
-  width: 4.7%;
-  -webkit-animation: rotateAnimationOut 1s forwards;
-          animation: rotateAnimationOut 1s forwards;
-  transition-duration: 0.5s;
-}
-@media screen and (max-width: 1024px) {
-  .becomeClientButton__plus {
-    width: 4.75%;
-    height: auto;
-  }
-}
-.becomeClientButton__plusHovered {
-  margin-right: 2.3%;
-  width: 4.7%;
-  -webkit-animation: rotateAnimation 1s forwards;
-          animation: rotateAnimation 1s forwards;
-  transition-duration: 0.5s;
-}
-@media screen and (max-width: 1024px) {
-  .becomeClientButton__plusHovered {
-    width: 4.75%;
-    height: auto;
-  }
-}
-.becomeClientButton__plusClicked {
-  margin-right: 2.3%;
-  width: 4.7%;
-  -webkit-animation: rotateAnimationOut 0.5s forwards;
-          animation: rotateAnimationOut 0.5s forwards;
-  transition-duration: 0.5s;
-}
-@media screen and (max-width: 1024px) {
-  .becomeClientButton__plusClicked {
-    width: 4.75%;
-    height: auto;
-  }
-}
-
-.becomeClientButtonPressed {
-  -webkit-animation: pressPlusButtonAnimation 0.5s forwards;
-          animation: pressPlusButtonAnimation 0.5s forwards;
-}
-
-.footerClientButton {
-  width: 22vw;
-  height: 4.6vw;
-  border-radius: 2.6vw;
-  display: flex;
-  align-items: center;
-  font-family: "Unbounded-Bold";
-  justify-content: center;
-  position: absolute;
-  background-color: white;
-  color: #5566b7;
-  z-index: 5;
-  font-size: 1.25vw;
-  bottom: 14.5vw;
-  left: 6.6vw;
-  transform: scale(1);
-  transition-duration: 1s;
-  border: none;
-  outline: none;
-  -webkit-animation: unPressButtonAnimation 0.5s forwards;
-          animation: unPressButtonAnimation 0.5s forwards;
-  font-weight: 700;
-  cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
-}
-@media screen and (max-width: 1024px) {
-  .footerClientButton {
-    width: 55.2vw;
-    height: 11vw;
-    border-radius: 6.5vw;
-    font-size: 3.125vw;
-    bottom: unset;
-    top: 33vw;
-  }
-}
-@media screen and (max-width: 480px) {
-  .footerClientButton {
-    width: 48vw;
-    height: 10vw;
-    border-radius: 13.8vw;
-    font-size: 3vw;
-    bottom: 9.5vw;
-    left: 4.4vw;
-  }
-}
-.footerClientButton__plus {
-  margin-right: 2.3%;
-  width: 4.7%;
-  height: 30%;
-  -webkit-animation: rotateAnimationOut 1s forwards;
-          animation: rotateAnimationOut 1s forwards;
-  transition-duration: 0.5s;
-}
-@media screen and (max-width: 1024px) {
-  .footerClientButton__plus {
-    width: 4.75%;
-    height: auto;
-  }
-}
-.footerClientButton__plusHovered {
-  margin-right: 2.3%;
-  width: 4.7%;
-  -webkit-animation: rotateAnimation 1s forwards;
-          animation: rotateAnimation 1s forwards;
-  transition-duration: 0.5s;
-}
-@media screen and (max-width: 1024px) {
-  .footerClientButton__plusHovered {
-    width: 4.75%;
-    height: auto;
-  }
-}
-.footerClientButton__plusClicked {
-  margin-right: 2.3%;
-  width: 4.7%;
-  -webkit-animation: rotateAnimationOut 0.5s forwards;
-          animation: rotateAnimationOut 0.5s forwards;
-  transition-duration: 0.5s;
-}
-@media screen and (max-width: 1024px) {
-  .footerClientButton__plusClicked {
-    width: 4.75%;
-    height: auto;
-  }
-}
-
-.footerClientButtonPressed {
-  -webkit-animation: pressButtonAnimation 0.5s forwards;
-          animation: pressButtonAnimation 0.5s forwards;
-}
-
-.comeBackButton {
-  width: 24.4vw;
-  height: 5.2vw;
-  border-radius: 2.6vw;
-  display: flex;
-  align-items: center;
-  font-family: "Unbounded-Medium";
-  justify-content: center;
-  background-color: #a967dd;
-  color: white;
-  z-index: 5;
-  font-size: 1.25vw;
-  left: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  transition-duration: 1s;
-  border: none;
-  outline: none;
-  font-weight: 700;
-  line-height: 100%;
-  margin-top: 3vw;
-  -webkit-animation: unPressButtonAnimation 0.5s forwards;
-          animation: unPressButtonAnimation 0.5s forwards;
-  cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
-}
-@media screen and (max-width: 1024px) {
-  .comeBackButton {
-    width: 57vw;
-    height: 13vw;
-    border-radius: 6.5vw;
-    font-size: 3.2vw;
-    bottom: 7.5vw;
-    margin-top: 5vw;
-  }
-}
-@media screen and (max-width: 480px) {
-  .comeBackButton {
-    font-family: Unbounded;
-    width: 55vw;
-    height: 10vw;
-    border-radius: 13.8vw;
-    font-size: 3vw;
-    bottom: 9.5vw;
-  }
-}
-.comeBackButton__arrow {
-  margin-left: 1.25vw;
-  width: 1.9vw;
-  transition-duration: 0.5s;
-}
-@media screen and (max-width: 1024px) {
-  .comeBackButton__arrow {
-    width: 4.8vw;
-    height: auto;
-    margin-left: 3.125vw;
-  }
-}
-@media screen and (max-width: 480px) {
-  .comeBackButton__arrow {
-    width: 3.8vw;
-    height: auto;
-    margin-left: 2.2vw;
-  }
-}
-
-.comeBackButton:hover .comeBackButton__arrow {
-  transform: rotate(90deg);
-}
-
-.comeBackButtonPressed {
-  -webkit-animation: pressButtonAnimation 0.5s forwards;
-          animation: pressButtonAnimation 0.5s forwards;
-}
-
-@-webkit-keyframes pressButtonAnimation {
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.03);
-  }
-  100% {
-    transform: scale(0.95);
-  }
-}
-
-@keyframes pressButtonAnimation {
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(1.03);
-  }
-  100% {
-    transform: scale(0.95);
-  }
-}
-@-webkit-keyframes unPressButtonAnimation {
-  0% {
-    transform: scale(0.95);
-  }
-  30% {
-    transform: scale(0.93);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes unPressButtonAnimation {
-  0% {
-    transform: scale(0.95);
-  }
-  30% {
-    transform: scale(0.93);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes pressPlusButtonAnimation {
-  0% {
-    transform: translateX(-50%) scale(1);
-  }
-  30% {
-    transform: translateX(-50%) scale(1.03);
-  }
-  100% {
-    transform: translateX(-50%) scale(0.95);
-  }
-}
-@keyframes pressPlusButtonAnimation {
-  0% {
-    transform: translateX(-50%) scale(1);
-  }
-  30% {
-    transform: translateX(-50%) scale(1.03);
-  }
-  100% {
-    transform: translateX(-50%) scale(0.95);
-  }
-}
-@-webkit-keyframes unPressPlusButtonAnimation {
-  0% {
-    transform: translateX(-50%) scale(0.95);
-  }
-  30% {
-    transform: translateX(-50%) scale(0.93);
-  }
-  100% {
-    transform: translateX(-50%) scale(1);
-  }
-}
-@keyframes unPressPlusButtonAnimation {
-  0% {
-    transform: translateX(-50%) scale(0.95);
-  }
-  30% {
-    transform: translateX(-50%) scale(0.93);
-  }
-  100% {
-    transform: translateX(-50%) scale(1);
-  }
-}
-@-webkit-keyframes rotateAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-  30% {
-    transform: rotate(-30deg);
-  }
-  100% {
-    transform: rotate(90deg);
-  }
-}
-@keyframes rotateAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-  30% {
-    transform: rotate(-30deg);
-  }
-  100% {
-    transform: rotate(90deg);
-  }
-}
-@-webkit-keyframes rotateAnimationOut {
-  0% {
-    transform: rotate(90deg);
-  }
-  30% {
-    transform: rotate(120deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes rotateAnimationOut {
-  0% {
-    transform: rotate(90deg);
-  }
-  30% {
-    transform: rotate(120deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 .aboutUsContainer {
   width: 86.8vw;
   height: 75vw;
@@ -669,6 +272,12 @@
     line-height: 5.5vw;
     margin-bottom: 6.6vw;
   }
+}
+.servicesContainer__buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
 }
 .servicesContainer__service {
   display: flex;
@@ -1210,6 +819,12 @@
     align-items: center;
   }
 }
+.casesContainer__buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+}
 .casesContainer__image {
   background-image: url(../Assets/Images/HomePageImages/DuckCase.png);
   background-repeat: no-repeat;
@@ -1268,6 +883,12 @@
     height: 316vw;
     width: 90vw;
   }
+}
+.partnerContainer__buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
 }
 
 .cooperationContainer {

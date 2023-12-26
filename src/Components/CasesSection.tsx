@@ -1,5 +1,5 @@
 import styles from "../Styling/homePage.module.css";
-import ArrowTypeButton from "./ArrowTypeButton";
+import Button, { ARROW_BUTTON_TYPE, VIOLET } from "./Button";
 
 function CasesSection() {
   return (
@@ -10,7 +10,13 @@ function CasesSection() {
         <div className={styles.casesContainer__image}></div>
         <div className={styles.casesContainer__image}></div>
       </div>
-      <ArrowTypeButton header={"Переглянути всі кейси"} />
+      <div className={styles.casesContainer__buttonContainer}>
+        <Button
+          type={ARROW_BUTTON_TYPE}
+          text="Переглянути всі кейси"
+          color={VIOLET}
+        />
+      </div>
     </section>
   );
 }
