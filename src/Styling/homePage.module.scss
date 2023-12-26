@@ -225,7 +225,7 @@
     border-radius: 6.5vw;
     font-size: 3.125vw;
     bottom: unset;
-    top:33vw;
+    top: 33vw;
   }
   @media screen and (max-width: 480px) {
     width: 48vw;
@@ -233,12 +233,12 @@
     border-radius: 13.8vw;
     font-size: 3vw;
     bottom: 9.5vw;
-    left:4.4vw;
+    left: 4.4vw;
   }
   &__plus {
     margin-right: 2.3%;
     width: 4.7%;
-    height:30%;
+    height: 30%;
     animation: rotateAnimationOut 1s forwards;
     transition-duration: 0.5s;
     @media screen and (max-width: 1024px) {
@@ -412,19 +412,32 @@
 }
 
 .aboutUsContainer {
-  width: 100vw;
-  height: 56vw;
+  width: 86.8vw;
+  height: 75vw;
   background-color: white;
-  padding: 6.6vw 6.6vw 0 6.6vw;
+  padding: 6.6vw 0.6vw 0 0vw;
   color: #5566b7;
   position: relative;
+  margin: 0 auto;
+  background-image: url(../Assets/Images/HomePageImages/AboutUsDesctop.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 18vw;
+
   @media screen and (max-width: 1024px) {
-    padding: 12.3vw 6.25vw 0 6.25vw;
-    height: 105vw;
+    width: 87.5vw;
+    padding: 12.3vw 0vw 0 0vw;
+    height: 115vw;
+    background-image: url(../Assets/Images/HomePageImages/AboutUsMobile.webp);
+    background-position: center 38vw;
   }
   @media screen and (max-width: 480px) {
+    width: 91.2vw;
     padding: 13.5vw 4.4vw 0 4.4vw;
-    height: 102vw;
+    height: 105vw;
+    background-position: center 30vw;
+  }
+  img {
   }
   &__title {
     display: flex;
@@ -474,155 +487,155 @@
       border-left: 1px solid #5566b7;
     }
   }
-  &__infoItem1 {
-    background-image: url(../Assets/Images/HomePageImages/AboutUsBackground1.png);
-    position: absolute;
-    height: 19vw;
-    width: 29vw;
-    top: 17.2vw;
-    left: 48%;
-    transform: translateX(-50%);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 8.6vw 2.1vw 5vw 3.5vw;
-    font-size: 1.25vw;
-    font-family: Unbounded;
-    text-align: center;
-    color: white;
-    letter-spacing: 0.0375vw;
-    @media screen and (max-width: 1024px) {
-      background-image: url(../Assets/Images/HomePageImages/AboutUsTabletBackground1.png);
-      height: 32.6vw;
-      width: 42vw;
-      top: 35.6vw;
-      left: 48%;
-      transform: translateX(-50%);
-      font-size: 2vw;
-      line-height: 2.6vw;
-      padding: 11.8vw 9.1vw 5vw 6.5vw;
-    }
-    @media screen and (max-width: 480px) {
-      background-image: url(../Assets/Images/HomePageImages/AboutUsTabletBackground1.png);
-      height: 34vw;
-      width: 42vw;
-      top: 25vw;
-      left: 48%;
-      transform: translateX(-50%);
-      font-size: 2.3vw;
-      line-height: 2.7vw;
-      letter-spacing: 0.066vw;
-      padding: 10.8vw 5.1vw 5vw 8.5vw;
-    }
-  }
-  &__infoItem2 {
-    background-image: url(../Assets/Images/HomePageImages/AboutUsBackground2.png);
-    position: absolute;
-    height: 17vw;
-    width: 25.6vw;
-    left: 18.5vw;
-    top: 31.5vw;
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 5.9vw 1.5vw 6vw 4.8vw;
-    font-size: 1.25vw;
-    font-family: Unbounded;
-    text-align: center;
-    letter-spacing: 0.0375vw;
-    @media screen and (max-width: 1024px) {
-      background-image: url(../Assets/Images/HomePageImages/AboutUsTabletBackground2.png);
-      height: 30.8vw;
-      width: 35.1vw;
-      left: 6.25vw;
-      top: 61.7vw;
-      font-size: 2vw;
-      line-height: 2.6vw;
-      padding: 9.1vw 3.5vw 2vw 3vw;
-    }
-    @media screen and (max-width: 480px) {
-      background-image: url(../Assets/Images/HomePageImages/AboutUsMobileBackground2.png);
-      height: 34.8vw;
-      width: 36.1vw;
-      left: 6.25vw;
-      top: 50.7vw;
-      font-size: 2.3vw;
-      line-height: 2.7vw;
-      letter-spacing: 0.066vw;
-      padding: 7.6vw 3.5vw 2vw 3vw;
-    }
-  }
-  &__infoItem3 {
-    background-image: url(../Assets/Images/HomePageImages/AboutUsBackground3.png);
-    position: absolute;
-    height: 20.5vw;
-    width: 36.4vw;
-    right: 19.5vw;
-    top: 29vw;
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 5.4vw 2.5vw 3vw 7.5vw;
-    font-size: 1.25vw;
-    font-family: Unbounded;
-    text-align: center;
-    letter-spacing: 0.0375vw;
-    @media screen and (max-width: 1024px) {
-      background-image: url(../Assets/Images/HomePageImages/AboutUsTabletBackground3.png);
-      height: 37.2vw;
-      width: 50vw;
-      right: 8.25vw;
-      top: 58vw;
-      font-size: 2vw;
-      line-height: 2.6vw;
-      padding: 10vw 3.5vw 3vw 7.5vw;
-    }
-    @media screen and (max-width: 480px) {
-      background-image: url(../Assets/Images/HomePageImages/AboutUsMobileBackground3.png);
-      height: 42.2vw;
-      width: 51vw;
-      right: 7vw;
-      top: 48.5vw;
-      font-size: 2.3vw;
-      line-height: 2.7vw;
-      letter-spacing: 0.066vw;
-      padding: 7.5vw 3.5vw 3vw 7.5vw;
-    }
-  }
-  &__infoItem4 {
-    position: absolute;
-    width: 57vw;
-    height: 5.6vw;
-    background-color: #5566b7;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0.5vw;
-    border-radius: 2.6vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 3.3vw;
-    font-family: Gilroy;
-    box-shadow: 0.3125vw 0.3125vw 0.3125vw 0px rgba(0, 0, 0, 0.35);
-    @media screen and (max-width: 1024px) {
-      width: 71vw;
-      height: 9.3vw;
-      border-radius: 6.5vw;
-      font-size: 3.125vw;
-      box-shadow: 0.78vw 0.78vw 0.78vw 0px rgba(0, 0, 0, 0.35);
-      bottom: 1.2vw;
-    }
-    @media screen and (max-width: 480px) {
-      font-family: Unbounded;
-      width: 71.5vw;
-      height: 6.3vw;
-      border-radius: 6.5vw;
-      font-size: 2.2vw;
-      box-shadow: 1.38vw 1.38vw 1.5vw 0px rgba(0, 0, 0, 0.35);
-      bottom: 4vw;
-      letter-spacing: 0.066vw;
-    }
-  }
+  // &__infoItem1 {
+  //   background-image: url(../Assets/Images/HomePageImages/AboutUsBackground1.png);
+  //   position: absolute;
+  //   height: 19vw;
+  //   width: 29vw;
+  //   top: 17.2vw;
+  //   left: 48%;
+  //   transform: translateX(-50%);
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   padding: 8.6vw 2.1vw 5vw 3.5vw;
+  //   font-size: 1.25vw;
+  //   font-family: Unbounded;
+  //   text-align: center;
+  //   color: white;
+  //   letter-spacing: 0.0375vw;
+  //   @media screen and (max-width: 1024px) {
+  //     background-image: url(../Assets/Images/HomePageImages/AboutUsTabletBackground1.png);
+  //     height: 32.6vw;
+  //     width: 42vw;
+  //     top: 35.6vw;
+  //     left: 48%;
+  //     transform: translateX(-50%);
+  //     font-size: 2vw;
+  //     line-height: 2.6vw;
+  //     padding: 11.8vw 9.1vw 5vw 6.5vw;
+  //   }
+  //   @media screen and (max-width: 480px) {
+  //     background-image: url(../Assets/Images/HomePageImages/AboutUsTabletBackground1.png);
+  //     height: 34vw;
+  //     width: 42vw;
+  //     top: 25vw;
+  //     left: 48%;
+  //     transform: translateX(-50%);
+  //     font-size: 2.3vw;
+  //     line-height: 2.7vw;
+  //     letter-spacing: 0.066vw;
+  //     padding: 10.8vw 5.1vw 5vw 8.5vw;
+  //   }
+  // }
+  // &__infoItem2 {
+  //   background-image: url(../Assets/Images/HomePageImages/AboutUsBackground2.png);
+  //   position: absolute;
+  //   height: 17vw;
+  //   width: 25.6vw;
+  //   left: 18.5vw;
+  //   top: 31.5vw;
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   color: white;
+  //   padding: 5.9vw 1.5vw 6vw 4.8vw;
+  //   font-size: 1.25vw;
+  //   font-family: Unbounded;
+  //   text-align: center;
+  //   letter-spacing: 0.0375vw;
+  //   @media screen and (max-width: 1024px) {
+  //     background-image: url(../Assets/Images/HomePageImages/AboutUsTabletBackground2.png);
+  //     height: 30.8vw;
+  //     width: 35.1vw;
+  //     left: 6.25vw;
+  //     top: 61.7vw;
+  //     font-size: 2vw;
+  //     line-height: 2.6vw;
+  //     padding: 9.1vw 3.5vw 2vw 3vw;
+  //   }
+  //   @media screen and (max-width: 480px) {
+  //     background-image: url(../Assets/Images/HomePageImages/AboutUsMobileBackground2.png);
+  //     height: 34.8vw;
+  //     width: 36.1vw;
+  //     left: 6.25vw;
+  //     top: 50.7vw;
+  //     font-size: 2.3vw;
+  //     line-height: 2.7vw;
+  //     letter-spacing: 0.066vw;
+  //     padding: 7.6vw 3.5vw 2vw 3vw;
+  //   }
+  // }
+  // &__infoItem3 {
+  //   background-image: url(../Assets/Images/HomePageImages/AboutUsBackground3.png);
+  //   position: absolute;
+  //   height: 20.5vw;
+  //   width: 36.4vw;
+  //   right: 19.5vw;
+  //   top: 29vw;
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   color: white;
+  //   padding: 5.4vw 2.5vw 3vw 7.5vw;
+  //   font-size: 1.25vw;
+  //   font-family: Unbounded;
+  //   text-align: center;
+  //   letter-spacing: 0.0375vw;
+  //   @media screen and (max-width: 1024px) {
+  //     background-image: url(../Assets/Images/HomePageImages/AboutUsTabletBackground3.png);
+  //     height: 37.2vw;
+  //     width: 50vw;
+  //     right: 8.25vw;
+  //     top: 58vw;
+  //     font-size: 2vw;
+  //     line-height: 2.6vw;
+  //     padding: 10vw 3.5vw 3vw 7.5vw;
+  //   }
+  //   @media screen and (max-width: 480px) {
+  //     background-image: url(../Assets/Images/HomePageImages/AboutUsMobileBackground3.png);
+  //     height: 42.2vw;
+  //     width: 51vw;
+  //     right: 7vw;
+  //     top: 48.5vw;
+  //     font-size: 2.3vw;
+  //     line-height: 2.7vw;
+  //     letter-spacing: 0.066vw;
+  //     padding: 7.5vw 3.5vw 3vw 7.5vw;
+  //   }
+  // }
+  // &__infoItem4 {
+  //   position: absolute;
+  //   width: 57vw;
+  //   height: 5.6vw;
+  //   background-color: #5566b7;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   bottom: 0.5vw;
+  //   border-radius: 2.6vw;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   color: white;
+  //   font-size: 3.3vw;
+  //   font-family: Gilroy;
+  //   box-shadow: 0.3125vw 0.3125vw 0.3125vw 0px rgba(0, 0, 0, 0.35);
+  //   @media screen and (max-width: 1024px) {
+  //     width: 71vw;
+  //     height: 9.3vw;
+  //     border-radius: 6.5vw;
+  //     font-size: 3.125vw;
+  //     box-shadow: 0.78vw 0.78vw 0.78vw 0px rgba(0, 0, 0, 0.35);
+  //     bottom: 1.2vw;
+  //   }
+  //   @media screen and (max-width: 480px) {
+  //     font-family: Unbounded;
+  //     width: 71.5vw;
+  //     height: 6.3vw;
+  //     border-radius: 6.5vw;
+  //     font-size: 2.2vw;
+  //     box-shadow: 1.38vw 1.38vw 1.5vw 0px rgba(0, 0, 0, 0.35);
+  //     bottom: 4vw;
+  //     letter-spacing: 0.066vw;
+  //   }
+  // }
 }
 .servicesContainer {
   width: 100vw;

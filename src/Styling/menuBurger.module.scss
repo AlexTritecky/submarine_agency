@@ -110,11 +110,13 @@
     transform: rotate(0deg);
 }
 .burgerToRightSide {
-    left: 87%;
-    top:5vw;
+    @media screen and (max-width: 1024px) {
+        left: 87%;
+        top: 5vw;
+    }
     @media screen and (max-width: 480px) {
         left: 90%;
-        top:5vw;
+        top: 5vw;
     }
 }
 .burgerMenuContainer {

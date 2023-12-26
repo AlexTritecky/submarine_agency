@@ -126,9 +126,11 @@
   transform: rotate(0deg);
 }
 
-.burgerToRightSide {
-  left: 87%;
-  top: 5vw;
+@media screen and (max-width: 1024px) {
+  .burgerToRightSide {
+    left: 87%;
+    top: 5vw;
+  }
 }
 @media screen and (max-width: 480px) {
   .burgerToRightSide {
