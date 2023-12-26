@@ -53,6 +53,19 @@
     border-bottom-left-radius: 13.8vw;
     border-bottom-right-radius: 13.8vw;
   }
+  &__button {
+    z-index: 5;
+    position: absolute;
+    bottom: 5.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    @media screen and (max-width: 1024px) {
+      bottom: 7.8vw;
+    }
+    @media screen and (max-width: 480px) {
+      bottom: 9.4vw;
+    }
+  }
 }
 .headerContainer {
   position: absolute;

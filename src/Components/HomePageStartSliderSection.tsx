@@ -15,7 +15,7 @@ import Logo from "../Assets/Images/HomePageImages/ProjectLogo.svg";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
-import BecomeClientButton from "./BecomeClientButton";
+import Button, { PLUS_BUTTON_TYPE, VIOLET, WHITE } from "./Button";
 
 function HomePageSlider() {
   return (
@@ -77,19 +77,19 @@ function HomePageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto2}
             alt="firstSliderImage"
-            priority={false} 
+            priority={false}
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto2}
             alt="firstSliderImage"
-            priority={false} 
+            priority={false}
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto2}
             alt="firstSliderImage"
-            priority={false} 
+            priority={false}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -97,23 +97,25 @@ function HomePageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto3}
             alt="firstSliderImage"
-            priority={false} 
+            priority={false}
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto3}
             alt="firstSliderImage"
-            priority={false} 
+            priority={false}
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto3}
             alt="firstSliderImage"
-            priority={false} 
+            priority={false}
           />
         </SwiperSlide>
       </Swiper>
-      <BecomeClientButton />
+      <div className={styles.startSectionContainer__button}>
+        <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={VIOLET} />
+      </div>
     </section>
   );
 }

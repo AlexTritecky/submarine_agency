@@ -71,6 +71,23 @@
     border-bottom-right-radius: 13.8vw;
   }
 }
+.startSectionContainer__button {
+  z-index: 5;
+  position: absolute;
+  bottom: 5.5vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 1024px) {
+  .startSectionContainer__button {
+    bottom: 7.8vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .startSectionContainer__button {
+    bottom: 9.4vw;
+  }
+}
 
 .headerContainer {
   position: absolute;

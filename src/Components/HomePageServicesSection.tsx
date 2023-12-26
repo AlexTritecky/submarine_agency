@@ -14,7 +14,6 @@ import {
   SMM,
   SMM_STRATEGY,
 } from "@/Interfaces/interfaces";
-import BecomeClientButton from "./BecomeClientButton";
 import { createPortal } from "react-dom";
 import Button, {
   ARROW_BUTTON_TYPE,
@@ -196,10 +195,6 @@ function ServicesSection() {
           </div>
         </div>
       </div>
-      {/* <BecomeClientButton />
-      <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={VIOLET} />
-      <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={WHITE} />
-      <Button type={ARROW_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={VIOLET} /> */}
       <div className={styles.servicesContainer__buttonContainer}>
         <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={VIOLET} />
       </div>

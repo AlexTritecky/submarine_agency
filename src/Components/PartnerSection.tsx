@@ -1,5 +1,4 @@
 import styles from "../Styling/homePage.module.css";
-import BecomeClientButton from "./BecomeClientButton";
 import Button, { PLUS_BUTTON_TYPE, VIOLET } from "./Button";
 
 function PartnerSection() {
