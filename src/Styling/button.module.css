@@ -149,6 +149,10 @@
   padding: 1.5vw 2.5vw;
   text-align: left;
   white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 1024px) {
   .button {

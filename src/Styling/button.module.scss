@@ -90,6 +90,7 @@
     padding: 1.5vw 2.5vw;
     text-align: left;
     white-space: nowrap;
+    user-select: none;
     @media screen and (max-width: 1024px) {
         font-size: 3.25vw;
         line-height: 3.25vw;
