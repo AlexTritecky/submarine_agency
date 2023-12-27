@@ -30,6 +30,11 @@ const Button: React.FC<ButtonProps> = ({ type, color, text, onClick }) => {
       document.body.style.overflow = "unset";
     }
   }, [isPortalVisible]);
+  const handleFormClose = () => {
+      setTimeout(() => {
+        setPortalVisible(false);
+      }, 500);
+  };
   return (
     <>
       <button
@@ -71,7 +76,14 @@ const Button: React.FC<ButtonProps> = ({ type, color, text, onClick }) => {
           <Image className={styles.button__arrow} src={Arrow} alt="arrow" />
         )}
       </button>
-      {isPortalVisible && createPortal(<Form />, document.body)}
+      {isPortalVisible &&
+        createPortal(
+          <Form
+            isPortalVisible={isPortalVisible}
+            handleFormClose={handleFormClose}
+          />,
+          document.body
+        )}
     </>
   );
 };

@@ -5,6 +5,7 @@
    backdrop-filter: blur(6px);
    position: fixed;
    top: 0;
+   transition-duration: 0.5s;
    @media screen and (max-width: 480px) {
       min-height: unset;
       overflow-y: scroll;
@@ -26,6 +27,22 @@
       right: 0;
    }
 }
+@keyframes slideCloseLeftDesktop {
+   from {
+      right: 0;
+   }
+   to {
+      right: -47vw;
+   }
+}
+@keyframes slideCloseLeftTablet {
+   from {
+      right: 0;
+   }
+   to {
+      right: -100vw;
+   }
+}
 
 .formContainer {
    height: 100%;
@@ -42,6 +59,7 @@
    flex-direction: column;
    align-items: flex-start;
    animation: slideCloseRightDesktop 0.5s forwards;
+   transition-duration: 0.5s;
    @media screen and (max-width: 1024px) {
       width: 100vw;
       animation: slideCloseRightTablet 0.5s forwards;
@@ -157,6 +175,9 @@
          resize: none;
          border: none;
          outline: none;
+         font-family: Unbounded;
+         font-size: 1vw;
+         line-height: 1vw;
          @media screen and (max-width: 1024px) {
             height: 15.8vw;
             padding: 3.25vw;
@@ -247,4 +268,7 @@
       display: flex;
       justify-content: center;
    }
+}
+.formContainerClose {
+   animation: slideCloseLeftDesktop 0.5s forwards;
 }

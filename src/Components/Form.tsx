@@ -10,7 +10,7 @@ type FormValues = {
   company: string;
   service: string;
 };
-function Form({ isFormOpened }: any) {
+function Form({ handleFormClose }: any) {
   const {
     register,
     handleSubmit,
@@ -35,9 +35,27 @@ function Form({ isFormOpened }: any) {
   };
   const onSubmit: SubmitHandler<FormValues> = (data) =>
     console.log(data, selectedServices);
+  const parentElement = document.getElementById("formPopUpContainer");
+  const childElement = document.getElementById("formContainer");
+
   return (
-    <section className={styles.formPopUpContainer}>
-      <div className={styles.formContainer}>
+    <section
+      id="formPopUpContainer"
+      onClick={(e) => {
+        if (e.target === parentElement) {
+          childElement!.classList.add(
+            styles.formContainer,
+            styles.formContainerClose
+          );
+          handleFormClose();
+        }
+      }}
+      className={styles.formPopUpContainer}
+    >
+      <div
+        id="formContainer"
+        className={styles.formContainer}
+      >
         <div className={styles.formContainer__title}>РОЗКАЖІТЬ ПРО СЕБЕ</div>
         <div className={styles.formContainer__subTitle}>
           Щоб почати з нами співпрацю
