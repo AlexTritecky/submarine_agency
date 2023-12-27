@@ -96,6 +96,7 @@
         line-height: 3.25vw;
         padding: 4.2vw 6.25vw;
         border-radius: 6.5vw;
+        border-radius: 0;
     }
     &__plus {
         margin-right: 3.5%;
@@ -104,6 +105,10 @@
         transition-duration: 0.5s;
         @media screen and (max-width: 1024px) {
             width: 10%;
+            height: auto;
+        }
+        @media screen and (max-width: 1024px) {
+            width: 7%;
             height: auto;
         }
     }

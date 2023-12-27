@@ -160,6 +160,7 @@
     line-height: 3.25vw;
     padding: 4.2vw 6.25vw;
     border-radius: 6.5vw;
+    border-radius: 0;
   }
 }
 .button__plus {
@@ -172,6 +173,12 @@
 @media screen and (max-width: 1024px) {
   .button__plus {
     width: 10%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .button__plus {
+    width: 7%;
     height: auto;
   }
 }
