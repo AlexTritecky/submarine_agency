@@ -7,6 +7,12 @@
   position: fixed;
   top: 0;
 }
+@media screen and (max-width: 480px) {
+  .formPopUpContainer {
+    min-height: unset;
+    overflow-y: scroll;
+  }
+}
 
 @-webkit-keyframes slideCloseRightDesktop {
   from {
@@ -69,6 +75,12 @@
     padding: 10.2vw 6.25vw;
   }
 }
+@media screen and (max-width: 480px) {
+  .formContainer {
+    padding: 11vw 7.2vw 14vw 7.2vw;
+    height: unset;
+  }
+}
 .formContainer__title {
   color: #5566b7;
   font-family: Gilroy-SemiBold;
@@ -81,6 +93,14 @@
     font-size: 6.25vw;
     line-height: 6.25vw;
     margin-bottom: 2vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .formContainer__title {
+    font-size: 5.5vw;
+    line-height: 5.5vw;
+    margin-bottom: 2.2vw;
+    font-family: Gilroy-Bold;
   }
 }
 .formContainer__subTitle {
@@ -97,6 +117,14 @@
     margin-bottom: 2vw;
   }
 }
+@media screen and (max-width: 480px) {
+  .formContainer__subTitle {
+    font-size: 3.8vw;
+    line-height: 4.4vw;
+    margin-bottom: 3.8vw;
+    font-family: Unbounded-Blond;
+  }
+}
 .formContainer__inputContainer {
   display: flex;
   flex-wrap: wrap;
@@ -109,6 +137,13 @@
     height: 26vw;
   }
 }
+@media screen and (max-width: 480px) {
+  .formContainer__inputContainer {
+    flex-direction: column;
+    flex-wrap: unset;
+    height: 69vw;
+  }
+}
 .formContainer__input {
   display: flex;
   flex-direction: column;
@@ -118,6 +153,11 @@
 @media screen and (max-width: 1024px) {
   .formContainer__input {
     width: 40vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .formContainer__input {
+    width: 70vw;
   }
 }
 .formContainer__input input {
@@ -136,6 +176,12 @@
     line-height: 2vw;
   }
 }
+@media screen and (max-width: 480px) {
+  .formContainer__input input {
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+  }
+}
 .formContainer__textarea {
   display: flex;
   flex-direction: column;
@@ -145,6 +191,11 @@
 @media screen and (max-width: 1024px) {
   .formContainer__textarea {
     margin-bottom: 1vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .formContainer__textarea {
+    margin-bottom: 2vw;
   }
 }
 .formContainer__textarea textarea {
@@ -165,6 +216,15 @@
     border-radius: 6.5vw;
   }
 }
+@media screen and (max-width: 480px) {
+  .formContainer__textarea textarea {
+    height: 28.3vw;
+    padding: 6.6vw;
+    border-radius: 13.8vw;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+  }
+}
 .formContainer__chooseServiceItems {
   display: flex;
   flex-wrap: wrap;
@@ -173,6 +233,11 @@
   width: 100%;
   border: none;
   outline: none;
+}
+@media screen and (max-width: 480px) {
+  .formContainer__chooseServiceItems {
+    margin-bottom: 3.7vw;
+  }
 }
 .formContainer__chooseServiceItem {
   box-shadow: 2px 2px 5px 0px #5566b7;
@@ -194,6 +259,17 @@
     line-height: 3.25vw;
     padding: 1vw 2vw;
     margin: 0.5vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .formContainer__chooseServiceItem {
+    font-family: Unbounded-Blond;
+    box-shadow: 2px 2px 3px 0px #5566b7;
+    font-size: 2.7vw;
+    line-height: 2.7vw;
+    margin: 0.8vw;
+    padding: 2.2vw 4.4vw;
+    border-radius: 13.8vw;
   }
 }
 .formContainer__chooseServiceItemSelected {
@@ -222,6 +298,14 @@
     font-family: Unbounded;
     font-size: 2.6vw;
     line-height: 3.25vw;
+    margin-bottom: 4vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .formContainer__errorMainMessage {
+    font-family: Unbounded-Blond;
+    font-size: 3.8vw;
+    line-height: 4.4vw;
   }
 }
 .formContainer__buttonContainer {
