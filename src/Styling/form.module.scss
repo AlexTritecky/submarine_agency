@@ -1,0 +1,189 @@
+.formPopUpContainer {
+   width: 100%;
+   height: 100%;
+   z-index: 100;
+   backdrop-filter: blur(6px);
+   position: fixed;
+   top: 0;
+}
+@keyframes slideCloseRightDesktop {
+   from {
+      right: -47vw;
+   }
+   to {
+      right: 0;
+   }
+}
+@keyframes slideCloseRightTablet {
+   from {
+      right: -100vw;
+   }
+   to {
+      right: 0;
+   }
+}
+
+.formContainer {
+   height: 100%;
+   width: 47vw;
+   background-color: white;
+   position: absolute;
+   right: 0;
+   box-shadow: -8px -2px 5px 0px #5566b7;
+   border-bottom-left-radius: 50px;
+   border-top-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+   padding: 2.5vw 6.6vw 1.7vw 6.6vw;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   animation: slideCloseRightDesktop 0.5s forwards;
+   @media screen and (max-width: 1024px) {
+      width: 100vw;
+      animation: slideCloseRightTablet 0.5s forwards;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: 10.2vw 6.25vw;
+   }
+   &__title {
+      color: #5566b7;
+      font-family: Gilroy-SemiBold;
+      font-size: 2.5vw;
+      line-height: 2.5vw;
+      margin-bottom: 1vw;
+      @media screen and (max-width: 1024px) {
+         font-size: 6.25vw;
+         line-height: 6.25vw;
+         margin-bottom: 2vw;
+      }
+   }
+   &__subTitle {
+      color: #000;
+      font-family: Unbounded;
+      font-size: 1vw;
+      line-height: 1.25vw;
+      letter-spacing: 0.04vw;
+      @media screen and (max-width: 1024px) {
+         font-size: 2.6vw;
+         line-height: 3.25vw;
+         margin-bottom: 2vw;
+      }
+   }
+   &__inputContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 1.25vw;
+      height: 13vw;
+      @media screen and (max-width: 1024px) {
+         height: 26vw;
+      }
+   }
+   &__input {
+      display: flex;
+      flex-direction: column;
+      width: 15.7vw;
+      margin-bottom: 1.5vw;
+      @media screen and (max-width: 1024px) {
+         width: 40vw;
+      }
+
+      input {
+         border: none;
+         outline: none;
+         border-bottom: 1px solid #5566b7;
+         font-size: 1vw;
+         line-height: 1vw;
+         padding-bottom: 0.2vw;
+         margin-top: 1.25vw;
+         @media screen and (max-width: 1024px) {
+            font-size: 2vw;
+            line-height: 2vw;
+         }
+      }
+   }
+   &__textarea {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5vw;
+      font-family: Unbounded-Blond;
+      @media screen and (max-width: 1024px) {
+         margin-bottom: 1vw; 
+      }
+
+      textarea {
+         margin-top: 1.25vw;
+         height: 6.3vw;
+         padding: 1.25vw;
+         box-shadow: 2px 2px 5px 0px #5566b7;
+         border-radius: 2.6vw;
+         resize: none;
+         border: none;
+         outline: none;
+         @media screen and (max-width: 1024px) {
+            height: 15.8vw;
+            padding: 3.25vw;
+            font-size: 2vw;
+            border-radius: 6.5vw;
+         }
+      }
+   }
+   &__chooseServiceItems {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1.25vw;
+      margin-bottom: 1.7vw;
+      width: 100%;
+      border: none;
+      outline: none;
+   }
+   &__chooseServiceItem {
+      box-shadow: 2px 2px 5px 0px #5566b7;
+      padding: 0.42vw 0.83vw;
+      font-size: 1vw;
+      line-height: 1.25vw;
+      border-radius: 2.6vw;
+      font-family: Unbounded;
+      margin: 0.2vw;
+      user-select: none;
+      transition-duration: 0.2s;
+      @media screen and (max-width: 1024px) {
+         font-size: 2.6vw;
+         line-height: 3.25vw;
+         padding: 1vw 2vw;
+         margin: 0.5vw;
+      }
+   }
+   &__chooseServiceItemSelected {
+      background: #5566b7;
+      color: white;
+   }
+   &__errorMessage {
+      color: #fd6a6a;
+   }
+   &__serviceInput {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+   }
+   &__errorMainMessage {
+      font-family: Unbounded-Blond;
+      color: #fd6a6a;
+      width: 100%;
+      text-align: left;
+      font-size: 1.5vw;
+      line-height: 1.5vw;
+      margin-bottom: 1vw;
+      @media screen and (max-width: 1024px) {
+         font-family: Unbounded;
+         font-size: 2.6vw;
+         line-height: 3.25vw;
+      }
+   }
+   &__buttonContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+}

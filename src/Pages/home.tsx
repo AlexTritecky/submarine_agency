@@ -1,6 +1,7 @@
 import CasesSection from "@/Components/CasesSection";
 import CooperationSection from "@/Components/CooperationSection";
 import FooterSection from "@/Components/Footer";
+import Form from "@/Components/Form";
 import AboutUsSection from "@/Components/HomePageAboutUs";
 import ServicesSection from "@/Components/HomePageServicesSection";
 import HomePageSlider from "@/Components/HomePageStartSliderSection";
