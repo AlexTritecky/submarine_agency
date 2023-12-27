@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../Styling/button.module.css";
 import PlusImage from "../Assets/Images/HomePageImages/PlusElement.svg";
 import BluePlusImage from "../Assets/Images/HomePageImages/BluePlus.svg";
@@ -23,13 +23,19 @@ const Button: React.FC<ButtonProps> = ({ type, color, text, onClick }) => {
   const [isPressed, setIsPressed] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isPortalVisible, setPortalVisible] = useState(false);
+  useEffect(() => {
+    if (isPortalVisible) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isPortalVisible]);
   return (
     <>
       <button
         onClick={() => {
           onClick && onClick();
-          if (text === 
-            'СТАТИ КЛІЄНТОМ') {
+          if (text === "СТАТИ КЛІЄНТОМ") {
             console.log("dddddddd");
             setPortalVisible(true);
           }
