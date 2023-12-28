@@ -348,6 +348,11 @@
          line-height: 7.3vw;
          margin-bottom: 1.5vw;
       }
+      @media screen and (max-width: 480px) {
+         font-size: 9.3vw;
+         line-height: 9.3vw;
+         margin-bottom: 3vw;
+      }
    }
    &__subTitle {
       color: #000;
@@ -358,6 +363,11 @@
       @media screen and (max-width: 1024px) {
          font-size: 3vw;
          line-height: 3.25vw;
+      }
+      @media screen and (max-width: 480px) {
+         font-size: 4vw;
+         line-height: 4.25vw;
+         margin-bottom: 5vw;
       }
    }
    &__buttonContainer{
@@ -372,8 +382,7 @@
       padding: 40vw 12vw 13vw 6.6vw;
    }
    @media screen and (max-width: 480px) {
-      padding: 11vw 7.2vw 14vw 7.2vw;
-      height: unset;
+      padding: 50vw 7.2vw 14vw 7.2vw;
    }
 }
 .formContainerClose {
