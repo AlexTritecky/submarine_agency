@@ -1,10 +1,11 @@
 import styles from "../Styling/form.module.css";
 import { useForm, SubmitHandler } from "react-hook-form";
-import Button, { PLUS_BUTTON_TYPE, VIOLET } from "./Button";
+import Button, { ARROW_BUTTON_TYPE, PLUS_BUTTON_TYPE, VIOLET } from "./Button";
 import ServiceFormItem from "./ServiceFormItem";
 import { useEffect, useState } from "react";
 import React, { useRef } from "react";
 import Image from "next/image";
+import Loader from "../Assets/Images/Spinner/spinner.svg";
 type FormValues = {
   name: string;
   number: string;
@@ -30,11 +31,18 @@ function Form({ handleFormClose }: any) {
       service: sessionStorage.getItem("service") || "",
     },
   });
+
+  const formRef = useRef<HTMLDivElement>(null);
+  const successContainer = useRef<HTMLDivElement>(null);
+
   const defaultServices = sessionStorage.getItem("services");
-  console.log(defaultServices);
   const [selectedServices, setSelectedServices] = useState<string[]>(
     defaultServices ? JSON.parse(defaultServices) : []
   );
+
+  //similation of email posting
+  const [emailStatus, setEmailStatus] = useState("not ready");
+
   useEffect(() => {
     sessionStorage.setItem("services", JSON.stringify(selectedServices));
   }, [selectedServices]);
@@ -48,6 +56,7 @@ function Form({ handleFormClose }: any) {
 
     return () => subscription.unsubscribe();
   }, [watch]);
+
   const selectItemHandler = (service: string) => {
     if (selectedServices.includes(service)) {
       setSelectedServices(selectedServices.filter((s) => s !== service));
@@ -60,9 +69,14 @@ function Form({ handleFormClose }: any) {
       setSelectedServices([...selectedServices, service]);
     }
   };
-  const onSubmit: SubmitHandler<FormValues> = (data) =>
+
+  const onSubmit: SubmitHandler<FormValues> = (data) => {
     console.log(data, selectedServices);
-  const formRef = useRef<HTMLDivElement>(null);
+    setEmailStatus("sending");
+    setTimeout(() => {
+      setEmailStatus("success");
+    }, 1000);
+  };
 
   return (
     <section
@@ -79,7 +93,13 @@ function Form({ handleFormClose }: any) {
       className={styles.formPopUpContainer}
     >
       <div id="formContainer" className={styles.formContainer} ref={formRef}>
-        <div id="back" className={styles.formContainer__close} onClick={handleFormClose}>Назад</div>
+        <div
+          id="back"
+          className={styles.formContainer__close}
+          onClick={handleFormClose}
+        >
+          Назад
+        </div>
         <div className={styles.formContainer__title}>РОЗКАЖІТЬ ПРО СЕБЕ</div>
         <div className={styles.formContainer__subTitle}>
           Щоб почати з нами співпрацю
@@ -179,9 +199,7 @@ function Form({ handleFormClose }: any) {
 
           <div
             className={`${styles.formContainer__title} ${
-              errors.service
-                ? styles.formContainer__errorMessage
-                : ""
+              errors.service ? styles.formContainer__errorMessage : ""
             } `}
           >
             ОБЕРІТЬ ПОСЛУГИ
@@ -263,6 +281,40 @@ function Form({ handleFormClose }: any) {
           </div>
         </form>
       </div>
+      {emailStatus === "sending" && (
+        <div className={styles.loaderContainer}>
+          <Image src={Loader} alt="loading" />
+        </div>
+      )}
+      {emailStatus === "success" && (
+        <div ref={successContainer} className={styles.successContainer}>
+          <div className={styles.successContainer__title}>
+            Наш менеджер зв’яжеться з вами найближчим часом!
+          </div>
+          <div className={styles.successContainer__subTitle}>
+            З нетерпінням чекаємо на співпрацю! Вдалого дня!
+          </div>
+          <div className={styles.successContainer__buttonContainer}>
+            <Button
+              onClick={() => {
+                formRef.current?.classList.add(
+                  styles.formContainer,
+                  styles.formContainerClose
+                );
+                successContainer.current?.classList.add(
+                  styles.successContainer,
+                  styles.formContainerClose
+                );
+
+                handleFormClose();
+              }}
+              type={ARROW_BUTTON_TYPE}
+              text="Отримати консультацію"
+              color={VIOLET}
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
