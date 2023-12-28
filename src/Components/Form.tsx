@@ -179,7 +179,7 @@ function Form({ handleFormClose }: any) {
 
           <div
             className={`${styles.formContainer__title} ${
-              selectedServices.length === 0
+              errors.service
                 ? styles.formContainer__errorMessage
                 : ""
             } `}
