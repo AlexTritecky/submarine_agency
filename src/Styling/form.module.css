@@ -115,6 +115,22 @@
     height: unset;
   }
 }
+.formContainer__close {
+  position: absolute;
+  top: 6.6vw;
+  right: 6.6vw;
+  width: 16vw;
+  height: 6vw;
+  padding: 1vw;
+  background-color: #5566b7;
+  color: white;
+  border-radius: 2vw;
+  font-family: Unbounded;
+  font-size: 2.6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .formContainer__title {
   color: #5566b7;
   font-family: Gilroy-SemiBold;
@@ -354,4 +370,10 @@
 .formContainerClose {
   -webkit-animation: slideCloseLeftDesktop 0.5s forwards;
           animation: slideCloseLeftDesktop 0.5s forwards;
+}
+@media screen and (max-width: 1024px) {
+  .formContainerClose {
+    -webkit-animation: slideCloseLeftTablet 0.5s forwards;
+            animation: slideCloseLeftTablet 0.5s forwards;
+  }
 }/*# sourceMappingURL=form.module.css.map */

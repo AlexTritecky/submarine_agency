@@ -4,11 +4,13 @@ import styles from "../Styling/form.module.css";
 const ServiceFormItem = ({
   text,
   onClick,
+  isSelected
 }: {
   text: string;
+  isSelected?: boolean;
   onClick?: () => void;
 }) => {
-  const [selected, setSelected] = useState(false);
+  const [selected, setSelected] = useState(isSelected);
 
   return (
     <div
