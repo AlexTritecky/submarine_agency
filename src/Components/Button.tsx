@@ -4,8 +4,6 @@ import PlusImage from "../Assets/Images/HomePageImages/PlusElement.svg";
 import BluePlusImage from "../Assets/Images/HomePageImages/BluePlus.svg";
 import Arrow from "../Assets/Images/HomePageImages/PopUp/ComeBackArrow.svg";
 import Image from "next/image";
-import { createPortal } from "react-dom";
-import Form from "./Form";
 
 export const PLUS_BUTTON_TYPE = "plus button";
 export const ARROW_BUTTON_TYPE = "arrow button";
@@ -22,28 +20,11 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ type, color, text, onClick }) => {
   const [isPressed, setIsPressed] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  const [isPortalVisible, setPortalVisible] = useState(false);
-  useEffect(() => {
-    if (isPortalVisible) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-  }, [isPortalVisible]);
-  const handleFormClose = () => {
-      setTimeout(() => {
-        setPortalVisible(false);
-      }, 500);
-  };
   return (
     <>
       <button
         onClick={() => {
           onClick && onClick();
-          if (text === "СТАТИ КЛІЄНТОМ") {
-            console.log("dddddddd");
-            setPortalVisible(true);
-          }
         }}
         onMouseEnter={() => {
           setIsHovered(true);
@@ -76,14 +57,6 @@ const Button: React.FC<ButtonProps> = ({ type, color, text, onClick }) => {
           <Image className={styles.button__arrow} src={Arrow} alt="arrow" />
         )}
       </button>
-      {isPortalVisible &&
-        createPortal(
-          <Form
-            isPortalVisible={isPortalVisible}
-            handleFormClose={handleFormClose}
-          />,
-          document.body
-        )}
     </>
   );
 };

@@ -3,6 +3,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import Button, { PLUS_BUTTON_TYPE, VIOLET } from "./Button";
 import ServiceFormItem from "./ServiceFormItem";
 import { useState } from "react";
+import React, { useRef } from 'react';
 type FormValues = {
   name: string;
   number: string;
@@ -35,15 +36,14 @@ function Form({ handleFormClose }: any) {
   };
   const onSubmit: SubmitHandler<FormValues> = (data) =>
     console.log(data, selectedServices);
-  const parentElement = document.getElementById("formPopUpContainer");
-  const childElement = document.getElementById("formContainer");
+    const formRef = useRef<HTMLDivElement>(null);
 
   return (
     <section
       id="formPopUpContainer"
-      onClick={(e) => {
-        if (e.target === parentElement) {
-          childElement!.classList.add(
+      onClick={(e:any) => {
+        if (e.target.id === "formPopUpContainer") {
+          formRef.current?.classList.add(
             styles.formContainer,
             styles.formContainerClose
           );
@@ -55,6 +55,7 @@ function Form({ handleFormClose }: any) {
       <div
         id="formContainer"
         className={styles.formContainer}
+        ref={formRef}
       >
         <div className={styles.formContainer__title}>РОЗКАЖІТЬ ПРО СЕБЕ</div>
         <div className={styles.formContainer__subTitle}>

@@ -16,6 +16,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import Button, { PLUS_BUTTON_TYPE, VIOLET, WHITE } from "./Button";
+import FormModalPage from "./FormModalPage";
 
 function HomePageSlider() {
   return (
@@ -114,7 +115,7 @@ function HomePageSlider() {
         </SwiperSlide>
       </Swiper>
       <div className={styles.startSectionContainer__button}>
-        <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={VIOLET} />
+        <FormModalPage />
       </div>
     </section>
   );
