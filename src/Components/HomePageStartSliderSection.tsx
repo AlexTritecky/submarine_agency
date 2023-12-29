@@ -115,7 +115,7 @@ function HomePageSlider() {
         </SwiperSlide>
       </Swiper>
       <div className={styles.startSectionContainer__button}>
-        <FormModalPage />
+        <FormModalPage color={VIOLET} />
       </div>
     </section>
   );

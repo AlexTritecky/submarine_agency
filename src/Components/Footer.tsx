@@ -6,6 +6,7 @@ import TikTokHyper from "../Assets/Images/BurgerMenuImages/TikTokHyper.svg";
 import LinkArrow from "../Assets/Images/BurgerMenuImages/ArrowLink.svg";
 import Image from "next/image";
 import Button, { PLUS_BUTTON_TYPE, WHITE } from "./Button";
+import FormModalPage from "./FormModalPage";
 
 function FooterSection() {
   const scrollToTop = () => {
@@ -21,7 +22,8 @@ function FooterSection() {
         <div className={styles.footerContainer__sectionOneHeader}>
           БУДУЄМО БРЕНД-КОМУНІКАЦІЮ У СОЦІАЛЬНИХ МЕРЕЖАХ
         </div>
-        <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={WHITE} />
+        {/* <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={WHITE} /> */}
+        <FormModalPage color={WHITE} />
         <div className={styles.footerContainer__sectionOneFillForm}>
           Не любите заповнювати форми?
         </div>
