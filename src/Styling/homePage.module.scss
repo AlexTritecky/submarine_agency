@@ -353,6 +353,9 @@
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
   padding: 16px;
   border-radius: 2.6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media screen and (max-width: 1024px) {
     border-radius: 6.25vw;
     width: 87.5vw;

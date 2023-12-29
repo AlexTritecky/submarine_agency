@@ -541,6 +541,7 @@ export default function TransitionsModal({
         </div>
         <div>
           <Button
+            onClick={handleClose}
             type={ARROW_BUTTON_TYPE}
             text="Повернутися назад"
             color={VIOLET}
