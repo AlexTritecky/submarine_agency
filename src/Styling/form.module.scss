@@ -60,6 +60,7 @@
    align-items: flex-start;
    animation: slideCloseRightDesktop 0.5s forwards;
    transition-duration: 0.5s;
+   overflow-x: scroll;
    @media screen and (max-width: 1024px) {
       width: 100vw;
       animation: slideCloseRightTablet 0.5s forwards;

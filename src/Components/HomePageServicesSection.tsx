@@ -51,7 +51,7 @@ function ServicesSection() {
       document.body
     );
   return (
-    <section className={styles.servicesContainer}>
+    <section id="services" className={styles.servicesContainer}>
       {modal}
       <div className={styles.servicesContainer__header}>ПОСЛУГИ</div>
       <div

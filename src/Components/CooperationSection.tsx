@@ -10,7 +10,7 @@ const swiperStyles = {
 
 function YourComponent() {
   return (
-    <section className={styles.cooperationContainer}>
+    <section id="cooperation" className={styles.cooperationContainer}>
       <div className={styles.cooperationContainer__header}>
         <span className={styles.cooperationContainer__headerTabletHide}>
           НАША З ВАМИ{" "}

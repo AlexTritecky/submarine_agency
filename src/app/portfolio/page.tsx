@@ -6,8 +6,8 @@ import PortfolioPageSlider from "../../Components/PortfolioPageStartSliderSectio
 const portfolio = () => {
   return (
     <>
+      <MenuBurger />
       <PortfolioPageSlider />
-      <MenuBurger/>
       <FooterSection />
     </>
   );

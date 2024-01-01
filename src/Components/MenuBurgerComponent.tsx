@@ -55,15 +55,27 @@ function MenuBurger() {
           <div className={styles.navigationContainer__navigationHeader}>
             Навігація
           </div>
-          <div className={styles.navigationContainer__navigationItem}>
+          <Link
+            onClick={handleBurgerOpen}
+            href="/"
+            className={styles.navigationContainer__navigationItem}
+          >
             ДOМАШНЯ СТОРІНКА
-          </div>
-          <div className={styles.navigationContainer__navigationItem}>
+          </Link>
+          <a
+            onClick={handleBurgerOpen}
+            href="#aboutUs"
+            className={styles.navigationContainer__navigationItem}
+          >
             ПРО НАС
-          </div>
-          <div className={styles.navigationContainer__navigationItem}>
+          </a>
+          <a
+            onClick={handleBurgerOpen}
+            href="#services"
+            className={styles.navigationContainer__navigationItem}
+          >
             ПОСЛУГИ
-          </div>
+          </a>
           {/* <a
             href="/portfolio"
             className={styles.navigationContainer__navigationItem}
@@ -76,12 +88,20 @@ function MenuBurger() {
           >
             ПОРТФОЛІО
           </Link>
-          <div className={styles.navigationContainer__navigationItem}>
+          <a
+            onClick={handleBurgerOpen}
+            href="#clients"
+            className={styles.navigationContainer__navigationItem}
+          >
             КЛІЄНТИ
-          </div>
-          <div className={styles.navigationContainer__navigationItem}>
+          </a>
+          <a
+            onClick={handleBurgerOpen}
+            href="#cooperation"
+            className={styles.navigationContainer__navigationItem}
+          >
             СПІВПРАЦЯ
-          </div>
+          </a>
           <div className={styles.navigationContainer__navigationItem}>
             КОМАНДА
           </div>

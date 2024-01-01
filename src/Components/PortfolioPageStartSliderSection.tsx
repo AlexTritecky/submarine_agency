@@ -63,9 +63,12 @@ function PortfolioPageSlider() {
             alt="logo"
           />
           <nav className={styles.headerContainer__navigation}>
-            <div className={styles.headerContainer__navigationItem}>
+            <a
+              href="#aboutUs"
+              className={styles.headerContainer__navigationItem}
+            >
               Про нас
-            </div>
+            </a>
             <div className={styles.headerContainer__navigationItem}>
               Послуги
             </div>

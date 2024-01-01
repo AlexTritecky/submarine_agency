@@ -39,28 +39,36 @@ function HomePageSlider() {
             alt="logo"
           />
           <nav className={styles.headerContainer__navigation}>
-            <div className={styles.headerContainer__navigationItem}>
+            <a
+              href="#aboutUs"
+              className={styles.headerContainer__navigationItem}
+            >
               Про нас
-            </div>
-            <div className={styles.headerContainer__navigationItem}>
+            </a>
+            <a
+              href="#services"
+              className={styles.headerContainer__navigationItem}
+            >
               Послуги
-            </div>
+            </a>
             {/* <div className={styles.headerContainer__navigationItem}>
               Портфоліо
             </div> */}
-            {/* <Link
-              to="/portfolio"
+            <Link
+              href="/portfolio"
               className={styles.headerContainer__navigationItem}
             >
               Портфоліо
-            </Link> */}
-            <Link href="/portfolio" className={styles.headerContainer__navigationItem}>About Us</Link>
-            <div className={styles.headerContainer__navigationItem}>
+            </Link>
+            <a href="#clients" className={styles.headerContainer__navigationItem}>
               Клієнти
-            </div>
-            <div className={styles.headerContainer__navigationItem}>
+            </a>
+            <a
+              href="#cooperation"
+              className={styles.headerContainer__navigationItem}
+            >
               Співпраця
-            </div>
+            </a>
           </nav>
         </header>
         <SwiperSlide>

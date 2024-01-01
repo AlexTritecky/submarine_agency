@@ -4,7 +4,7 @@ import FormModalPage from "./FormModalPage";
 
 function PartnerSection() {
   return (
-    <section className={styles.partnerContainer}>
+    <section id="clients" className={styles.partnerContainer}>
       <div className={styles.partnerContainer__imageContainer}></div>
       <div className={styles.partnerContainer__buttonContainer}>
       {/* <Button type={PLUS_BUTTON_TYPE} text='СТАТИ КЛІЄНТОМ' color={VIOLET} /> */}
