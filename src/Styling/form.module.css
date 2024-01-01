@@ -310,6 +310,7 @@
       -ms-user-select: none;
           user-select: none;
   transition-duration: 0.2s;
+  color: #5566b7;
 }
 @media screen and (max-width: 1024px) {
   .formContainer__chooseServiceItem {

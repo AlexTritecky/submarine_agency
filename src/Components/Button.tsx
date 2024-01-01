@@ -1,9 +1,11 @@
+"use client";
 import { useEffect, useState } from "react";
 import styles from "../Styling/button.module.css";
 import PlusImage from "../Assets/Images/HomePageImages/PlusElement.svg";
 import BluePlusImage from "../Assets/Images/HomePageImages/BluePlus.svg";
 import Arrow from "../Assets/Images/HomePageImages/PopUp/ComeBackArrow.svg";
-import Image from "next/image";
+import Image from "../../node_modules/next/image";
+
 
 export const PLUS_BUTTON_TYPE = "plus button";
 export const ARROW_BUTTON_TYPE = "arrow button";

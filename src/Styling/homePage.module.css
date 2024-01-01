@@ -158,6 +158,7 @@
   justify-content: center;
   text-align: center;
   height: 100%;
+  color: black;
 }
 .headerContainer__navigationItem:hover {
   color: #5566b7;
@@ -1065,6 +1066,7 @@
   font-family: Unbounded-Blond;
   font-size: 0.8vw;
   line-height: 1vw;
+  color: #5566b7;
 }
 @media screen and (max-width: 1024px) {
   .cooperationContainer__sliderItemContent {

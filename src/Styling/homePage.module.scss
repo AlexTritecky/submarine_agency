@@ -125,6 +125,7 @@
     justify-content: center;
     text-align: center;
     height: 100%;
+    color:black;
   }
   &__navigationItem:hover {
     color: #5566b7;
@@ -892,6 +893,7 @@
     font-family: Unbounded-Blond;
     font-size: 0.8vw;
     line-height: 1vw;
+    color: #5566b7;
     @media screen and (max-width: 1024px) {
       font-size: 2vw;
       line-height: 2.6vw;

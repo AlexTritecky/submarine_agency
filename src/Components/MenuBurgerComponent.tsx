@@ -8,7 +8,7 @@ import InstagramHyper from "../Assets/Images/BurgerMenuImages/InstagramHyper.svg
 import LinkedinHyper from "../Assets/Images/BurgerMenuImages/LinkedinHyper.svg";
 import TikTokHyper from "../Assets/Images/BurgerMenuImages/TikTokHyper.svg";
 import Burger from "./BurgerIcon";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 function MenuBurger() {
   const [rotateBurger, setRotateBurger] = useState(false);
   const [moveBurgerLines, setMoveBurgerLines] = useState(false);
@@ -71,7 +71,7 @@ function MenuBurger() {
             ПОРТФОЛІО
           </a> */}
           <Link
-            to="/portfolio"
+            href="/portfolio"
             className={styles.navigationContainer__navigationItem}
           >
             ПОРТФОЛІО

@@ -1,3 +1,4 @@
+"use client";
 import "../Styling/main.css";
 import styles from "../Styling/homePage.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,10 +15,11 @@ import SwiperMobileFoto3 from "../Assets/Images/HomePageImages/HomePageSwiperMob
 import Logo from "../Assets/Images/HomePageImages/ProjectLogo.svg";
 import "swiper/css";
 import "swiper/css/pagination";
-import Image from "next/image";
+
 import { VIOLET } from "./Button";
 import FormModalPage from "./FormModalPage";
-import { Link } from "react-router-dom";
+import Image from "../../node_modules/next/image";
+import Link from "next/link";
 
 function HomePageSlider() {
   return (
@@ -46,12 +48,13 @@ function HomePageSlider() {
             {/* <div className={styles.headerContainer__navigationItem}>
               Портфоліо
             </div> */}
-            <Link
+            {/* <Link
               to="/portfolio"
               className={styles.headerContainer__navigationItem}
             >
               Портфоліо
-            </Link>
+            </Link> */}
+            <Link href="/portfolio" className={styles.headerContainer__navigationItem}>About Us</Link>
             <div className={styles.headerContainer__navigationItem}>
               Клієнти
             </div>

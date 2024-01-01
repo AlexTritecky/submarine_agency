@@ -1,14 +1,16 @@
+"use client";
 import FooterSection from "@/Components/Footer";
 import MenuBurger from "@/Components/MenuBurgerComponent";
-import PortfolioPageSlider from "@/Components/PortfolioPageStartSliderSection";
+import PortfolioPageSlider from "../../Components/PortfolioPageStartSliderSection";
 
-function PortFolioPage() {
+const portfolio = () => {
   return (
     <>
       <PortfolioPageSlider />
+      <MenuBurger/>
       <FooterSection />
     </>
   );
-}
+};
 
-export default PortFolioPage;
+export default portfolio;
