@@ -8,6 +8,7 @@ import InstagramHyper from "../Assets/Images/BurgerMenuImages/InstagramHyper.svg
 import LinkedinHyper from "../Assets/Images/BurgerMenuImages/LinkedinHyper.svg";
 import TikTokHyper from "../Assets/Images/BurgerMenuImages/TikTokHyper.svg";
 import Burger from "./BurgerIcon";
+import { Link } from "react-router-dom";
 function MenuBurger() {
   const [rotateBurger, setRotateBurger] = useState(false);
   const [moveBurgerLines, setMoveBurgerLines] = useState(false);
@@ -45,7 +46,6 @@ function MenuBurger() {
         className={`${styles.burgerMenuContainer} ${
           !openMenu ? styles.none : ""
         }`}
-        
       >
         <nav
           className={`${styles.navigationContainer} ${
@@ -56,7 +56,6 @@ function MenuBurger() {
             Навігація
           </div>
           <div className={styles.navigationContainer__navigationItem}>
-            <div></div>
             ДOМАШНЯ СТОРІНКА
           </div>
           <div className={styles.navigationContainer__navigationItem}>
@@ -65,9 +64,18 @@ function MenuBurger() {
           <div className={styles.navigationContainer__navigationItem}>
             ПОСЛУГИ
           </div>
-          <div className={styles.navigationContainer__navigationItem}>
+          {/* <a
+            href="/portfolio"
+            className={styles.navigationContainer__navigationItem}
+          >
             ПОРТФОЛІО
-          </div>
+          </a> */}
+          <Link
+            to="/portfolio"
+            className={styles.navigationContainer__navigationItem}
+          >
+            ПОРТФОЛІО
+          </Link>
           <div className={styles.navigationContainer__navigationItem}>
             КЛІЄНТИ
           </div>
@@ -96,18 +104,30 @@ function MenuBurger() {
           <div className={styles.socialMediaLinksContainer__header}>
             Фоловте нас:
           </div>
-          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
+          <a
+            className={styles.socialMediaLinksContainer__link}
+            href="https://www.youtube.com"
+          >
             instagram <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
+          <a
+            className={styles.socialMediaLinksContainer__link}
+            href="https://www.youtube.com"
+          >
             linkedin
             <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
+          <a
+            className={styles.socialMediaLinksContainer__link}
+            href="https://www.youtube.com"
+          >
             facebook
             <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
+          <a
+            className={styles.socialMediaLinksContainer__link}
+            href="https://www.youtube.com"
+          >
             tik tok
             <Image src={LinkArrow} alt="link" />
           </a>
@@ -117,16 +137,16 @@ function MenuBurger() {
             !rotateBurger ? styles.socialMediaLinksTabletContainerHide : ""
           }`}
         >
-          <a href='https://www.youtube.com'>
+          <a href="https://www.youtube.com">
             <Image src={TikTokHyper} alt="link to tik tok" />
           </a>
-          <a href='https://www.youtube.com'>
+          <a href="https://www.youtube.com">
             <Image src={InstagramHyper} alt="link to instagram" />
           </a>
-          <a href='https://www.youtube.com'>
+          <a href="https://www.youtube.com">
             <Image src={FaceBookHyper} alt="link to facebook" />
           </a>
-          <a href='https://www.youtube.com'>
+          <a href="https://www.youtube.com">
             <Image src={LinkedinHyper} alt="link to linkedin" />
           </a>
         </div>
