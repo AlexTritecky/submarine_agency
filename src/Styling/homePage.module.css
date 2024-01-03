@@ -184,6 +184,7 @@
     height: 115vw;
     background-image: url(../Assets/Images/HomePageImages/AboutUsMobile.webp);
     background-position: center 38vw;
+    background-size: 100%;
   }
 }
 @media screen and (max-width: 480px) {
