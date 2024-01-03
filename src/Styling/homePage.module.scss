@@ -555,7 +555,7 @@
     letter-spacing: 0.03125vw;
     color: #ffffff;
     background-color: #5566b7;
-    margin: 0.1vw;
+    margin: 0.2vw;
     flex-shrink: 0;
     box-shadow: none;
     border: none;
@@ -636,6 +636,7 @@
     }
     @media screen and (max-width: 1024px) {
       margin-top: 2.5vw;
+      margin-bottom:2.5vw;
       font-size: 6.6vw;
       line-height: 6.6vw;
     }
@@ -646,12 +647,13 @@
     line-height: 1.25vw;
     letter-spacing: 0.03125vw;
     color: #5566b7;
-    margin-bottom: 0.8vw;
+    margin-bottom: 1vw;
     @media screen and (max-width: 1024px) {
       font-family: Unbounded-Blond;
       font-size: 2.6vw;
       line-height: 3.125vw; /* 120% */
       letter-spacing: 0.07vw;
+      margin-bottom: 2.5vw;
     }
     @media screen and (max-width: 480px) {
       font-family: Gilroy-Semibold;
@@ -679,6 +681,14 @@
     @media screen and (max-width: 480px) {
       font-size: 2.2vw;
       line-height: 3.3vw;
+    }
+  }
+  &__informationItemTitleLast {
+    margin-bottom: 1vw;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 2.5vw;
+    }
+    @media screen and (max-width: 480px) {
     }
   }
   &__informationItemTitle:before {

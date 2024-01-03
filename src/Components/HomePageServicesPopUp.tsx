@@ -24,38 +24,22 @@ export default function TransitionsModal({
   const [showScrollButton, setShowScrollButton] = useState(false);
 
   const handleScroll = () => {
-    // Перевірка, чи ref не є null перед доступом до scrollHeight
     if (contentRef.current) {
       const { scrollHeight, clientHeight, scrollTop, offsetHeight, clientTop } =
         contentRef.current;
-
-      // Перевірка, чи є оверфлоу
       const hasOverflow =
         scrollTop < (Number(scrollHeight) - Number(clientHeight)) * 0.3;
-
-      // Встановлення видимості кнопки вниз в залежності від наявності оверфлоу
       setShowScrollButton(hasOverflow);
-      console.log(
-        hasOverflow,
-        scrollHeight,
-        Number(scrollHeight) - Number(clientHeight) * 0.9,
-        clientHeight,
-        offsetHeight,
-        clientTop,
-        scrollTop
-      );
     }
   };
 
   const scrollToBottom = () => {
-    // Перевірка, чи ref не є null перед доступом до scrollHeight
     if (contentRef.current) {
       contentRef.current.scrollTop = contentRef.current.scrollHeight * 0.3;
     }
   };
 
   useEffect(() => {
-    // Перевірка оверфлоу при завантаженні компонента
     handleScroll();
   }, []);
   return (
@@ -373,7 +357,9 @@ export default function TransitionsModal({
                 <div className={styles.modalPopUp__informationItemTitle}>
                   Мудборд фотосесії
                 </div>
-                <div className={styles.modalPopUp__informationItemTitle}>
+                <div
+                  className={`${styles.modalPopUp__informationItemTitle} ${styles.modalPopUp__informationItemTitleLast}`}
+                >
                   Таймлайн
                 </div>
               </div>
@@ -416,7 +402,9 @@ export default function TransitionsModal({
                 <div className={styles.modalPopUp__informationItemTitle}>
                   Мудборд фотосесії
                 </div>
-                <div className={styles.modalPopUp__informationItemTitle}>
+                <div
+                  className={`${styles.modalPopUp__informationItemTitle} ${styles.modalPopUp__informationItemTitleLast}`}
+                >
                   Таймлайн
                 </div>
                 <div className={styles.modalPopUp__informationItemSecondHeader}>
@@ -467,7 +455,9 @@ export default function TransitionsModal({
                 <div className={styles.modalPopUp__informationItemSubTitle}>
                   - Події та заходи
                 </div>
-                <div className={styles.modalPopUp__informationItemSubTitle}>
+                <div
+                  className={`${styles.modalPopUp__informationItemTitle} ${styles.modalPopUp__informationItemTitleLast}`}
+                >
                   - Власні продукти
                 </div>
               </div>
@@ -495,7 +485,9 @@ export default function TransitionsModal({
                 <div className={styles.modalPopUp__informationItemTitle}>
                   Модерація сторінки
                 </div>
-                <div className={styles.modalPopUp__informationItemTitle}>
+                <div
+                  className={`${styles.modalPopUp__informationItemTitle} ${styles.modalPopUp__informationItemTitleLast}`}
+                >
                   Проведення активацій
                 </div>
               </div>
@@ -596,8 +588,7 @@ export default function TransitionsModal({
           <div
             className={styles.modalPopUp__scrollToButton}
             onClick={scrollToBottom}
-          >
-          </div>
+          ></div>
         )}
       </Box>
     </Fade>
