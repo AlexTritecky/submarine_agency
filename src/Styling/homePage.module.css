@@ -646,6 +646,7 @@
 @media screen and (max-width: 1024px) {
   .modalPopUp__description {
     width: 88%;
+    bottom: 2.83vw;
   }
 }
 @media screen and (max-width: 480px) {
@@ -662,6 +663,11 @@
   justify-content: center;
   bottom: 0.83vw;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 1024px) {
+  .modalPopUp__descriptionBigger {
+    bottom: 2.83vw;
+  }
 }
 .modalPopUp__descriptionItem {
   border-radius: 5.2vw;
