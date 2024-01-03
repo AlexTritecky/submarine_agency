@@ -4,7 +4,7 @@ import { createPortal } from "react-dom";
 import Form from "./Form";
 import Button, { PLUS_BUTTON_TYPE, VIOLET } from "./Button";
 
-const FormModalPage = ({color}:any) => {
+const FormModalPage = ({ color, text }: any) => {
   const [isPortalVisible, setPortalVisible] = useState(false);
   useEffect(() => {
     if (isPortalVisible) {
@@ -24,7 +24,7 @@ const FormModalPage = ({color}:any) => {
         onClick={() => {
           setPortalVisible(true);
         }}
-        text="СТАТИ КЛІЄНТОМ"
+        text={text ? text : "СТАТИ КЛІЄНТОМ"}
         color={color}
         type={PLUS_BUTTON_TYPE}
       />

@@ -45,7 +45,7 @@
   font-family: Unbounded;
   font-size: 1vw;
   line-height: 1.2vw;
-  margin-top: 3.5vw;
+  margin-top: 2vw;
 }
 @media screen and (max-width: 1024px) {
   .footerContainer__sectionOneFillForm {
@@ -178,7 +178,7 @@
   font-family: Unbounded;
   font-size: 1vw;
   left: 6.6vw;
-  bottom: 0.5vw;
+  bottom: 2.5vw;
   width: 23.6vw;
 }
 @media screen and (max-width: 1024px) {

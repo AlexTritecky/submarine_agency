@@ -23,7 +23,7 @@ function FooterSection() {
           БУДУЄМО БРЕНД-КОМУНІКАЦІЮ У СОЦІАЛЬНИХ МЕРЕЖАХ
         </div>
         {/* <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={WHITE} /> */}
-        <FormModalPage color={WHITE} />
+        {/* <FormModalPage color={WHITE} /> */}
         <div className={styles.footerContainer__sectionOneFillForm}>
           Не любите заповнювати форми?
         </div>

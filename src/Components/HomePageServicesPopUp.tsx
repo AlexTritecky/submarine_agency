@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState, useRef, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
 import styles from "../Styling/homePage.module.css";
@@ -11,16 +12,59 @@ import {
   SMM,
   SMM_STRATEGY,
 } from "@/Interfaces/interfaces";
-import Button, { ARROW_BUTTON_TYPE, VIOLET } from "./Button";
+import { VIOLET } from "./Button";
+import FormModalPage from "./FormModalPage";
 
 export default function TransitionsModal({
   open,
   modalName,
   handleClose,
 }: any) {
+  const contentRef = useRef<HTMLDivElement | null>(null);
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  const handleScroll = () => {
+    // Перевірка, чи ref не є null перед доступом до scrollHeight
+    if (contentRef.current) {
+      const { scrollHeight, clientHeight, scrollTop, offsetHeight, clientTop } =
+        contentRef.current;
+
+      // Перевірка, чи є оверфлоу
+      const hasOverflow =
+        scrollTop < (Number(scrollHeight) - Number(clientHeight)) * 0.3;
+
+      // Встановлення видимості кнопки вниз в залежності від наявності оверфлоу
+      setShowScrollButton(hasOverflow);
+      console.log(
+        hasOverflow,
+        scrollHeight,
+        Number(scrollHeight) - Number(clientHeight) * 0.9,
+        clientHeight,
+        offsetHeight,
+        clientTop,
+        scrollTop
+      );
+    }
+  };
+
+  const scrollToBottom = () => {
+    // Перевірка, чи ref не є null перед доступом до scrollHeight
+    if (contentRef.current) {
+      contentRef.current.scrollTop = contentRef.current.scrollHeight * 0.3;
+    }
+  };
+
+  useEffect(() => {
+    // Перевірка оверфлоу при завантаженні компонента
+    handleScroll();
+  }, []);
   return (
     <Fade in={open}>
-      <Box className={styles.modalPopUp}>
+      <Box
+        ref={contentRef}
+        onScroll={handleScroll}
+        className={styles.modalPopUp}
+      >
         <div className={styles.modalPopUp__infoSection}>
           <div className={styles.modalPopUp__imagesList}>
             {modalName === SMM_STRATEGY && (
@@ -540,13 +584,21 @@ export default function TransitionsModal({
           </div>
         </div>
         <div>
-          <Button
+          {/* <Button
             onClick={handleClose}
             type={ARROW_BUTTON_TYPE}
             text="Повернутися назад"
             color={VIOLET}
-          />
+          /> */}
+          <FormModalPage color={VIOLET} text="Замовити послугу" />
         </div>
+        {showScrollButton && (
+          <div
+            className={styles.modalPopUp__scrollToButton}
+            onClick={scrollToBottom}
+          >
+          </div>
+        )}
       </Box>
     </Fade>
   );

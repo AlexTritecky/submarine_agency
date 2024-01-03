@@ -21,6 +21,7 @@ import Button, {
   VIOLET,
   WHITE,
 } from "./Button";
+import FormModalPage from "./FormModalPage";
 
 function ServicesSection() {
   const [open, setOpen] = React.useState(false);
@@ -196,7 +197,7 @@ function ServicesSection() {
         </div>
       </div>
       <div className={styles.servicesContainer__buttonContainer}>
-        <Button type={PLUS_BUTTON_TYPE} text="СТАТИ КЛІЄНТОМ" color={VIOLET} />
+        <FormModalPage color={VIOLET} />
       </div>
     </section>
   );
