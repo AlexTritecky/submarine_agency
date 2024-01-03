@@ -64,14 +64,14 @@ function MenuBurger() {
           </Link>
           <a
             onClick={handleBurgerOpen}
-            href="#aboutUs"
+            href="/#aboutUs"
             className={styles.navigationContainer__navigationItem}
           >
             ПРО НАС
           </a>
           <a
             onClick={handleBurgerOpen}
-            href="#services"
+            href="/#services"
             className={styles.navigationContainer__navigationItem}
           >
             ПОСЛУГИ
@@ -90,14 +90,13 @@ function MenuBurger() {
           </Link>
           <a
             onClick={handleBurgerOpen}
-            href="#clients"
+            href="/#clients"
             className={styles.navigationContainer__navigationItem}
           >
             КЛІЄНТИ
           </a>
           <a
-            onClick={handleBurgerOpen}
-            href="#cooperation"
+            href="/#cooperation"
             className={styles.navigationContainer__navigationItem}
           >
             СПІВПРАЦЯ

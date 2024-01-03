@@ -64,23 +64,23 @@ function PortfolioPageSlider() {
           />
           <nav className={styles.headerContainer__navigation}>
             <a
-              href="#aboutUs"
+              href="/#aboutUs"
               className={styles.headerContainer__navigationItem}
             >
               Про нас
             </a>
-            <div className={styles.headerContainer__navigationItem}>
+            <a href="/#services" className={styles.headerContainer__navigationItem}>
               Послуги
-            </div>
-            <div className={styles.headerContainer__navigationItem}>
+            </a>
+            <a href="/portfolio" className={styles.headerContainer__navigationItem}>
               Портфоліо
-            </div>
-            <div className={styles.headerContainer__navigationItem}>
+            </a>
+            <a href="/#clients" className={styles.headerContainer__navigationItem}>
               Клієнти
-            </div>
-            <div className={styles.headerContainer__navigationItem}>
+            </a>
+            <a href="/#cooperation" className={styles.headerContainer__navigationItem}>
               Співпраця
-            </div>
+            </a>
           </nav>
         </header>
         <SwiperSlide>

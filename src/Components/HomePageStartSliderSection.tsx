@@ -40,13 +40,13 @@ function HomePageSlider() {
           />
           <nav className={styles.headerContainer__navigation}>
             <a
-              href="#aboutUs"
+              href="/#aboutUs"
               className={styles.headerContainer__navigationItem}
             >
               Про нас
             </a>
             <a
-              href="#services"
+              href="/#services"
               className={styles.headerContainer__navigationItem}
             >
               Послуги
@@ -60,11 +60,11 @@ function HomePageSlider() {
             >
               Портфоліо
             </Link>
-            <a href="#clients" className={styles.headerContainer__navigationItem}>
+            <a href="/#clients" className={styles.headerContainer__navigationItem}>
               Клієнти
             </a>
             <a
-              href="#cooperation"
+              href="/#cooperation"
               className={styles.headerContainer__navigationItem}
             >
               Співпраця
