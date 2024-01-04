@@ -8,7 +8,7 @@ import HomePageSlider from "@/Components/HomePageStartSliderSection";
 import MenuBurger from "@/Components/MenuBurgerComponent";
 import PartnerSection from "@/Components/PartnerSection";
 
-export default function home() {
+function Home({ Component, pageProps }: any) {
   return (
     <>
       <MenuBurger />
@@ -22,3 +22,5 @@ export default function home() {
     </>
   );
 }
+
+export default Home;

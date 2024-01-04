@@ -20,10 +20,21 @@ import { VIOLET } from "./Button";
 import FormModalPage from "./FormModalPage";
 import Image from "../../node_modules/next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import Loader from "./Loader";
 
 function HomePageSlider() {
+  const [isPageLoaded, setIsPageLoaded] = useState(false);
+  const [isLoaderClosed, setIsLoaderClosed] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth;
+    }
+    return 0;
+  });
   return (
     <section className={styles.startSectionContainer}>
+      {!isLoaderClosed && <Loader isLoaded={isPageLoaded} />}
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         slidesPerView={1}
@@ -51,16 +62,16 @@ function HomePageSlider() {
             >
               Послуги
             </a>
-            {/* <div className={styles.headerContainer__navigationItem}>
-              Портфоліо
-            </div> */}
             <Link
               href="/portfolio"
               className={styles.headerContainer__navigationItem}
             >
               Портфоліо
             </Link>
-            <a href="/#clients" className={styles.headerContainer__navigationItem}>
+            <a
+              href="/#clients"
+              className={styles.headerContainer__navigationItem}
+            >
               Клієнти
             </a>
             <a
@@ -76,11 +87,27 @@ function HomePageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto1}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded(true);
+                setTimeout(() => {
+                  setIsLoaderClosed(true);
+                }, 500);
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto1}
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded(true);
+                setTimeout(() => {
+                  setIsLoaderClosed(true);
+                }, 500);
+              }
+            }}
             alt="firstSliderImage"
             priority
           />
@@ -88,6 +115,14 @@ function HomePageSlider() {
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto1}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 480) {
+                setIsPageLoaded(true);
+                setTimeout(() => {
+                  setIsLoaderClosed(true);
+                }, 500);
+              }
+            }}
             priority
           />
         </SwiperSlide>
