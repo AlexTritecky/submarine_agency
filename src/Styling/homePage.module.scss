@@ -918,7 +918,7 @@
   &__sliderItemPressed {
     background-color: lightcoral;
     animation-delay: 500ms;
-    animation: rotate8 1s ease-in-out forwards;
+    animation: rotate8 1s ease-in-out forwards 500ms;
     user-select: none;
   }
   @keyframes rotate8 {
@@ -926,7 +926,7 @@
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(8deg);
+      transform: rotate(-8deg);
     }
   }
   &__sliderItemHeader {

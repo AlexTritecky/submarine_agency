@@ -1099,8 +1099,8 @@
   background-color: lightcoral;
   -webkit-animation-delay: 500ms;
           animation-delay: 500ms;
-  -webkit-animation: rotate8 1s ease-in-out forwards;
-          animation: rotate8 1s ease-in-out forwards;
+  -webkit-animation: rotate8 1s ease-in-out forwards 500ms;
+          animation: rotate8 1s ease-in-out forwards 500ms;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1111,7 +1111,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(8deg);
+    transform: rotate(-8deg);
   }
 }
 @keyframes rotate8 {
@@ -1119,7 +1119,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(8deg);
+    transform: rotate(-8deg);
   }
 }
 .cooperationContainer__sliderItemHeader {
