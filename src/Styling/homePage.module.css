@@ -1095,6 +1095,11 @@
     border-radius: 14vw;
   }
 }
+.cooperationContainer__sliderItemPressed {
+  transition: transform 500ms ease 500ms;
+  transform: rotate(-8deg);
+  background-color: lightcoral;
+}
 .cooperationContainer__sliderItemHeader {
   font-family: Gilroy-SemiBold;
   color: #5566b7;
@@ -1159,7 +1164,17 @@
 .cooperationContainer__sliderItem:hover {
   transform: rotate(-8deg);
 }
+@media screen and (max-width: 1024px) {
+  .cooperationContainer__sliderItem:hover {
+    transform: rotate(0);
+  }
+}
 
 .cooperationContainer__slider .cooperationContainer__sliderItem:hover {
   transform: rotate(-8deg);
+}
+@media screen and (max-width: 1024px) {
+  .cooperationContainer__slider .cooperationContainer__sliderItem:hover {
+    transform: rotate(0);
+  }
 }/*# sourceMappingURL=homePage.module.css.map */

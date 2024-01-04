@@ -2,6 +2,7 @@ import styles from "../Styling/homePage.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import SwiperCore from "swiper";
+import { useState } from "react";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const swiperStyles = {
@@ -9,6 +10,19 @@ const swiperStyles = {
 };
 
 function YourComponent() {
+  const [isLongPress, setIsLongPress] = useState(false);
+  
+
+  const handleTouchStart = () => {
+    console.log('press');
+    setIsLongPress(true);
+  };
+
+  const handleTouchEnd = () => {
+    console.log('release');
+    setIsLongPress(false);
+  };
+
   return (
     <section id="cooperation" className={styles.cooperationContainer}>
       <div className={styles.cooperationContainer__header}>
@@ -31,7 +45,14 @@ function YourComponent() {
           }}
           scrollbar={{ draggable: true }}
         >
-          <SwiperSlide className={styles.cooperationContainer__sliderItem}>
+          <SwiperSlide
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+            onTouchCancel={handleTouchEnd}
+            className={`${styles.cooperationContainer__sliderItem} ${
+              isLongPress ? styles.cooperationContainer__sliderItemPressed : ""
+            }`}
+          >
             <div className={styles.cooperationContainer__sliderItemHeader}>
               1.
             </div>
