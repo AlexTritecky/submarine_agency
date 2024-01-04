@@ -916,9 +916,8 @@
     }
   }
   &__sliderItemPressed {
-    background-color: lightcoral;
     animation-delay: 500ms;
-    animation: rotate8 1s ease-in-out forwards 500ms;
+    animation: rotate8 0.5s ease-in-out forwards 500ms;
     user-select: none;
   }
   @keyframes rotate8 {
