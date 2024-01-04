@@ -1,7 +1,7 @@
 import * as React from "react";
 import Image from "next/image";
 import styles from "../Styling/loader.module.css";
-import LoaderImage from "../Assets/Images/LoaderImage/Loader.png";
+import LoaderImage from "../Assets/Images/LoaderImage/Loader.webp";
 import LinearProgress from "@mui/material/LinearProgress";
 
 function Loader({ isLoaded }: any) {
