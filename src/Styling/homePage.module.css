@@ -1074,6 +1074,7 @@
   border-radius: 2.6vw;
   padding: 0.8vw;
   box-shadow: 0.2vw 0.2vw 0.5vw 0.1vw #5566b7;
+  transition: transform 500ms ease 500ms;
 }
 @media screen and (max-width: 1024px) {
   .cooperationContainer__sliderItem {
@@ -1096,7 +1097,6 @@
   }
 }
 .cooperationContainer__sliderItemPressed {
-  transition: transform 500ms ease 500ms;
   transform: rotate(-8deg);
   background-color: lightcoral;
 }
