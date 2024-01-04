@@ -636,7 +636,7 @@
     }
     @media screen and (max-width: 1024px) {
       margin-top: 2.5vw;
-      margin-bottom:2.5vw;
+      margin-bottom: 2.5vw;
       font-size: 6.6vw;
       line-height: 6.6vw;
     }
@@ -898,7 +898,6 @@
     border-radius: 2.6vw;
     padding: 0.8vw;
     box-shadow: 0.2vw 0.2vw 0.5vw 0.1vw #5566b7;
-    transition: transform 500ms ease 500ms; 
     @media screen and (max-width: 1024px) {
       width: 41vw !important;
       height: 35vw !important;
@@ -916,10 +915,19 @@
       border-radius: 14vw;
     }
   }
-  &__sliderItemPressed{
-    transform: rotate(-8deg);
+  &__sliderItemPressed {
     background-color: lightcoral;
+    animation-delay: 500ms;
+    animation: rotate8 1s ease-in-out forwards;
     user-select: none;
+  }
+  @keyframes rotate8 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(8deg);
+    }
   }
   &__sliderItemHeader {
     font-family: Gilroy-SemiBold;
@@ -976,7 +984,6 @@
   }
 }
 .cooperationContainer__slider .cooperationContainer__sliderItem:hover {
-
   @media screen and (min-width: 1024px) {
     transform: rotate(-8deg);
   }

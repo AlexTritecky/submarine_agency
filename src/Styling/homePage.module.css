@@ -1074,7 +1074,6 @@
   border-radius: 2.6vw;
   padding: 0.8vw;
   box-shadow: 0.2vw 0.2vw 0.5vw 0.1vw #5566b7;
-  transition: transform 500ms ease 500ms;
 }
 @media screen and (max-width: 1024px) {
   .cooperationContainer__sliderItem {
@@ -1097,12 +1096,31 @@
   }
 }
 .cooperationContainer__sliderItemPressed {
-  transform: rotate(-8deg);
   background-color: lightcoral;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation: rotate8 1s ease-in-out forwards;
+          animation: rotate8 1s ease-in-out forwards;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@-webkit-keyframes rotate8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
+}
+@keyframes rotate8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
 }
 .cooperationContainer__sliderItemHeader {
   font-family: Gilroy-SemiBold;
