@@ -1099,6 +1099,10 @@
 .cooperationContainer__sliderItemPressed {
   transform: rotate(-8deg);
   background-color: lightcoral;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .cooperationContainer__sliderItemHeader {
   font-family: Gilroy-SemiBold;
@@ -1161,20 +1165,14 @@
   display: none !important;
 }
 
-.cooperationContainer__sliderItem:hover {
-  transform: rotate(-8deg);
-}
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .cooperationContainer__sliderItem:hover {
-    transform: rotate(0);
+    transform: rotate(-8deg);
   }
 }
 
-.cooperationContainer__slider .cooperationContainer__sliderItem:hover {
-  transform: rotate(-8deg);
-}
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .cooperationContainer__slider .cooperationContainer__sliderItem:hover {
-    transform: rotate(0);
+    transform: rotate(-8deg);
   }
 }/*# sourceMappingURL=homePage.module.css.map */

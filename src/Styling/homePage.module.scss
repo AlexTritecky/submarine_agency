@@ -919,6 +919,7 @@
   &__sliderItemPressed{
     transform: rotate(-8deg);
     background-color: lightcoral;
+    user-select: none;
   }
   &__sliderItemHeader {
     font-family: Gilroy-SemiBold;
@@ -970,14 +971,13 @@
 }
 
 .cooperationContainer__sliderItem:hover {
-  transform: rotate(-8deg);
-  @media screen and (max-width: 1024px) {
-    transform: rotate(0);
+  @media screen and (min-width: 1024px) {
+    transform: rotate(-8deg);
   }
 }
 .cooperationContainer__slider .cooperationContainer__sliderItem:hover {
-  transform: rotate(-8deg);
-  @media screen and (max-width: 1024px) {
-    transform: rotate(0);
+
+  @media screen and (min-width: 1024px) {
+    transform: rotate(-8deg);
   }
 }
