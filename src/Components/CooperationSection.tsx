@@ -3,13 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import SwiperCore from "swiper";
 import { useState } from "react";
+import CooperationSectionSwiperElement from "./CooperationSectionSwiperElement";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const swiperStyles = {
   overflow: "visible !important",
 };
-
-
 
 function YourComponent() {
   const [isLongPress, setIsLongPress] = useState(false);
@@ -22,7 +21,7 @@ function YourComponent() {
   const handleTouchEnd = () => {
     console.log("release");
     setIsLongPress(false);
-  }
+  };
   return (
     <section id="cooperation" className={styles.cooperationContainer}>
       <div className={styles.cooperationContainer__header}>
@@ -45,6 +44,7 @@ function YourComponent() {
           }}
           scrollbar={{ draggable: true }}
         >
+          <CooperationSectionSwiperElement />
           <SwiperSlide
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
