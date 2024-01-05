@@ -44,8 +44,12 @@ function YourComponent() {
           }}
           scrollbar={{ draggable: true }}
         >
-          <CooperationSectionSwiperElement />
-          <SwiperSlide
+          <CooperationSectionSwiperElement
+            number={1}
+            header="КОНСУЛЬТАЦІЯ"
+            text="15-хвилинний зум-брифінг з нашим стратегом , який оцінить існуючу ситуацію та проблемні зони"
+          />
+          {/* <SwiperSlide
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
             onTouchCancel={handleTouchEnd}
@@ -63,8 +67,13 @@ function YourComponent() {
               15-хвилинний зум-брифінг з нашим стратегом , який оцінить існуючу
               ситуацію та проблемні зони
             </div>
-          </SwiperSlide>
-          <SwiperSlide className={styles.cooperationContainer__sliderItem}>
+          </SwiperSlide> */}
+          <CooperationSectionSwiperElement
+            number={2}
+            header="ПРОПОЗИЦІЯ"
+            text="Ти отримаєш розгорнуту індивідуальну пропозицію по твоєму проекту"
+          />
+          {/* <SwiperSlide className={styles.cooperationContainer__sliderItem}>
             <div className={styles.cooperationContainer__sliderItemHeader}>
               2.
             </div>
@@ -74,8 +83,14 @@ function YourComponent() {
             <div className={styles.cooperationContainer__sliderItemContent}>
               Ти отримаєш розгорнуту індивідуальну пропозицію по твоєму проекту
             </div>
-          </SwiperSlide>
-          <SwiperSlide className={styles.cooperationContainer__sliderItem}>
+          </SwiperSlide> */}
+          <CooperationSectionSwiperElement
+            number={3}
+            header="ДОГОВІР"
+            text="Після погодження пропозиції ми підписуємо договір про співпрацю та
+            надсилаємо перший рахунок"
+          />
+          {/* <SwiperSlide className={styles.cooperationContainer__sliderItem}>
             <div className={styles.cooperationContainer__sliderItemHeader}>
               3.
             </div>
@@ -86,8 +101,14 @@ function YourComponent() {
               Після погодження пропозиції ми підписуємо договір про співпрацю та
               надсилаємо перший рахунок
             </div>
-          </SwiperSlide>
-          <SwiperSlide className={styles.cooperationContainer__sliderItem}>
+          </SwiperSlide> */}
+          <CooperationSectionSwiperElement
+            number={4}
+            header="ЗАПУСК"
+            text="Тут все тільки починається! Знайомство з менеджером твого проекту
+            та майбутньою командою"
+          />
+          {/* <SwiperSlide className={styles.cooperationContainer__sliderItem}>
             <div className={styles.cooperationContainer__sliderItemHeader}>
               4.
             </div>
@@ -98,7 +119,7 @@ function YourComponent() {
               Тут все тільки починається! Знайомство з менеджером твого проекту
               та майбутньою командою
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
       <div className={styles.cooperationContainer__items}>

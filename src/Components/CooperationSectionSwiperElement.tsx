@@ -1,7 +1,15 @@
 import styles from "../Styling/homePage.module.css";
 import { SwiperSlide } from "swiper/react";
 import { useState } from "react";
-function CooperationSectionSwiperElement() {
+interface CooperationSectionSwiperElementProps {
+  number: number;
+  header: string;
+  text: string;
+}
+
+const CooperationSectionSwiperElement: React.FC<
+  CooperationSectionSwiperElementProps
+> = ({ number, header, text }) => {
   const [isLongPress, setIsLongPress] = useState(false);
 
   const handleTouchStart = () => {
@@ -22,14 +30,17 @@ function CooperationSectionSwiperElement() {
         isLongPress ? styles.cooperationContainer__sliderItemPressed : ""
       }`}
     >
-      <div className={styles.cooperationContainer__sliderItemHeader}>4.</div>
-      <div className={styles.cooperationContainer__sliderItemTitle}>ЗАПУСК</div>
+      <div className={styles.cooperationContainer__sliderItemHeader}>
+        {number}.
+      </div>
+      <div className={styles.cooperationContainer__sliderItemTitle}>
+        {header}
+      </div>
       <div className={styles.cooperationContainer__sliderItemContent}>
-        Тут все тільки починається! Знайомство з менеджером твого проекту та
-        майбутньою командою
+        {text}
       </div>
     </SwiperSlide>
   );
-}
+};
 
 export default CooperationSectionSwiperElement;
