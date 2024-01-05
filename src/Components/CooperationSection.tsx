@@ -49,7 +49,7 @@ function YourComponent() {
             onTouchEnd={handleTouchEnd}
             onTouchCancel={handleTouchEnd}
             className={`${styles.cooperationContainer__sliderItem} ${
-              isLongPress === "1"
+              isLongPress == "1"
                 ? styles.cooperationContainer__sliderItemPressed
                 : ""
             }`}
@@ -71,7 +71,7 @@ function YourComponent() {
             onTouchEnd={handleTouchEnd}
             onTouchCancel={handleTouchEnd}
             className={`${styles.cooperationContainer__sliderItem} ${
-              isLongPress === "2"
+              isLongPress == "2"
                 ? styles.cooperationContainer__sliderItemPressed
                 : ""
             }`}
@@ -92,7 +92,7 @@ function YourComponent() {
             onTouchEnd={handleTouchEnd}
             onTouchCancel={handleTouchEnd}
             className={`${styles.cooperationContainer__sliderItem} ${
-              isLongPress === "3"
+              isLongPress == "3"
                 ? styles.cooperationContainer__sliderItemPressed
                 : ""
             }`}
@@ -114,7 +114,7 @@ function YourComponent() {
             onTouchEnd={handleTouchEnd}
             onTouchCancel={handleTouchEnd}
             className={`${styles.cooperationContainer__sliderItem} ${
-              isLongPress === "4"
+              isLongPress == "4"
                 ? styles.cooperationContainer__sliderItemPressed
                 : ""
             }`}
