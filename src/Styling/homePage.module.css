@@ -1074,6 +1074,8 @@
   border-radius: 2.6vw;
   padding: 0.8vw;
   box-shadow: 0.2vw 0.2vw 0.5vw 0.1vw #5566b7;
+  -webkit-animation: rotate0 0.5s ease-in-out forwards;
+          animation: rotate0 0.5s ease-in-out forwards;
 }
 @media screen and (max-width: 1024px) {
   .cooperationContainer__sliderItem {
@@ -1104,6 +1106,22 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@-webkit-keyframes rotate0 {
+  0% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate0 {
+  0% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 @-webkit-keyframes rotate8 {
   0% {
