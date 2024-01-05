@@ -1096,7 +1096,6 @@
   }
 }
 .cooperationContainer__sliderItemPressed {
-  background-color: tomato;
   -webkit-animation-delay: 500ms;
           animation-delay: 500ms;
   -webkit-animation: rotate8 0.5s ease-in-out forwards 500ms;
