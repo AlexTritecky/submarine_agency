@@ -9,19 +9,18 @@ const swiperStyles = {
   overflow: "visible !important",
 };
 
-
 function YourComponent() {
-  const [isLongPress, setIsLongPress] = useState(false);
+  const [isLongPress, setIsLongPress] = useState("");
 
-  const handleTouchStart = () => {
+  const handleTouchStart = ({ id }: any) => {
     console.log("press");
-    setIsLongPress(true);
+    setIsLongPress(id);
   };
 
   const handleTouchEnd = () => {
     console.log("release");
-    setIsLongPress(false);
-  }
+    setIsLongPress("");
+  };
   return (
     <section id="cooperation" className={styles.cooperationContainer}>
       <div className={styles.cooperationContainer__header}>
@@ -45,11 +44,14 @@ function YourComponent() {
           scrollbar={{ draggable: true }}
         >
           <SwiperSlide
-            onTouchStart={handleTouchStart}
+            id="1"
+            onTouchStart={() => handleTouchStart("1")}
             onTouchEnd={handleTouchEnd}
             onTouchCancel={handleTouchEnd}
             className={`${styles.cooperationContainer__sliderItem} ${
-              isLongPress ? styles.cooperationContainer__sliderItemPressed : ""
+              isLongPress === "1"
+                ? styles.cooperationContainer__sliderItemPressed
+                : ""
             }`}
           >
             <div className={styles.cooperationContainer__sliderItemHeader}>
@@ -63,7 +65,14 @@ function YourComponent() {
               ситуацію та проблемні зони
             </div>
           </SwiperSlide>
-          <SwiperSlide className={styles.cooperationContainer__sliderItem}>
+          <SwiperSlide
+            id="2"
+            className={`${styles.cooperationContainer__sliderItem} ${
+              isLongPress === "2"
+                ? styles.cooperationContainer__sliderItemPressed
+                : ""
+            }`}
+          >
             <div className={styles.cooperationContainer__sliderItemHeader}>
               2.
             </div>
@@ -74,7 +83,14 @@ function YourComponent() {
               Ти отримаєш розгорнуту індивідуальну пропозицію по твоєму проекту
             </div>
           </SwiperSlide>
-          <SwiperSlide className={styles.cooperationContainer__sliderItem}>
+          <SwiperSlide
+            id="3"
+            className={`${styles.cooperationContainer__sliderItem} ${
+              isLongPress === "3"
+                ? styles.cooperationContainer__sliderItemPressed
+                : ""
+            }`}
+          >
             <div className={styles.cooperationContainer__sliderItemHeader}>
               3.
             </div>
@@ -86,7 +102,14 @@ function YourComponent() {
               надсилаємо перший рахунок
             </div>
           </SwiperSlide>
-          <SwiperSlide className={styles.cooperationContainer__sliderItem}>
+          <SwiperSlide
+            id="4"
+            className={`${styles.cooperationContainer__sliderItem} ${
+              isLongPress === "4"
+                ? styles.cooperationContainer__sliderItemPressed
+                : ""
+            }`}
+          >
             <div className={styles.cooperationContainer__sliderItemHeader}>
               4.
             </div>
