@@ -44,70 +44,39 @@ function YourComponent() {
           }}
           scrollbar={{ draggable: true }}
         >
-          <CooperationSectionSwiperElement
-            number={1}
-            header="КОНСУЛЬТАЦІЯ"
-            text="15-хвилинний зум-брифінг з нашим стратегом , який оцінить існуючу ситуацію та проблемні зони"
-          />
-          {/* <SwiperSlide
-            onTouchStart={handleTouchStart}
-            onTouchEnd={handleTouchEnd}
-            onTouchCancel={handleTouchEnd}
-            className={`${styles.cooperationContainer__sliderItem} ${
-              isLongPress ? styles.cooperationContainer__sliderItemPressed : ""
-            }`}
-          >
-            <div className={styles.cooperationContainer__sliderItemHeader}>
-              1.
-            </div>
-            <div className={styles.cooperationContainer__sliderItemTitle}>
-              КОНСУЛЬТАЦІЯ
-            </div>
-            <div className={styles.cooperationContainer__sliderItemContent}>
-              15-хвилинний зум-брифінг з нашим стратегом , який оцінить існуючу
-              ситуацію та проблемні зони
-            </div>
-          </SwiperSlide> */}
-          <CooperationSectionSwiperElement
-            number={2}
-            header="ПРОПОЗИЦІЯ"
-            text="Ти отримаєш розгорнуту індивідуальну пропозицію по твоєму проекту"
-          />
-          {/* <SwiperSlide className={styles.cooperationContainer__sliderItem}>
-            <div className={styles.cooperationContainer__sliderItemHeader}>
-              2.
-            </div>
-            <div className={styles.cooperationContainer__sliderItemTitle}>
-              ПРОПОЗИЦІЯ
-            </div>
-            <div className={styles.cooperationContainer__sliderItemContent}>
-              Ти отримаєш розгорнуту індивідуальну пропозицію по твоєму проекту
-            </div>
-          </SwiperSlide> */}
-          <CooperationSectionSwiperElement
-            number={3}
-            header="ДОГОВІР"
-            text="Після погодження пропозиції ми підписуємо договір про співпрацю та
+          <SwiperSlide>
+            <CooperationSectionSwiperElement
+              number={1}
+              header="КОНСУЛЬТАЦІЯ"
+              text="15-хвилинний зум-брифінг з нашим стратегом , який оцінить існуючу ситуацію та проблемні зони"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CooperationSectionSwiperElement
+              number={2}
+              header="ПРОПОЗИЦІЯ"
+              text="Ти отримаєш розгорнуту індивідуальну пропозицію по твоєму проекту"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <CooperationSectionSwiperElement
+              number={3}
+              header="ДОГОВІР"
+              text="Після погодження пропозиції ми підписуємо договір про співпрацю та
             надсилаємо перший рахунок"
-          />
-          {/* <SwiperSlide className={styles.cooperationContainer__sliderItem}>
-            <div className={styles.cooperationContainer__sliderItemHeader}>
-              3.
-            </div>
-            <div className={styles.cooperationContainer__sliderItemTitle}>
-              ДОГОВІР
-            </div>
-            <div className={styles.cooperationContainer__sliderItemContent}>
-              Після погодження пропозиції ми підписуємо договір про співпрацю та
-              надсилаємо перший рахунок
-            </div>
-          </SwiperSlide> */}
-          <CooperationSectionSwiperElement
-            number={4}
-            header="ЗАПУСК"
-            text="Тут все тільки починається! Знайомство з менеджером твого проекту
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <CooperationSectionSwiperElement
+              number={4}
+              header="ЗАПУСК"
+              text="Тут все тільки починається! Знайомство з менеджером твого проекту
             та майбутньою командою"
-          />
+            />
+          </SwiperSlide>
+
           {/* <SwiperSlide className={styles.cooperationContainer__sliderItem}>
             <div className={styles.cooperationContainer__sliderItemHeader}>
               4.
