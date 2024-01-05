@@ -67,6 +67,9 @@ function YourComponent() {
           </SwiperSlide>
           <SwiperSlide
             id="2"
+            onTouchStart={() => handleTouchStart("2")}
+            onTouchEnd={handleTouchEnd}
+            onTouchCancel={handleTouchEnd}
             className={`${styles.cooperationContainer__sliderItem} ${
               isLongPress === "2"
                 ? styles.cooperationContainer__sliderItemPressed
@@ -85,6 +88,9 @@ function YourComponent() {
           </SwiperSlide>
           <SwiperSlide
             id="3"
+            onTouchStart={() => handleTouchStart("3")}
+            onTouchEnd={handleTouchEnd}
+            onTouchCancel={handleTouchEnd}
             className={`${styles.cooperationContainer__sliderItem} ${
               isLongPress === "3"
                 ? styles.cooperationContainer__sliderItemPressed
@@ -104,6 +110,9 @@ function YourComponent() {
           </SwiperSlide>
           <SwiperSlide
             id="4"
+            onTouchStart={() => handleTouchStart("4")}
+            onTouchEnd={handleTouchEnd}
+            onTouchCancel={handleTouchEnd}
             className={`${styles.cooperationContainer__sliderItem} ${
               isLongPress === "4"
                 ? styles.cooperationContainer__sliderItemPressed
