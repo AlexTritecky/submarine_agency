@@ -69,16 +69,28 @@ function PortfolioPageSlider() {
             >
               Про нас
             </a>
-            <a href="/#services" className={styles.headerContainer__navigationItem}>
+            <a
+              href="/#services"
+              className={styles.headerContainer__navigationItem}
+            >
               Послуги
             </a>
-            <a href="/portfolio" className={styles.headerContainer__navigationItem}>
+            <a
+              href="/portfolio"
+              className={styles.headerContainer__navigationItem}
+            >
               Портфоліо
             </a>
-            <a href="/#clients" className={styles.headerContainer__navigationItem}>
+            <a
+              href="/#clients"
+              className={styles.headerContainer__navigationItem}
+            >
               Клієнти
             </a>
-            <a href="/#cooperation" className={styles.headerContainer__navigationItem}>
+            <a
+              href="/#cooperation"
+              className={styles.headerContainer__navigationItem}
+            >
               Співпраця
             </a>
           </nav>
@@ -327,6 +339,9 @@ function PortfolioPageSlider() {
       <div className={styles.startSectionContainer__button}>
         <FormModalPage color={VIOLET} />
       </div>
+      <div className={styles.credoContainer}>
+          КОЖЕН КЕЙС - ЦЕ НАША СПІЛЬНА ІСТОРІЯ
+        </div>
     </section>
   );
 }

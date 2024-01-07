@@ -131,6 +131,33 @@
     color: #5566b7;
   }
 }
+.credoContainer {
+  font-family: Gilroy-Bold;
+  position: absolute;
+  color: white;
+  top: 0;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 26vw;
+  font-size: 5vw;
+  line-height: 5vw;
+  width: 86vw;
+  text-align: center;
+  user-select: none;
+  @media screen and (max-width: 1024px) {
+    top: 63vw;
+    font-size: 6.25vw;
+    line-height: 6.25vw;
+    width: 87.5vw;
+  }
+  @media screen and (max-width: 480px) {
+    top: 50vw;
+    font-size: 5.5vw;
+    line-height: 5.5vw;
+    width: 86vw;
+  }
+}
 
 .aboutUsContainer {
   width: 86.8vw;
