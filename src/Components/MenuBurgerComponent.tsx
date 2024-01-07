@@ -101,9 +101,9 @@ function MenuBurger() {
           >
             СПІВПРАЦЯ
           </a>
-          <div className={styles.navigationContainer__navigationItem}>
+          <a href="/team" className={styles.navigationContainer__navigationItem}>
             КОМАНДА
-          </div>
+          </a>
           <div className={styles.navigationContainer__navigationItem}>
             НАПИСАТИ НАМ
           </div>
