@@ -26,7 +26,7 @@ function Loader({ isLoaded }: any) {
   return (
     <div className={styles.loaderContainer}>
       <Image src={LoaderImage} alt="loading" />
-      <div style={{ width: "30%" }}>
+      <div className={styles.progressContainer}>
         <LinearProgress variant="determinate" value={progress} />
       </div>
     </div>

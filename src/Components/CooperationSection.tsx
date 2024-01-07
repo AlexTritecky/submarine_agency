@@ -92,7 +92,7 @@ function YourComponent() {
         </Swiper>
       </div>
       <div className={styles.cooperationContainer__items}>
-        <div className={styles.cooperationContainer__sliderItem}>
+        <div className={styles.cooperationContainer__sliderDesctopItem}>
           <div className={styles.cooperationContainer__sliderItemHeader}>
             1.
           </div>
@@ -104,7 +104,7 @@ function YourComponent() {
             ситуацію та проблемні зони
           </div>
         </div>
-        <div className={styles.cooperationContainer__sliderItem}>
+        <div className={styles.cooperationContainer__sliderDesctopItem}>
           <div className={styles.cooperationContainer__sliderItemHeader}>
             2.
           </div>
@@ -115,7 +115,7 @@ function YourComponent() {
             Ти отримаєш розгорнуту індивідуальну пропозицію по твоєму проекту
           </div>
         </div>
-        <div className={styles.cooperationContainer__sliderItem}>
+        <div className={styles.cooperationContainer__sliderDesctopItem}>
           <div className={styles.cooperationContainer__sliderItemHeader}>
             3.
           </div>
@@ -127,7 +127,7 @@ function YourComponent() {
             надсилаємо перший рахунок
           </div>
         </div>
-        <div className={styles.cooperationContainer__sliderItem}>
+        <div className={styles.cooperationContainer__sliderDesctopItem}>
           <div className={styles.cooperationContainer__sliderItemHeader}>
             4.
           </div>

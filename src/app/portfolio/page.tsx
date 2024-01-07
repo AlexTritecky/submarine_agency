@@ -9,7 +9,7 @@ const portfolio = () => {
     <>
       <MenuBurger />
       <PortfolioPageSlider />
-      <CasesSection />
+      <CasesSection page="portfolio" />
       <FooterSection />
     </>
   );
