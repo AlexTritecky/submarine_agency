@@ -16,7 +16,7 @@ function Loader({ isLoaded }: any) {
         setProgress((prevProgress) =>
           prevProgress >= 90 ? 98 : prevProgress + 5
         );
-    }, 200);
+    }, 500);
 
     return () => {
       document.body.style.overflow = "unset";
