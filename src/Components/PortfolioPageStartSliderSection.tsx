@@ -340,8 +340,8 @@ function PortfolioPageSlider() {
         <FormModalPage color={VIOLET} />
       </div>
       <div className={styles.credoContainer}>
-          КОЖЕН КЕЙС - ЦЕ НАША СПІЛЬНА ІСТОРІЯ
-        </div>
+        КОЖЕН КЕЙС - ЦЕ НАША СПІЛЬНА ІСТОРІЯ
+      </div>
     </section>
   );
 }
