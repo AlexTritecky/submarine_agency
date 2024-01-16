@@ -2,6 +2,7 @@
 import CasesSection from "@/Components/CasesSection";
 import FooterSection from "@/Components/Footer";
 import MenuBurger from "@/Components/MenuBurgerComponent";
+import TeamContainer from "@/Components/TeamContainer";
 import TeamPageSlider from "@/Components/TeamPageStartSliderSection";
 
 const portfolio = () => {
@@ -9,6 +10,7 @@ const portfolio = () => {
     <>
       <MenuBurger />
       <TeamPageSlider />
+      <TeamContainer />
       <FooterSection />
     </>
   );

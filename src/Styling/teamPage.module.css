@@ -1,0 +1,129 @@
+.teamContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.1198vw 6.66% 6.6667vw 6.66%;
+}
+.teamContainer__header {
+  width: 100%;
+  color: var(--5566B7, #5566b7);
+  font-family: Gilroy-SemiBold;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.2083vw;
+  margin-top: 6.6vw;
+  margin-bottom: 3.3333vw;
+}
+.teamContainer__membersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .teamContainer {
+    padding: 0.1042vw 6.66% 6.6667vw 6.66%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .teamContainer {
+    padding: 0.4792vw 6.66% 6.6667vw 6.66%;
+  }
+}
+
+.teamMemberContainer {
+  position: relative;
+  width: 27.9167vw;
+  height: 34.6354vw;
+  margin-bottom: 3.3333vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition-duration: 0.5s;
+}
+.teamMemberContainer__imageContainer {
+  z-index: 2;
+  top: 0;
+  position: absolute;
+  width: 23.4375vw;
+  height: 26.9531vw;
+}
+.teamMemberContainer__imageContainer img {
+  width: 23.4375vw;
+  height: 26.9531vw;
+}
+.teamMemberContainer__backgroundContainer {
+  z-index: 1;
+  top: 0;
+  position: absolute;
+  transition-duration: 0.5s;
+  width: 23.4375vw;
+  height: 26.9531vw;
+  padding-top: 6.25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teamMemberContainer__backgroundContainer_content {
+  position: absolute;
+  z-index: 2;
+  width: 20.8333vw;
+  padding-left: 1.6667vw;
+  color: var(--ffffff, #fff);
+  font-family: Unbounded;
+  font-size: 0.8333vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.0417vw;
+  letter-spacing: 0.025vw;
+}
+.teamMemberContainer__backgroundContainer_contentSection {
+  display: flex;
+  margin-bottom: 0.8333vw;
+}
+.teamMemberContainer__backgroundContainer_contentSectionHeader {
+  width: 55%;
+}
+.teamMemberContainer__backgroundContainer_contentSectionText {
+  width: 45%;
+}
+.teamMemberContainer__backgroundContainer img {
+  top: 0;
+  position: absolute;
+  width: 23.4375vw;
+  height: 26.9531vw;
+}
+.teamMemberContainer__header {
+  color: var(--5566B7, #5566b7);
+  font-family: Unbounded;
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.0417vw;
+  letter-spacing: 0.036vw;
+  transition-duration: 0.5s;
+}
+.teamMemberContainer__text {
+  color: var(--000000, #000);
+  font-family: Unbounded;
+  font-size: 0.8333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.0417vw;
+  letter-spacing: 0.025vw;
+  transition-duration: 0.5s;
+  width: 65%;
+}
+
+.teamMemberContainer:hover .teamMemberContainer__backgroundContainer {
+  transform: translate(2.6vw, 2.6vw);
+}
+.teamMemberContainer:hover .teamMemberContainer__imageContainer {
+  z-index: 0;
+}
+.teamMemberContainer:hover .teamMemberContainer__header {
+  opacity: 0;
+}
+.teamMemberContainer:hover .teamMemberContainer__text {
+  opacity: 0;
+}/*# sourceMappingURL=teamPage.module.css.map */
