@@ -393,7 +393,44 @@
 }
 @media screen and (max-width: 480px) {
   .teamMemberContainer__background10 {
-    background-image: url(../Assets/Images/TeamPageImages/Members/mobile10.png);
+    background-image: url(../Assets/Images/TeamPageImages/Members/Member10BackgroundMobile.webp);
+  }
+}
+.teamMemberContainer__newMember {
+  width: 25vw;
+  height: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../Assets/Images/TeamPageImages/Members/NewMemberDesctop.webp);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: var(--ffffff, #fff);
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 3.3vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.3vw;
+  padding: 0 3vw;
+  margin-bottom: 3.3333vw;
+}
+@media screen and (max-width: 1024px) {
+  .teamMemberContainer__newMember {
+    width: 62.5vw;
+    height: 63vw;
+    font-size: 8.3vw;
+    line-height: 8.3vw;
+    padding: 0 7.5vw;
+    margin-bottom: 6.25vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .teamMemberContainer__newMember {
+    margin-bottom: 13.3vw;
+    background-image: url(../Assets/Images/TeamPageImages/Members/Member10BackgroundMobile.webp);
   }
 }
 

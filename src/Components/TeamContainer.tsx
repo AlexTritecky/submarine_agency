@@ -2,6 +2,7 @@ import styles from "../Styling/teamPage.module.css";
 import { VIOLET } from "./Button";
 import FormModalPage from "./FormModalPage";
 import TeamMemberComponent from "./TeamMemberComponent";
+import TeamNewMemberComponent from "./TeamNewMemberComponent";
 // import Member1Foto from "../Assets/Images/TeamPageImages/Members/Member1Desctop.webp";
 // import Background1Foto from "../Assets/Images/TeamPageImages/Members/Member1BackgroundDesctop.webp";
 // import Member2Foto from "../Assets/Images/TeamPageImages/Members/Member2Desctop.webp";
@@ -132,6 +133,7 @@ const TeamContainer = () => {
           header={"Катерина"}
           text={"project manager"}
         />
+        <TeamNewMemberComponent />
       </div>
 
       <FormModalPage color={VIOLET} text="Стати частиною команди" />

@@ -31,6 +31,14 @@ function ServicesSection() {
     setOpen(true);
   };
   const handleClose = () => setOpen(false);
+  React.useEffect(() => {
+    console.log(open);
+    if (open) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "scroll";
+    }
+  }, [open]);
   const modal =
     open &&
     createPortal(
