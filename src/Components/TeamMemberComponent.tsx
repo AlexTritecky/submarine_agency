@@ -34,6 +34,12 @@ const TeamMemberComponent: React.FC<TeamMemberComponentProps> = ({
       onMouseUp={() => {
         setIsPressed(false);
       }}
+      onTouchStart={() => {
+        setIsPressed(true);
+      }}
+      onTouchEnd={() => {
+        setIsPressed(false);
+      }}
     >
       <div
         className={`${styles.teamMemberContainer__imageContainer} ${additionalClassFoto}`}
