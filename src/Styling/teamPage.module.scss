@@ -41,6 +41,18 @@
     flex-direction: column;
     justify-content: flex-end;
     transition-duration: 0.5s;
+    @media screen and (max-width: 1024px) {
+        width: 60vw;
+        min-height: 86vw;
+        height: 86vw;
+        margin-bottom: 6.25vw;
+    }
+    @media screen and (max-width: 480px) {
+        width: 79vw;
+        height: 72vw;
+        min-height: 79vw;
+        margin-bottom: 13.3vw;
+    }
 
     &__imageContainer {
         z-index: 2;
@@ -48,10 +60,16 @@
         position: absolute;
         width: 23.4375vw;
         height: 26.9531vw;
-
-        img {
-            width: 23.4375vw;
-            height: 26.9531vw;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 1024px) {
+            width: 58vw;
+            height: 70vw;
+        }
+        @media screen and (max-width: 480px) {
+            width: 79vw;
+            height: 55.5vw;
         }
     }
 
@@ -66,7 +84,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 1024px) {
+            z-index: 2;
+            opacity: 0;
+            width: 58vw;
+            height: 70vw;
+            padding-top: 22.25vw;
+        }
+        @media screen and (max-width: 480px) {
+            width: 79vw;
+            height: 55.5vw;
+        }
         &_content {
             position: absolute;
             z-index: 2;
@@ -79,6 +110,18 @@
             font-weight: 500;
             line-height: 1.0417vw;
             letter-spacing: 0.025vw;
+            @media screen and (max-width: 1024px) {
+                width: 50vw;
+                font-size: 2vw;
+                line-height: 2vw;
+                letter-spacing: 0.0625vw;
+            }
+            @media screen and (max-width: 480) {
+                width: 65vw;
+                font-size: 2.2vw;
+                line-height: 2.2vw;
+                letter-spacing: 0.0625vw;
+            }
         }
 
         &_contentSection {
@@ -93,12 +136,10 @@
         &_contentSectionText {
             width: 45%;
         }
-
-        img {
-            top: 0;
-            position: absolute;
-            width: 23.4375vw; 
-            height: 26.9531vw;
+    }
+    &__backgroundContainerPressed {
+        @media screen and (max-width: 1024px) {
+            opacity: 1;
         }
     }
 
@@ -111,35 +152,202 @@
         line-height: 1.0417vw;
         letter-spacing: 0.036vw;
         transition-duration: 0.5s;
+        @media screen and (max-width: 1024px) {
+            font-size: 3.25vw;
+            line-height: 3.25vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-size: 6.6vw;
+            line-height: 6.6vw;
+        }
     }
 
     &__text {
         color: var(--000000, #000);
         font-family: Unbounded;
-        font-size: 0.8333vw; 
+        font-size: 0.8333vw;
         font-style: normal;
         font-weight: 400;
         line-height: 1.0417vw;
         letter-spacing: 0.025vw;
         transition-duration: 0.5s;
         width: 65%;
+        @media screen and (max-width: 1024px) {
+            font-size: 2vw;
+            line-height: 2vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-size: 3.8vw;
+            line-height: 4.2vw;
+        }
+    }
+    &__arrow {
+        display: none;
+        @media screen and (max-width: 1024px) {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 7.4vw;
+            height: 7.4vw;
+            transition-duration: 0.5s;
+            transform-origin: center center;
+            img {
+                width: 7.4vw;
+                height: 7.4vw;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            width: 10vw;
+            height: 10vw;
+            img {
+                width: 10vw;
+                height: 10vw;
+            }
+        }
+    }
+    &__arrowPressed {
+        transform-origin: center center;
+        transform: rotate(-90deg);
+    }
+    &__member1 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member1Desctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member1Mobile.webp);
+        }
+    }
+    &__member2 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member2Desctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member2Mobile.webp);
+        }
+    }
+    &__member3 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member3Desctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member3Mobile.webp);
+        }
+    }
+    &__member4 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member4Desctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member4Mobile.webp);
+        }
+    }
+    &__member5 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member5Desctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member5Mobile.webp);
+        }
+    }
+    &__member6 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member6Desctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member6Mobile.webp);
+        }
+    }
+    &__member7 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member7Desctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member7Mobile.webp);
+        }
+    }
+    &__member8 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member8Desctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member8Mobile.webp);
+        }
+    }
+    &__member9 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member9Desctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member9Mobile.webp);
+        }
+    }
+    &__member10 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member10Desctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member10Mobile.webp);
+        }
+    }
+    &__background1 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member1BackgroundDesctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member1BackgroundMobile.webp);
+        }
+    }
+    &__background2 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member2BackgroundDesctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member2BackgroundMobile.webp);
+        }
+    }
+    &__background3 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member3BackgroundDesctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member3BackgroundMobile.webp);
+        }
+    }
+    &__background4 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member4BackgroundDesctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member4BackgroundMobile.webp);
+        }
+    }
+    &__background5 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member5BackgroundDesctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member5BackgroundMobile.webp);
+        }
+    }
+    &__background6 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member6BackgroundDesctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member6BackgroundMobile.webp);
+        }
+    }
+    &__background7 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member7BackgroundDesctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member7BackgroundMobile.webp);
+        }
+    }
+    &__background8 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member8BackgroundDesctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member8BackgroundMobile.webp);
+        }
+    }
+    &__background9 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member9BackgroundDesctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/Member9BackgroundMobile.webp);
+        }
+    }
+    &__background10 {
+        background-image: url(../Assets/Images/TeamPageImages/Members/Member10BackgroundDesctop.webp);
+        @media screen and (max-width: 480px) {
+            background-image: url(../Assets/Images/TeamPageImages/Members/mobile10.png);
+        }
     }
 }
 
 .teamMemberContainer:hover {
-    .teamMemberContainer__backgroundContainer {
-        transform: translate(2.6vw, 2.6vw);
-    }
+    @media screen and (min-width: 1024px) {
+        .teamMemberContainer__backgroundContainer {
+            transform: translate(2.6vw, 2.6vw);
+        }
 
-    .teamMemberContainer__imageContainer {
-        z-index: 0;
-    }
+        .teamMemberContainer__imageContainer {
+            z-index: 0;
+        }
 
-    .teamMemberContainer__header {
-        opacity: 0;
-    }
+        .teamMemberContainer__header {
+            opacity: 0;
+        }
 
-    .teamMemberContainer__text {
-        opacity: 0;
+        .teamMemberContainer__text {
+            opacity: 0;
+        }
     }
 }

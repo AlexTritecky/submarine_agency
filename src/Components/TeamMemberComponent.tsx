@@ -1,13 +1,15 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "../Styling/teamPage.module.css";
+import Arrow from "../Assets/Images/TeamPageImages/Members/MemberArrow.svg";
+import { useState } from "react";
 
 interface TeamMemberComponentProps {
   projectNumber: string;
   favoriteProject: string;
   experience: string;
   favoriteBand: string;
-  fotoUrl: StaticImageData;
-  backgroundUrl: StaticImageData;
+  additionalClassFoto: string;
+  additionalClassBackground: string;
   header: string;
   text: string;
 }
@@ -17,19 +19,34 @@ const TeamMemberComponent: React.FC<TeamMemberComponentProps> = ({
   favoriteProject,
   experience,
   favoriteBand,
-  fotoUrl,
-  backgroundUrl,
+  additionalClassFoto,
+  additionalClassBackground,
   header,
   text,
 }) => {
-
+  const [isPressed, setIsPressed] = useState(false);
   return (
-    <div className={styles.teamMemberContainer}>
-      <div className={styles.teamMemberContainer__imageContainer}>
-        <Image src={fotoUrl} alt="fotos" fill />
-      </div>
-      <div className={styles.teamMemberContainer__backgroundContainer}>
-        <Image src={backgroundUrl} alt="background" fill />
+    <div
+      className={styles.teamMemberContainer}
+      onMouseDown={() => {
+        setIsPressed(true);
+      }}
+      onMouseUp={() => {
+        setIsPressed(false);
+      }}
+    >
+      <div
+        className={`${styles.teamMemberContainer__imageContainer} ${additionalClassFoto}`}
+      ></div>
+      <div
+        className={`${styles.teamMemberContainer__backgroundContainer}
+         ${additionalClassBackground}
+        ${
+          isPressed
+            ? styles.teamMemberContainer__backgroundContainerPressed
+            : ""
+        }`}
+      >
         <div
           className={styles.teamMemberContainer__backgroundContainer_content}
         >
@@ -117,6 +134,13 @@ const TeamMemberComponent: React.FC<TeamMemberComponentProps> = ({
       </div>
       <div className={styles.teamMemberContainer__header}>{header}</div>
       <div className={styles.teamMemberContainer__text}>{text}</div>
+      <div
+        className={`${styles.teamMemberContainer__arrow} ${
+          isPressed ? styles.teamMemberContainer__arrowPressed : ""
+        }`}
+      >
+        <Image src={Arrow} alt="arrow" />
+      </div>
     </div>
   );
 };

@@ -3,7 +3,9 @@ import { useCallback, useEffect, useState } from "react";
 function Burger({ handleBurgerOpen, rotateBurger, moveBurgerLines }: any) {
   const [hasScrolled, setHasScrolled] = useState(false);
   const handleScroll = useCallback(() => {
-    setHasScrolled(window.scrollY > 400);
+    setHasScrolled(
+      window.innerWidth > 768 ? window.scrollY > 400 : window.scrollY > 200
+    );
   }, []);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);

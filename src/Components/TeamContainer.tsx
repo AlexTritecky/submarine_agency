@@ -2,26 +2,26 @@ import styles from "../Styling/teamPage.module.css";
 import { VIOLET } from "./Button";
 import FormModalPage from "./FormModalPage";
 import TeamMemberComponent from "./TeamMemberComponent";
-import Member1Foto from "../Assets/Images/TeamPageImages/Members/Member1Desctop.webp";
-import Background1Foto from "../Assets/Images/TeamPageImages/Members/Member1BackgroundDesctop.webp";
-import Member2Foto from "../Assets/Images/TeamPageImages/Members/Member2Desctop.webp";
-import Background2Foto from "../Assets/Images/TeamPageImages/Members/Member2BackgroundDesctop.webp";
-import Member3Foto from "../Assets/Images/TeamPageImages/Members/Member3Desctop.webp";
-import Background3Foto from "../Assets/Images/TeamPageImages/Members/Member3BackgroundDesctop.webp";
-import Member4Foto from "../Assets/Images/TeamPageImages/Members/Member4Desctop.webp";
-import Background4Foto from "../Assets/Images/TeamPageImages/Members/Member4BackgroundDesctop.webp";
-import Member5Foto from "../Assets/Images/TeamPageImages/Members/Member5Desctop.webp";
-import Background5Foto from "../Assets/Images/TeamPageImages/Members/Member5BackgroundDesctop.webp";
-import Member6Foto from "../Assets/Images/TeamPageImages/Members/Member6Desctop.webp";
-import Background6Foto from "../Assets/Images/TeamPageImages/Members/Member6BackgroundDesctop.webp";
-import Member7Foto from "../Assets/Images/TeamPageImages/Members/Member7Desctop.webp";
-import Background7Foto from "../Assets/Images/TeamPageImages/Members/Member7BackgroundDesctop.webp";
-import Member8Foto from "../Assets/Images/TeamPageImages/Members/Member8Desctop.webp";
-import Background8Foto from "../Assets/Images/TeamPageImages/Members/Member8BackgroundDesctop.webp";
-import Member9Foto from "../Assets/Images/TeamPageImages/Members/Member9Desctop.webp";
-import Background9Foto from "../Assets/Images/TeamPageImages/Members/Member9BackgroundDesctop.webp";
-import Member10Foto from "../Assets/Images/TeamPageImages/Members/Member10Desctop.webp";
-import Background10Foto from "../Assets/Images/TeamPageImages/Members/Member10BackgroundDesctop.webp";
+// import Member1Foto from "../Assets/Images/TeamPageImages/Members/Member1Desctop.webp";
+// import Background1Foto from "../Assets/Images/TeamPageImages/Members/Member1BackgroundDesctop.webp";
+// import Member2Foto from "../Assets/Images/TeamPageImages/Members/Member2Desctop.webp";
+// import Background2Foto from "../Assets/Images/TeamPageImages/Members/Member2BackgroundDesctop.webp";
+// import Member3Foto from "../Assets/Images/TeamPageImages/Members/Member3Desctop.webp";
+// import Background3Foto from "../Assets/Images/TeamPageImages/Members/Member3BackgroundDesctop.webp";
+// import Member4Foto from "../Assets/Images/TeamPageImages/Members/Member4Desctop.webp";
+// import Background4Foto from "../Assets/Images/TeamPageImages/Members/Member4BackgroundDesctop.webp";
+// import Member5Foto from "../Assets/Images/TeamPageImages/Members/Member5Desctop.webp";
+// import Background5Foto from "../Assets/Images/TeamPageImages/Members/Member5BackgroundDesctop.webp";
+// import Member6Foto from "../Assets/Images/TeamPageImages/Members/Member6Desctop.webp";
+// import Background6Foto from "../Assets/Images/TeamPageImages/Members/Member6BackgroundDesctop.webp";
+// import Member7Foto from "../Assets/Images/TeamPageImages/Members/Member7Desctop.webp";
+// import Background7Foto from "../Assets/Images/TeamPageImages/Members/Member7BackgroundDesctop.webp";
+// import Member8Foto from "../Assets/Images/TeamPageImages/Members/Member8Desctop.webp";
+// import Background8Foto from "../Assets/Images/TeamPageImages/Members/Member8BackgroundDesctop.webp";
+// import Member9Foto from "../Assets/Images/TeamPageImages/Members/Member9Desctop.webp";
+// import Background9Foto from "../Assets/Images/TeamPageImages/Members/Member9BackgroundDesctop.webp";
+// import Member10Foto from "../Assets/Images/TeamPageImages/Members/Member10Desctop.webp";
+// import Background10Foto from "../Assets/Images/TeamPageImages/Members/Member10BackgroundDesctop.webp";
 
 const TeamContainer = () => {
   return (
@@ -33,8 +33,8 @@ const TeamContainer = () => {
           favoriteProject={"Звісно, що Submarine"}
           experience={"9 років"}
           favoriteBand={"The Cure"}
-          fotoUrl={Member1Foto}
-          backgroundUrl={Background1Foto}
+          additionalClassFoto={styles.teamMemberContainer__member1}
+          additionalClassBackground={styles.teamMemberContainer__background1}
           header={"Юлія"}
           text={"CEO Submarine"}
         />
@@ -44,8 +44,8 @@ const TeamContainer = () => {
         Гроно (сторіс), Дегустаторка (стратегія) ОККО (сторіс)`}
           experience={"2,5 роки"}
           favoriteBand={"Лівінстон"}
-          fotoUrl={Member2Foto}
-          backgroundUrl={Background2Foto}
+          additionalClassFoto={styles.teamMemberContainer__member2}
+          additionalClassBackground={styles.teamMemberContainer__background2}
           header={"Марта"}
           text={`сторіс-менеджер, 
           контент-менеджер, стратег`}
@@ -55,8 +55,8 @@ const TeamContainer = () => {
           favoriteProject={`Barbercompany і Міністерство дверей (менеджер),  Рікота (стратегія`}
           experience={"Копірайтер 5р. Менеджер 1 р."}
           favoriteBand={"Один в каноє"}
-          fotoUrl={Member3Foto}
-          backgroundUrl={Background3Foto}
+          additionalClassFoto={styles.teamMemberContainer__member3}
+          additionalClassBackground={styles.teamMemberContainer__background3}
           header={"Юлія"}
           text={`копірайтер, 
           контент-менеджер, стратег`}
@@ -67,8 +67,8 @@ const TeamContainer = () => {
         Duck's Lake`}
           experience={"5-6 років"}
           favoriteBand={"Alt-J"}
-          fotoUrl={Member6Foto}
-          backgroundUrl={Background6Foto}
+          additionalClassFoto={styles.teamMemberContainer__member4}
+          additionalClassBackground={styles.teamMemberContainer__background4}
           header={"Марта-Марія"}
           text={"графічний дизайнер"}
         />
@@ -77,8 +77,8 @@ const TeamContainer = () => {
           favoriteProject={"айдентика Submarine education, сайт Sakana"}
           experience={"~3 роки"}
           favoriteBand={"Lebanon Hanover"}
-          fotoUrl={Member4Foto}
-          backgroundUrl={Background4Foto}
+          additionalClassFoto={styles.teamMemberContainer__member5}
+          additionalClassBackground={styles.teamMemberContainer__background5}
           header={"Юлія"}
           text={"дизайнер (графічний, UI/UX)"}
         />
@@ -87,8 +87,8 @@ const TeamContainer = () => {
           favoriteProject={"Barbercompany"}
           experience={"5+"}
           favoriteBand={"Coldplay"}
-          fotoUrl={Member8Foto}
-          backgroundUrl={Background8Foto}
+          additionalClassFoto={styles.teamMemberContainer__member6}
+          additionalClassBackground={styles.teamMemberContainer__background6}
           header={"Марка"}
           text={"графічний дизайнер"}
         />
@@ -97,8 +97,8 @@ const TeamContainer = () => {
           favoriteProject={"Міністерство дверей"}
           experience={"1 рік"}
           favoriteBand={"Maneskin"}
-          fotoUrl={Member5Foto}
-          backgroundUrl={Background5Foto}
+          additionalClassFoto={styles.teamMemberContainer__member7}
+          additionalClassBackground={styles.teamMemberContainer__background7}
           header={"Валерія"}
           text={"сторіс-мейкер"}
         />
@@ -107,8 +107,8 @@ const TeamContainer = () => {
           favoriteProject={"Okko, Solid"}
           experience={"3 років"}
           favoriteBand={"Kiss, Жадан і Собаки"}
-          fotoUrl={Member7Foto}
-          backgroundUrl={Background7Foto}
+          additionalClassFoto={styles.teamMemberContainer__member8}
+          additionalClassBackground={styles.teamMemberContainer__background8}
           header={"Анна"}
           text={"Копірайтер"}
         />
@@ -117,8 +117,8 @@ const TeamContainer = () => {
           favoriteProject={"Okko, Grono, не просто підтримка, Enzym"}
           experience={"4 роки"}
           favoriteBand={"Hozier"}
-          fotoUrl={Member9Foto}
-          backgroundUrl={Background9Foto}
+          additionalClassFoto={styles.teamMemberContainer__member9}
+          additionalClassBackground={styles.teamMemberContainer__background9}
           header={"Аліна"}
           text={"контент-менеджер, стратег"}
         />
@@ -127,8 +127,8 @@ const TeamContainer = () => {
           favoriteProject={"Найбільше пишаюсь нашою спільною Джирою😊"}
           experience={"4 роки"}
           favoriteBand={"AC/DC"}
-          fotoUrl={Member10Foto}
-          backgroundUrl={Background10Foto}
+          additionalClassFoto={styles.teamMemberContainer__member10}
+          additionalClassBackground={styles.teamMemberContainer__background10}
           header={"Катерина"}
           text={"project manager"}
         />
