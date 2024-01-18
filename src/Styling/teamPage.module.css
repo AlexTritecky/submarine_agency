@@ -131,16 +131,17 @@
   .teamMemberContainer__backgroundContainer_content {
     width: 50vw;
     font-size: 2vw;
-    line-height: 2vw;
+    line-height: 2.4vw;
     letter-spacing: 0.0625vw;
   }
 }
 @media screen and (max-width: 480px) {
   .teamMemberContainer__backgroundContainer_content {
     width: 64vw;
-    font-size: 2.4vw;
+    font-size: 2vw;
     line-height: 2.6vw;
     letter-spacing: 0.0625vw;
+    padding-left: 4.5vw;
   }
 }
 .teamMemberContainer__backgroundContainer_contentSection {
@@ -150,8 +151,19 @@
 .teamMemberContainer__backgroundContainer_contentSectionHeader {
   width: 55%;
 }
+@media screen and (max-width: 480px) {
+  .teamMemberContainer__backgroundContainer_contentSectionHeader {
+    width: 58%;
+  }
+}
 .teamMemberContainer__backgroundContainer_contentSectionText {
   width: 45%;
+}
+@media screen and (max-width: 480px) {
+  .teamMemberContainer__backgroundContainer_contentSectionText {
+    width: 42%;
+    font-family: Unbounded-Blond;
+  }
 }
 @media screen and (max-width: 1024px) {
   .teamMemberContainer__backgroundContainerPressed {
@@ -429,6 +441,8 @@
 }
 @media screen and (max-width: 480px) {
   .teamMemberContainer__newMember {
+    font-size: 5.5vw;
+    line-height: 5.5vw;
     margin-bottom: 13.3vw;
     background-image: url(../Assets/Images/TeamPageImages/Members/Member10BackgroundMobile.webp);
   }
