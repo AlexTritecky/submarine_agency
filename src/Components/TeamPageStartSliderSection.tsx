@@ -20,10 +20,47 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import { VIOLET } from "./Button";
 import FormModalPage from "./FormModalPage";
+import { useEffect, useState } from "react";
+import Loader from "./Loader";
 
 function TeamPageSlider() {
+  const [isPageLoaded, setIsPageLoaded] = useState({
+    img1: false,
+    img2: false,
+    img3: false,
+    img4: false,
+  });
+  const [isLoaderClosed, setIsLoaderClosed] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth;
+    }
+    return 0;
+  });
+  useEffect(() => {
+    if (
+      isPageLoaded.img1 &&
+      isPageLoaded.img2 &&
+      isPageLoaded.img3 &&
+      isPageLoaded.img4
+    ) {
+      setTimeout(() => {
+        setIsLoaderClosed(true);
+      }, 500);
+    }
+  }, [isPageLoaded]);
   return (
     <section className={styles.startSectionContainer}>
+      {!isLoaderClosed && (
+        <Loader
+          isLoaded={
+            isPageLoaded.img1 &&
+            isPageLoaded.img2 &&
+            isPageLoaded.img3 &&
+            isPageLoaded.img4
+          }
+        />
+      )}
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         slidesPerView={1}
@@ -76,18 +113,33 @@ function TeamPageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto1}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded((prev) => ({ ...prev, img1: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto1}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto1}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img1: true }));
+              }
+            }}
             priority
           />
         </SwiperSlide>
@@ -96,19 +148,34 @@ function TeamPageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto2}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+              }
+            }}
+            priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto2}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+              }
+            }}
+            priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto2}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth <= 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+              }
+            }}
+            priority
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -116,19 +183,34 @@ function TeamPageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto3}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+              }
+            }}
+            priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto3}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+              }
+            }}
+            priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto3}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth <= 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+              }
+            }}
+            priority
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -136,19 +218,34 @@ function TeamPageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto4}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded((prev) => ({ ...prev, img4: true }));
+              }
+            }}
+            priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto4}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img4: true }));
+              }
+            }}
+            priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto4}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth <= 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img4: true }));
+              }
+            }}
+            priority
           />
         </SwiperSlide>
       </Swiper>

@@ -9,6 +9,7 @@ import LinkedinHyper from "../Assets/Images/BurgerMenuImages/LinkedinHyper.svg";
 import TikTokHyper from "../Assets/Images/BurgerMenuImages/TikTokHyper.svg";
 import Burger from "./BurgerIcon";
 import Link from "next/link";
+import FormModalPage from "./FormModalPage";
 function MenuBurger() {
   const [rotateBurger, setRotateBurger] = useState(false);
   const [moveBurgerLines, setMoveBurgerLines] = useState(false);
@@ -97,16 +98,25 @@ function MenuBurger() {
           </a>
           <a
             href="/#cooperation"
+            onClick={handleBurgerOpen}
             className={styles.navigationContainer__navigationItem}
           >
             СПІВПРАЦЯ
           </a>
-          <a href="/team" className={styles.navigationContainer__navigationItem}>
+          <a
+            href="/team"
+            className={styles.navigationContainer__navigationItem}
+          >
             КОМАНДА
           </a>
-          <div className={styles.navigationContainer__navigationItem}>
-            НАПИСАТИ НАМ
-          </div>
+          <FormModalPage
+            type="link"
+            element={
+              <div className={styles.navigationContainer__navigationItem}>
+                НАПИСАТИ НАМ
+              </div>
+            }
+          />
         </nav>
         <Image
           className={`${styles.burgerMenuLogo} ${

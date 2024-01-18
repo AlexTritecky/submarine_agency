@@ -24,7 +24,11 @@ import { useEffect, useState } from "react";
 import Loader from "./Loader";
 
 function HomePageSlider() {
-  const [isPageLoaded, setIsPageLoaded] = useState(false);
+  const [isPageLoaded, setIsPageLoaded] = useState({
+    img1: false,
+    img2: false,
+    img3: false,
+  });
   const [isLoaderClosed, setIsLoaderClosed] = useState(false);
   const [screenWidth, setScreenWidth] = useState(() => {
     if (typeof window !== "undefined") {
@@ -32,9 +36,21 @@ function HomePageSlider() {
     }
     return 0;
   });
+  useEffect(() => {
+    if (isPageLoaded.img1 && isPageLoaded.img2 && isPageLoaded.img3) {
+      setTimeout(() => {
+        setIsLoaderClosed(true);
+      }, 500);
+    }
+  }, [isPageLoaded]);
+
   return (
     <section className={styles.startSectionContainer}>
-      {!isLoaderClosed && <Loader isLoaded={isPageLoaded} />}
+      {!isLoaderClosed && (
+        <Loader
+          isLoaded={isPageLoaded.img1 && isPageLoaded.img2 && isPageLoaded.img3}
+        />
+      )}
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         slidesPerView={1}
@@ -89,10 +105,7 @@ function HomePageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth > 1024) {
-                setIsPageLoaded(true);
-                setTimeout(() => {
-                  setIsLoaderClosed(true);
-                }, 500);
+                setIsPageLoaded((prev) => ({ ...prev, img1: true }));
               }
             }}
             priority
@@ -102,10 +115,7 @@ function HomePageSlider() {
             src={SwiperTabletFoto1}
             onLoad={() => {
               if (screenWidth <= 1024 && screenWidth > 480) {
-                setIsPageLoaded(true);
-                setTimeout(() => {
-                  setIsLoaderClosed(true);
-                }, 500);
+                setIsPageLoaded((prev) => ({ ...prev, img1: true }));
               }
             }}
             alt="firstSliderImage"
@@ -117,10 +127,7 @@ function HomePageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 480) {
-                setIsPageLoaded(true);
-                setTimeout(() => {
-                  setIsLoaderClosed(true);
-                }, 500);
+                setIsPageLoaded((prev) => ({ ...prev, img1: true }));
               }
             }}
             priority
@@ -131,19 +138,34 @@ function HomePageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto2}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+              }
+            }}
+            priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto2}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+              }
+            }}
+            priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto2}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth <= 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+              }
+            }}
+            priority
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -151,19 +173,34 @@ function HomePageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto3}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+              }
+            }}
+            priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto3}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+              }
+            }}
+            priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto3}
             alt="firstSliderImage"
-            priority={false}
+            onLoad={() => {
+              if (screenWidth <= 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+              }
+            }}
+            priority
           />
         </SwiperSlide>
       </Swiper>
