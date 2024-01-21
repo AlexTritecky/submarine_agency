@@ -38,6 +38,7 @@ function TeamPageSlider() {
     return 0;
   });
   useEffect(() => {
+    console.log(isPageLoaded);
     if (
       isPageLoaded.img1 &&
       isPageLoaded.img2 &&
@@ -126,7 +127,7 @@ function TeamPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 1024 && screenWidth > 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img1: true }));
               }
             }}
             priority

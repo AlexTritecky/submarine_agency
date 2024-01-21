@@ -441,6 +441,8 @@
 }
 @media screen and (max-width: 480px) {
   .teamMemberContainer__newMember {
+    width: 79vw;
+    height: 55.5vw;
     font-size: 5.5vw;
     line-height: 5.5vw;
     margin-bottom: 13.3vw;

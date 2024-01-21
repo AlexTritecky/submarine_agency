@@ -42,32 +42,63 @@ function FooterSection() {
           <div className={styles.socialMediaLinksContainer__header}>
             Фоловте нас:
           </div>
-          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
-            
+          <a
+            target="_blank"
+            className={styles.socialMediaLinksContainer__link}
+            href="https://www.instagram.com/submarine_agency/?igsh=MXJtd2J0ZWczaHhpcw%3D%3D"
+          >
             instagram <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
+          <a
+            target="_blank"
+            className={styles.socialMediaLinksContainer__link}
+            href="https://www.youtube.com"
+          >
             linkedin
             <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
+          <a
+            target="_blank"
+            className={styles.socialMediaLinksContainer__link}
+            href="https://m.facebook.com/submarineagency"
+          >
             facebook
             <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__link} href='https://www.youtube.com'>
+          <a
+            target="_blank"
+            className={styles.socialMediaLinksContainer__link}
+            href={`https://www.tiktok.com/@submarineua?_t=8jA67dMjF81&_r=1`}
+          >
             tik tok
             <Image src={LinkArrow} alt="link" />
           </a>
-          <a className={styles.socialMediaLinksContainer__mobileLink} href='https://www.youtube.com'>
+          <a
+            target="_blank"
+            className={styles.socialMediaLinksContainer__mobileLink}
+            href={`https://www.tiktok.com/@submarineua?_t=8jA67dMjF81&_r=1`}
+          >
             <Image src={TikTokHyper} alt="link to tik tok" />
           </a>
-          <a className={styles.socialMediaLinksContainer__mobileLink} href='https://www.youtube.com'>
+          <a
+            target="_blank"
+            className={styles.socialMediaLinksContainer__mobileLink}
+            href="https://www.instagram.com/submarine_agency/?igsh=MXJtd2J0ZWczaHhpcw%3D%3D"
+          >
             <Image src={InstagramHyper} alt="link to instagram" />
           </a>
-          <a className={styles.socialMediaLinksContainer__mobileLink} href='https://www.youtube.com'>
+          <a
+            target="_blank"
+            className={styles.socialMediaLinksContainer__mobileLink}
+            href="https://m.facebook.com/submarineagency"
+          >
             <Image src={FaceBookHyper} alt="link to facebook" />
           </a>
-          <a className={styles.socialMediaLinksContainer__mobileLink} href='https://www.youtube.com'>
+          <a
+            target="_blank"
+            className={styles.socialMediaLinksContainer__mobileLink}
+            href="https://www.youtube.com"
+          >
             <Image src={LinkedinHyper} alt="link to linkedin" />
           </a>
         </div>
