@@ -324,7 +324,7 @@ function PortfolioPageSlider() {
             src={SwiperMobileFoto5}
             alt="firstSliderImage"
             onLoad={() => {
-              if (screenWidth <= 1024 && screenWidth > 480) {
+              if (screenWidth <= 480) {
                 setIsPageLoaded((prev) => ({ ...prev, img5: true }));
               }
             }}
@@ -569,7 +569,7 @@ function PortfolioPageSlider() {
             src={SwiperMobileFoto12}
             alt="firstSliderImage"
             onLoad={() => {
-              if (screenWidth <= 1024 && screenWidth > 480) {
+              if (screenWidth <= 480) {
                 setIsPageLoaded((prev) => ({ ...prev, img12: true }));
               }
             }}
