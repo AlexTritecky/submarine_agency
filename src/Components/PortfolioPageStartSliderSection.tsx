@@ -5,18 +5,18 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import SwiperDesctopFoto1 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto1.webp";
 import SwiperTabletFoto1 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto1.webp";
 import SwiperMobileFoto1 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto1.webp";
-// import SwiperDesctopFoto2 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto2.webp";
-// import SwiperTabletFoto2 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto2.webp";
-// import SwiperMobileFoto2 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto2.webp";
-// import SwiperDesctopFoto3 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto3.webp";
-// import SwiperTabletFoto3 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto3.webp";
-// import SwiperMobileFoto3 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto3.webp";
+import SwiperDesctopFoto2 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto2.webp";
+import SwiperTabletFoto2 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto2.webp";
+import SwiperMobileFoto2 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto2.webp";
+import SwiperDesctopFoto3 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto3.webp";
+import SwiperTabletFoto3 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto3.webp";
+import SwiperMobileFoto3 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto3.webp";
 import SwiperDesctopFoto4 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto4.webp";
 import SwiperTabletFoto4 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto4.webp";
 import SwiperMobileFoto4 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto4.webp";
-// import SwiperDesctopFoto5 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto5.webp";
-// import SwiperTabletFoto5 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto5.webp";
-// import SwiperMobileFoto5 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto5.webp";
+import SwiperDesctopFoto5 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto5.webp";
+import SwiperTabletFoto5 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto5.webp";
+import SwiperMobileFoto5 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto5.webp";
 import SwiperDesctopFoto6 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto6.webp";
 import SwiperTabletFoto6 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto6.webp";
 import SwiperMobileFoto6 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto6.webp";
@@ -29,15 +29,15 @@ import SwiperMobileFoto8 from "../Assets/Images/PortfolioPageImages/PortfolioPag
 import SwiperDesctopFoto9 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto9.webp";
 import SwiperTabletFoto9 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto9.webp";
 import SwiperMobileFoto9 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto9.webp";
-// import SwiperDesctopFoto10 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto10.webp";
-// import SwiperTabletFoto10 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto10.webp";
-// import SwiperMobileFoto10 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto10.webp";
+import SwiperDesctopFoto10 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto10.webp";
+import SwiperTabletFoto10 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto10.webp";
+import SwiperMobileFoto10 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto10.webp";
 import SwiperDesctopFoto11 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto11.webp";
 import SwiperTabletFoto11 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto11.webp";
 import SwiperMobileFoto11 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto11.webp";
-// import SwiperDesctopFoto12 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto12.webp";
-// import SwiperTabletFoto12 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto12.webp";
-// import SwiperMobileFoto12 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto12.webp";
+import SwiperDesctopFoto12 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperDesctopFoto12.webp";
+import SwiperTabletFoto12 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperTabletFoto12.webp";
+import SwiperMobileFoto12 from "../Assets/Images/PortfolioPageImages/PortfolioPageSwiperMobileFoto12.webp";
 import Logo from "../Assets/Images/HomePageImages/ProjectLogo.svg";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -56,6 +56,11 @@ function PortfolioPageSlider() {
     img5: false,
     img6: false,
     img7: false,
+    img8: false,
+    img9: false,
+    img10: false,
+    img11: false,
+    img12: false,
   });
   const [isLoaderClosed, setIsLoaderClosed] = useState(false);
   const [screenWidth, setScreenWidth] = useState(() => {
@@ -72,7 +77,12 @@ function PortfolioPageSlider() {
       isPageLoaded.img4 &&
       isPageLoaded.img5 &&
       isPageLoaded.img6 &&
-      isPageLoaded.img7
+      isPageLoaded.img7 &&
+      isPageLoaded.img8 &&
+      isPageLoaded.img9 &&
+      isPageLoaded.img10 &&
+      isPageLoaded.img11 &&
+      isPageLoaded.img12
     ) {
       setTimeout(() => {
         setIsLoaderClosed(true);
@@ -90,7 +100,12 @@ function PortfolioPageSlider() {
             isPageLoaded.img4 &&
             isPageLoaded.img5 &&
             isPageLoaded.img6 &&
-            isPageLoaded.img7
+            isPageLoaded.img7 &&
+            isPageLoaded.img8 &&
+            isPageLoaded.img9 &&
+            isPageLoaded.img10 &&
+            isPageLoaded.img11 &&
+            isPageLoaded.img12
           }
         />
       )}
@@ -176,23 +191,38 @@ function PortfolioPageSlider() {
             priority
           />
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <Image
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto2}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto2}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto2}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+              }
+            }}
             priority
           />
         </SwiperSlide>
@@ -201,21 +231,36 @@ function PortfolioPageSlider() {
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto3}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto3}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto3}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+              }
+            }}
             priority
           />
-        </SwiperSlide> */}
+        </SwiperSlide>
         <SwiperSlide>
           <Image
             className={styles.swiperFotoDesctop}
@@ -223,7 +268,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth > 1024) {
-                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img4: true }));
               }
             }}
             priority
@@ -234,7 +279,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 1024 && screenWidth > 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img4: true }));
               }
             }}
             priority
@@ -245,32 +290,47 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img2: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img4: true }));
               }
             }}
             priority
           />
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <Image
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto5}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded((prev) => ({ ...prev, img5: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto5}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img5: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto5}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img5: true }));
+              }
+            }}
             priority
           />
-        </SwiperSlide> */}
+        </SwiperSlide>
         <SwiperSlide>
           <Image
             className={styles.swiperFotoDesctop}
@@ -278,7 +338,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth > 1024) {
-                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img6: true }));
               }
             }}
             priority
@@ -289,7 +349,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 1024 && screenWidth > 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img6: true }));
               }
             }}
             priority
@@ -300,7 +360,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img3: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img6: true }));
               }
             }}
             priority
@@ -313,7 +373,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth > 1024) {
-                setIsPageLoaded((prev) => ({ ...prev, img4: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img7: true }));
               }
             }}
             priority
@@ -324,7 +384,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 1024 && screenWidth > 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img4: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img7: true }));
               }
             }}
             priority
@@ -335,7 +395,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img4: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img7: true }));
               }
             }}
             priority
@@ -348,7 +408,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth > 1024) {
-                setIsPageLoaded((prev) => ({ ...prev, img5: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img8: true }));
               }
             }}
             priority
@@ -359,7 +419,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 1024 && screenWidth > 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img5: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img8: true }));
               }
             }}
             priority
@@ -370,7 +430,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img5: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img8: true }));
               }
             }}
             priority
@@ -383,7 +443,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth > 1024) {
-                setIsPageLoaded((prev) => ({ ...prev, img6: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img9: true }));
               }
             }}
             priority
@@ -394,7 +454,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 1024 && screenWidth > 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img6: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img9: true }));
               }
             }}
             priority
@@ -405,32 +465,47 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img6: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img9: true }));
               }
             }}
             priority
           />
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <Image
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto10}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded((prev) => ({ ...prev, img10: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto10}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img10: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto10}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img10: true }));
+              }
+            }}
             priority
           />
-        </SwiperSlide> */}
+        </SwiperSlide>
         <SwiperSlide>
           <Image
             className={styles.swiperFotoDesctop}
@@ -438,7 +513,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth > 1024) {
-                setIsPageLoaded((prev) => ({ ...prev, img7: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img11: true }));
               }
             }}
             priority
@@ -449,7 +524,7 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 1024 && screenWidth > 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img7: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img11: true }));
               }
             }}
             priority
@@ -460,32 +535,47 @@ function PortfolioPageSlider() {
             alt="firstSliderImage"
             onLoad={() => {
               if (screenWidth <= 480) {
-                setIsPageLoaded((prev) => ({ ...prev, img7: true }));
+                setIsPageLoaded((prev) => ({ ...prev, img11: true }));
               }
             }}
             priority
           />
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <Image
             className={styles.swiperFotoDesctop}
             src={SwiperDesctopFoto12}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth > 1024) {
+                setIsPageLoaded((prev) => ({ ...prev, img12: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoTablet}
             src={SwiperTabletFoto12}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img12: true }));
+              }
+            }}
             priority
           />
           <Image
             className={styles.swiperFotoMobile}
             src={SwiperMobileFoto12}
             alt="firstSliderImage"
+            onLoad={() => {
+              if (screenWidth <= 1024 && screenWidth > 480) {
+                setIsPageLoaded((prev) => ({ ...prev, img12: true }));
+              }
+            }}
             priority
           />
-        </SwiperSlide> */}
+        </SwiperSlide>
       </Swiper>
       <div className={styles.startSectionContainer__button}>
         <FormModalPage color={VIOLET} />
