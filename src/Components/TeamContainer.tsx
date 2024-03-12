@@ -48,8 +48,7 @@ const TeamContainer = () => {
           additionalClassFoto={styles.teamMemberContainer__member2}
           additionalClassBackground={styles.teamMemberContainer__background2}
           header={"Марта"}
-          text={`сторіс-менеджер, 
-          контент-менеджер, стратег`}
+          text={`арт-директор, стратег`}
         />
         <TeamMemberComponent
           projectNumber={"10+"}
@@ -59,8 +58,7 @@ const TeamContainer = () => {
           additionalClassFoto={styles.teamMemberContainer__member3}
           additionalClassBackground={styles.teamMemberContainer__background3}
           header={"Юлія"}
-          text={`копірайтер, 
-          контент-менеджер, стратег`}
+          text={`СОО, стратег`}
         />
         <TeamMemberComponent
           projectNumber={"50+"}
@@ -101,7 +99,7 @@ const TeamContainer = () => {
           additionalClassFoto={styles.teamMemberContainer__member7}
           additionalClassBackground={styles.teamMemberContainer__background7}
           header={"Валерія"}
-          text={"сторіс-мейкер"}
+          text={"контент-менеджер"}
         />
         <TeamMemberComponent
           projectNumber={"6"}
@@ -113,7 +111,7 @@ const TeamContainer = () => {
           header={"Анна"}
           text={"Копірайтер"}
         />
-        <TeamMemberComponent
+        {/* <TeamMemberComponent
           projectNumber={"22+"}
           favoriteProject={"Okko, Grono, не просто підтримка, Enzym"}
           experience={"4 роки"}
@@ -122,7 +120,7 @@ const TeamContainer = () => {
           additionalClassBackground={styles.teamMemberContainer__background9}
           header={"Аліна"}
           text={"контент-менеджер, стратег"}
-        />
+        /> */}
         <TeamMemberComponent
           projectNumber={"3+"}
           favoriteProject={"Найбільше пишаюсь нашою спільною Джирою😊"}
