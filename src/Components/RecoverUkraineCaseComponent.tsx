@@ -10,7 +10,7 @@ const FotoCaseRecoverUrkraineComponent = ({ text }: any) => {
         Відбудова країни, у якій хочеться жити
       </div>
       <div className={styles.recoverUkraineCaseContainer__desctopContent}>
-        <div className={styles.caseContainer__desctopContentItem}>лошо</div>
+        <div className={styles.caseContainer__desctopContentItem}>лого</div>
         <div className={styles.caseContainer__desctopContentItem}>
           фонд
         </div>
@@ -20,12 +20,9 @@ const FotoCaseRecoverUrkraineComponent = ({ text }: any) => {
       </div>
       <div className={styles.caseContainer__mobileContent}>
         <div className={styles.caseContainer__mobileContentItem}>фонд</div>
-        <div className={styles.caseContainer__mobileContentItem}>брендинг</div>
         <div className={styles.caseContainer__mobileContentItem}>лого</div>
+        <div className={styles.caseContainer__mobileContentItem}>брендинг</div>
         <div className={styles.caseContainer__mobileContentItem}>мерч</div>
-        <div className={styles.caseContainer__mobileContentItem}>
-          smm-супровід
-        </div>
       </div>
     </div>
   );

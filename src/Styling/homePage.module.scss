@@ -895,6 +895,11 @@
     @media screen and (max-width: 1024px) {
       font-size: 4.4vw;
       line-height: 4.4vw;
+      margin-bottom: 34vw;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 4.4vw;
+      line-height: 4.4vw;
       margin-bottom: 24vw;
     }
   }
@@ -966,21 +971,22 @@
     position: relative;
     margin-bottom: 0.5vw;
     margin-left: 3.5%;
-    background-image: url("../Assets/Images/HomePageImages/RecoverUkraineLogo.png");
+    background-image: url("../Assets/Images/HomePageImages/RecoverUkraineLogo.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     width: 20.6vw;
     height: 1.875vw;
     @media screen and (max-width: 1024px) {
-      width: 17vw;
-      height: 5.5vw;
-      margin-left: 12.7vw;
+      width: 59.5vw;
+      height: 5.4vw;
+      margin-bottom: 3vw;
+      margin-left: unset;
     }
     @media screen and (max-width: 480px) {
-      background-image: url("../Assets/Images/HomePageImages/LogoMobile.svg");
-      width: 28vw;
-      min-height: 8.3vw;
+      width: 42vw;
+      min-height: 3.8vw;
+      margin-right: 11.3vw;
     }
   }
   &__header {
@@ -1009,23 +1015,34 @@
     width: 19.7vw;
     font-size: 1.25vw;
     line-height: 1.25vw;
-    margin-bottom: 13vw;
+    margin-bottom: 13.8vw;
     padding-right: 2vw;
     @media screen and (max-width: 1024px) {
-      margin-left: 12.7vw;
-      font-size: 6.25vw;
-      line-height: 6.25vw;
-      width: 75%;
+      font-family: Unbounded;
+      font-size: 4.1vw;
+      line-height: 4.1vw;
+      width: 59.5vw;
       margin-bottom: 35vw;
     }
     @media screen and (max-width: 1024px) {
       font-size: 4.4vw;
       line-height: 4.4vw;
+      margin-bottom: 34vw;
+    }
+    @media screen and (max-width: 480px) {
+      font-family: Unbounded-Blond;
+      font-size: 3.8vw;
+      line-height: 3.8vw;
       margin-bottom: 24vw;
+      width: 53.3vw;
+      text-align: left;
+      font-style: normal;
+      font-weight: 300;
+      padding-right: 9vw;
     }
   }
   &__desctopContent {
-    width: 93%;
+    width: 73%;
     margin-left: 3.5%;
     border-top: 1px solid white;
     padding-top: 0.5vw;
@@ -1035,7 +1052,6 @@
     @media screen and (max-width: 1024px) {
       width: 72%;
       padding-top: 1vw;
-      margin-left: 12.7vw;
     }
     @media screen and (max-width: 480px) {
       display: none;
