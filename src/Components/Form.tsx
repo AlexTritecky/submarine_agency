@@ -12,6 +12,7 @@ type FormValues = {
   email: string;
   company: string;
   service: string;
+  message?: string;
 };
 function Form({ handleFormClose }: any) {
   const {
@@ -29,6 +30,7 @@ function Form({ handleFormClose }: any) {
       email: sessionStorage.getItem("email") || "",
       company: sessionStorage.getItem("company") || "",
       service: sessionStorage.getItem("service") || "",
+      message: sessionStorage.getItem("message") || "",
     },
   });
 
@@ -73,9 +75,40 @@ function Form({ handleFormClose }: any) {
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     console.log(data, selectedServices);
     setEmailStatus("sending");
-    setTimeout(() => {
-      setEmailStatus("success");
-    }, 1000);
+    
+    const dataToSend = {
+      name: data.name,
+      email: data.email,
+      phone: data.number,
+      selectedCourse: selectedServices.toString(),
+      feedbackMethod: "feedback method",
+      additionalRequest1: `company is ${data.company}`,
+      additionalRequest2: data.message ? `message is ${data.message}` : "",
+    };
+
+    fetch("https://submarine-creative-agency-api.azurewebsites.net/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dataToSend),
+    })
+      .then((response) => response)
+      .then((data) => {
+        setEmailStatus("success");
+        setValue("name", "");
+        setValue("number", "");
+        setValue("email", "");
+        setValue("company", "");
+        setValue("service", "");
+        setValue("message", "");
+        setSelectedServices([]);
+
+        console.log("Success:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
 
   return (
@@ -261,8 +294,9 @@ function Form({ handleFormClose }: any) {
               Розкажіть нам більше про свій проект
             </label>
             <textarea
+              id="message"
               className={styles.formContainer__textarea}
-              name="message"
+              {...register("message")}
               placeholder="Додаткова інформація"
             ></textarea>
           </div>

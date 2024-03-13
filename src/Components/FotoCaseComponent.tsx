@@ -1,6 +1,4 @@
-import Image from "next/image";
 import styles from "../Styling/homePage.module.css";
-import CaseLogo from "../Assets/Images/HomePageImages/CaseLogo.png";
 const FotoCaseComponent = ({ text }: any) => {
   return (
     <div className={styles.caseFotoContainer}>
