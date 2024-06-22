@@ -1,0 +1,40 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.3",
+    "@types/node": "20.10.3",
+    "@types/react": "18.2.42",
+    "@types/react-dom": "18.2.17",
+    "eslint": "8.55.0",
+    "eslint-config-next": "14.0.3",
+    "express": "^4.18.2",
+    "file-loader": "^6.2.0",
+    "next": "^14.0.3",
+    "next-video": "^0.17.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.2",
+    "react-player": "^2.15.1",
+    "react-router-dom": "^6.21.1",
+    "sharp": "^0.33.1",
+    "styled-components": "^6.1.9",
+    "swiper": "^11.0.5",
+    "typescript": "5.3.2",
+    "underscore": "^1.13.6",
+    "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/nprogress": "^0.2.3",
+    "video.js": "^8.10.0"
+  }
+}

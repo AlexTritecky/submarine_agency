@@ -1,0 +1,413 @@
+.formPopUpContainer {
+   width: 100%;
+   height: 100%;
+   z-index: 100;
+   backdrop-filter: blur(6px);
+   position: fixed;
+   top: 0;
+   transition-duration: 0.5s;
+   @media screen and (max-width: 480px) {
+      min-height: unset;
+      overflow-y: scroll;
+   }
+}
+@keyframes slideCloseRightDesktop {
+   from {
+      right: -47vw;
+   }
+   to {
+      right: 0;
+   }
+}
+@keyframes slideCloseRightTablet {
+   from {
+      right: -100vw;
+   }
+   to {
+      right: 0;
+   }
+}
+@keyframes slideCloseLeftDesktop {
+   from {
+      right: 0;
+   }
+   to {
+      right: -47vw;
+   }
+}
+@keyframes slideCloseLeftTablet {
+   from {
+      right: 0;
+   }
+   to {
+      right: -100vw;
+   }
+}
+
+.formContainer {
+   height: 100%;
+   width: 47vw;
+   background-color: white;
+   position: absolute;
+   right: 0;
+   box-shadow: -8px -2px 5px 0px #5566b7;
+   border-bottom-left-radius: 50px;
+   border-top-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+   padding: 2.5vw 6.6vw 1.7vw 6.6vw;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   animation: slideCloseRightDesktop 0.5s forwards;
+   transition-duration: 0.5s;
+   overflow-x: scroll;
+   @media screen and (max-width: 1024px) {
+      width: 100vw;
+      animation: slideCloseRightTablet 0.5s forwards;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: 10.2vw 6.25vw;
+   }
+   @media screen and (max-width: 480px) {
+      padding: 11vw 7.2vw 14vw 7.2vw;
+      height: unset;
+   }
+   &__close {
+      display: none;
+      @media screen and (max-width: 1024px) {
+         position: absolute;
+         top: 6.6vw;
+         right: 6.6vw;
+         width: 16vw;
+         height: 6vw;
+         padding: 1vw;
+         background-color: #5566b7;
+         color: white;
+         border-radius: 2vw;
+         font-family: Unbounded;
+         font-size: 2.6vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+   &__title {
+      color: #5566b7;
+      font-family: Gilroy-Bold;
+      font-size: 2.5vw;
+      line-height: 2.5vw;
+      margin-bottom: 1vw;
+      @media screen and (max-width: 1024px) {
+         font-size: 6.25vw;
+         line-height: 6.25vw;
+         margin-bottom: 2vw;
+      }
+      @media screen and (max-width: 480px) {
+         font-size: 5.5vw;
+         line-height: 5.5vw;
+         margin-bottom: 2.2vw;
+         font-family: Gilroy-Bold;
+      }
+   }
+   &__subTitle {
+      color: #000;
+      font-family: Unbounded;
+      font-size: 1vw;
+      line-height: 1.25vw;
+      letter-spacing: 0.04vw;
+      @media screen and (max-width: 1024px) {
+         font-size: 2.6vw;
+         line-height: 3.25vw;
+         margin-bottom: 2vw;
+      }
+      @media screen and (max-width: 480px) {
+         font-size: 3.8vw;
+         line-height: 4.4vw;
+         margin-bottom: 3.8vw;
+         font-family: Unbounded-Blond;
+      }
+   }
+   &__inputContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 1.25vw;
+      height: 13vw;
+      @media screen and (max-width: 1024px) {
+         height: 26vw;
+      }
+      @media screen and (max-width: 480px) {
+         flex-direction: column;
+         flex-wrap: unset;
+         height: 69vw;
+      }
+   }
+   &__input {
+      display: flex;
+      flex-direction: column;
+      width: 15.7vw;
+      margin-bottom: 1.5vw;
+      @media screen and (max-width: 1024px) {
+         width: 40vw;
+      }
+      @media screen and (max-width: 480px) {
+         font-family: Unbounded;
+         width: 70vw;
+      }
+
+      input {
+         border: none;
+         outline: none;
+         border-bottom: 1px solid #5566b7;
+         font-size: 1vw;
+         line-height: 1vw;
+         padding-bottom: 0.2vw;
+         margin-top: 1.25vw;
+         border-radius: 0;
+         @media screen and (max-width: 1024px) {
+            font-size: 3.5vw;
+            line-height: 3.5vw;
+         }
+         @media screen and (max-width: 480px) {
+            font-size: 2.2vw;
+            line-height: 2.2vw;
+         }
+      }
+      input::placeholder {
+         color: black;
+         opacity: 0.5;
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+         -webkit-appearance: none;
+         margin: 0;
+      }
+      input[type="number"] {
+         -moz-appearance: textfield; /* Firefox */
+      }
+   }
+   &__textarea {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5vw;
+      font-family: Unbounded-Blond;
+      @media screen and (max-width: 1024px) {
+         margin-bottom: 1vw;
+      }
+      @media screen and (max-width: 480px) {
+         margin-bottom: 2vw;
+      }
+
+      textarea {
+         margin-top: 1.25vw;
+         height: 6.3vw;
+         padding: 1.25vw;
+         box-shadow: 2px 2px 5px 0px #5566b7;
+         border-radius: 2.6vw;
+         resize: none;
+         border: none;
+         outline: none;
+         font-family: Unbounded;
+         font-size: 1vw;
+         line-height: 1vw;
+         @media screen and (max-width: 1024px) {
+            height: 15.8vw;
+            padding: 3.25vw;
+            border-radius: 6.5vw;
+            font-size: 3.5vw;
+            line-height: 3.5vw;
+         }
+         @media screen and (max-width: 480px) {
+            height: 28.3vw;
+            padding: 6.6vw;
+            border-radius: 13.8vw;
+            font-size: 2.2vw;
+            line-height: 2.2vw;
+         }
+      }
+      textarea::placeholder {
+         color: black;
+         opacity: 0.5;
+      }
+   }
+   &__chooseServiceItems {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1.25vw;
+      margin-bottom: 1.7vw;
+      width: 100%;
+      border: none;
+      outline: none;
+      @media screen and (max-width: 480px) {
+         margin-bottom: 3.7vw;
+      }
+   }
+   &__chooseServiceItem {
+      box-shadow: 2px 2px 5px 0px #5566b7;
+      padding: 0.42vw 0.83vw;
+      font-size: 1vw;
+      line-height: 1.25vw;
+      border-radius: 2.6vw;
+      font-family: Unbounded;
+      margin: 0.2vw;
+      user-select: none;
+      transition-duration: 0.2s;
+      color: black;
+      @media screen and (max-width: 1024px) {
+         font-size: 2.6vw;
+         line-height: 3.25vw;
+         padding: 1vw 2vw;
+         margin: 0.5vw;
+      }
+      @media screen and (max-width: 480px) {
+         font-family: Unbounded-Blond;
+         box-shadow: 0.5vw 0.5vw 0.8vw 0px #5566b7;
+         font-size: 2.7vw;
+         line-height: 2.7vw;
+         margin: 0.8vw;
+         padding: 2.2vw 4.4vw;
+         border-radius: 13.8vw;
+      }
+   }
+   &__chooseServiceItemSelected {
+      background: #5566b7;
+      color: white;
+   }
+   &__errorMessage {
+      color: #fd6a6a;
+   }
+   &__serviceInput {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+   }
+   &__errorMainMessage {
+      font-family: Unbounded-Blond;
+      color: #fd6a6a;
+      width: 100%;
+      text-align: left;
+      font-size: 1.5vw;
+      line-height: 1.5vw;
+      margin-bottom: 1vw;
+      @media screen and (max-width: 1024px) {
+         font-family: Unbounded;
+         font-size: 2.6vw;
+         line-height: 3.25vw;
+         margin-bottom: 4vw;
+      }
+      @media screen and (max-width: 480px) {
+         font-family: Unbounded-Blond;
+         font-size: 3.8vw;
+         line-height: 4.4vw;
+      }
+   }
+   &__buttonContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+}
+.formContainerClose {
+   animation: slideCloseLeftDesktop 0.5s forwards;
+   @media screen and (max-width: 1024px) {
+      animation: slideCloseLeftTablet 0.5s forwards;
+   }
+}
+.loaderContainer {
+   width: 47vw;
+   height: 100%;
+   z-index: 100;
+   backdrop-filter: blur(3px);
+   position: fixed;
+   top: 0;
+   right: 0;
+   transition-duration: 0.5s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   img {
+      width: 10vw;
+      height: 10vw;
+   }
+   @media screen and (max-width: 1024px) {
+      width: 100%;
+      height: 100%;
+      img {
+         width: 15vw;
+         height: 15vw;
+      }
+   }
+}
+.successContainer {
+   width: 47vw;
+   height: 100%;
+   z-index: 100;
+   backdrop-filter: blur(3px);
+   background-color: white;
+   position: fixed;
+   top: 0;
+   right: 0;
+   transition-duration: 0.5s;
+   display: flex;
+   flex-direction: column;
+   animation: slideCloseRightDesktop 0.5s forwards;
+   box-shadow: -8px -2px 5px 0px #5566b7;
+   border-bottom-left-radius: 50px;
+   border-top-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+   padding: 15vw 6.6vw 13vw 6.6vw;
+   &__title {
+      color: #5566b7;
+      font-family: Gilroy-SemiBold;
+      font-size: 3.3vw;
+      line-height: 3.3vw;
+      margin-bottom: 0.5vw;
+      @media screen and (max-width: 1024px) {
+         font-size: 7.3vw;
+         line-height: 7.3vw;
+         margin-bottom: 1.5vw;
+      }
+      @media screen and (max-width: 480px) {
+         font-size: 9.3vw;
+         line-height: 9.3vw;
+         margin-bottom: 3vw;
+      }
+   }
+   &__subTitle {
+      color: #000;
+      font-family: Unbounded;
+      font-size: 1vw;
+      line-height: 1.25vw;
+      margin-bottom: 3.3vw; /* 120% */
+      @media screen and (max-width: 1024px) {
+         font-size: 3vw;
+         line-height: 3.25vw;
+      }
+      @media screen and (max-width: 480px) {
+         font-size: 4vw;
+         line-height: 4.25vw;
+         margin-bottom: 5vw;
+      }
+   }
+   &__buttonContainer {
+      width: 28vw;
+   }
+   @media screen and (max-width: 1024px) {
+      width: 100vw;
+      animation: slideCloseRightTablet 0.5s forwards;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: 40vw 12vw 13vw 6.6vw;
+   }
+   @media screen and (max-width: 480px) {
+      padding: 50vw 7.2vw 14vw 7.2vw;
+   }
+}
+.formContainerClose {
+   animation: slideCloseLeftDesktop 0.5s forwards;
+   @media screen and (max-width: 1024px) {
+      animation: slideCloseLeftTablet 0.5s forwards;
+   }
+}

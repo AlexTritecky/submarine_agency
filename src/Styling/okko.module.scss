@@ -1,0 +1,1475 @@
+.okkoHeaderSection {
+    width: 100%;
+    height: 49.3vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../Assets/Images/OkkoCaseImages/OkkoDesctop.webp);
+    position: relative;
+    color: black;
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    &__mobileBackgroundFoto {
+        display: none;
+    }
+    &__headerLogo {
+        position: absolute;
+        left: 6.9vw;
+        top: 4.1vw;
+        width: 20.5vw;
+        height: 4.6vw;
+        @media screen and (max-width: 1024px) {
+            width: 36vw;
+            height: 8vw;
+            left: 50%;
+            transform: translate(-50%);
+            top: 2.2vw;
+        }
+        @media screen and (max-width: 768px) {
+            top: 11.9vw;
+            width: 27.2vw;
+            height: 5.8vw;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        background-image: url(../Assets/Images/OkkoCaseImages/OkkoDesctop.webp);
+        height: 57.4vw;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        height: 63vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: none;
+        &__mobileBackgroundFoto {
+            display: block;
+            width: 87vw;
+            height: 50.2vw;
+            box-shadow: 0.83vw 0.83vw 1.1vw -0.55vw #5566b7;
+            border-radius: 13.8vw;
+        }
+    }
+}
+.okkoStartSection {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    padding: 6.6%;
+    @media screen and (max-width: 1024px) {
+        padding-top: 8.3%;
+    }
+    @media screen and (max-width: 768px) {
+        padding-bottom: 13.3vw;
+    }
+    &__logo {
+        width: 52%;
+        height: auto;
+        margin-bottom: 7vw;
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 8.3vw;
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 13.3vw;
+        }
+    }
+    &__text {
+        width: 100%;
+        color: #000;
+        font-family: Gilroy-SemiBold;
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+        margin-bottom: 6.6vw;
+        @media screen and (max-width: 1024px) {
+            color: var(--000000, #000);
+            font-family: Gilroy-Bold;
+            font-size: 3.125vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 3.125vw;
+        }
+        @media screen and (max-width: 768px) {
+            font-family: Unbounded;
+            font-size: 2.2vw;
+            line-height: 2.7vw;
+            letter-spacing: 0.06vw;
+            padding-right: 11vw;
+            margin-bottom: 13.3vw;
+        }
+    }
+    &__fotosContainer {
+        width: 100%;
+        height: 42vw;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 1024px) {
+            height: 177vw;
+            flex-direction: column;
+        }
+        &__leftSection {
+            width: 47%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+                height: 48.3%;
+            }
+            &_upper {
+                width: 100%;
+                height: 60%;
+                display: flex;
+                justify-content: space-between;
+                @media screen and (max-width: 1024px) {
+                    height: 58.5%;
+                }
+                &_card {
+                    width: 50.5%;
+                    height: 100%;
+                    border-radius: 1.5vw;
+                    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+                    background: #a967dd;
+                    position: relative;
+                    padding: 4%;
+                    padding-top: 16.5%;
+                    color: #fff;
+                    font-family: Unbounded;
+                    font-size: 1vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.25vw;
+                    letter-spacing: 0.03vw;
+                    img {
+                        position: absolute;
+                        right: 7.7%;
+                        bottom: 6.5%;
+                        width: 16%;
+                        height: 13.1%;
+                        transform: rotate(90deg);
+                    }
+                    @media screen and (max-width: 1024px) {
+                        width: 49.7%;
+                        border-radius: 4vw;
+                        padding: 4vw;
+                        color: #fff;
+                        font-family: Unbounded;
+                        font-size: 2.6vw;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 3.125vw;
+                        letter-spacing: 0.07vw;
+
+                        img {
+                            position: absolute;
+                            right: 7.7%;
+                            bottom: 6.5%;
+                            width: 8.3vw;
+                            height: 8.3vw;
+                            transform: rotate(90deg);
+                        }
+                    }
+                    @media screen and (max-width: 768px) {
+                        border-radius: 8.3vw;
+                        padding: 4.4vw;
+                        font-family: Unbounded-Blond;
+                        font-size: 2.2vw;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 3.3vw; /* 150% */
+                        letter-spacing: 0.06vw;
+                    }
+                }
+                &_foto {
+                    width: 45.5%;
+                    height: 100%;
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    transition-duration: 0.3s;
+                }
+                &_foto1 {
+                    background-image: url(../Assets/Images/OkkoCaseImages/2DynamicFotot1.webp);
+                    @media screen and (max-width: 1024px) {
+                        background-image: url(../Assets/Images/OkkoCaseImages/2DynamicFoto1Tablet.webp);
+                    }
+                    @media screen and (max-width: 768px) {
+                        background-image: url(../Assets/Images/OkkoCaseImages/2DynamicFoto1Mobile.webp);
+                    }
+                }
+                &_foto2 {
+                    background-image: url(../Assets/Images/OkkoCaseImages/2DynamicFotot2.webp);
+                    @media screen and (max-width: 1024px) {
+                        background-image: url(../Assets/Images/OkkoCaseImages/2DynamicFotot2Tablet.webp);
+                    }
+                    @media screen and (max-width: 768px) {
+                        background-image: url(../Assets/Images/OkkoCaseImages/2DynamicFotot2Mobile.webp);
+                    }
+                }
+                &_foto3 {
+                    background-image: url(../Assets/Images/OkkoCaseImages/2DynamicFotot3.webp);
+                    @media screen and (max-width: 1024px) {
+                        background-image: url(../Assets/Images/OkkoCaseImages/2DynamicFotot3Tablet.webp);
+                    }
+                    @media screen and (max-width: 768px) {
+                        background-image: url(../Assets/Images/OkkoCaseImages/2DynamicFotot3Mobile.webp);
+                    }
+                }
+            }
+            &_lower {
+                width: 100%;
+                height: 36%;
+                display: flex;
+                justify-content: space-between;
+                @media screen and (max-width: 1024px) {
+                    height: 36.5%;
+                }
+                &_card {
+                    width: 45.5%;
+                    height: 100%;
+                    border-radius: 1.5vw;
+                    background: #5566b7;
+                    position: relative;
+
+                    padding: 4%;
+                    padding-top: 12.2%;
+                    padding-right: 7%;
+                    color: #fff;
+                    font-family: Unbounded;
+                    font-size: 1vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.25vw;
+                    letter-spacing: 0.03vw;
+                    img {
+                        position: absolute;
+                        left: 9%;
+                        bottom: 6.5%;
+                        width: 17.2%;
+                        height: 22%;
+                        transform: rotate(-90deg);
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        padding: 2vw;
+                        padding-top: 4vw;
+                        border-radius: 4vw;
+                        color: #fff;
+                        font-family: Unbounded;
+                        font-size: 2.6vw;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 3.125vw;
+                        letter-spacing: 0.07vw;
+
+                        img {
+                            width: 8.3vw;
+                            height: 8.3vw;
+                            left: 2vw;
+                        }
+                    }
+                    @media screen and (max-width: 768px) {
+                        border-radius: 8.3vw;
+                        padding: 4.4vw;
+                        font-family: Unbounded-Blond;
+                        font-size: 2.2vw;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 3.3vw; /* 150% */
+                        letter-spacing: 0.06vw;
+                        width: 43vw;
+                        img {
+                            position: absolute;
+                            left: 4.4vw;
+                            bottom: 4.4vw;
+                            width: 17.2%;
+                            height: 22%;
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+                &_foto {
+                    width: 50.5%;
+                    height: 100%;
+                    background-size: 100% 100%;
+                    background-size: 100% 100%;
+                    position: relative;
+                    @media screen and (max-width: 768px) {
+                        width: 46.5%;
+                    }
+                }
+                &_foto1 {
+                    background-image: url(../Assets/Images/OkkoCaseImages/3DynamicFoto1.webp);
+                    @media screen and (max-width: 1024px) {
+                        background-image: url(../Assets/Images/OkkoCaseImages/3DynamicFotoTablet.webp);
+                    }
+                    @media screen and (max-width: 768px) {
+                        background-image: url(../Assets/Images/OkkoCaseImages/3DynamicFoto1Mobile.webp);
+                    }
+                }
+                &_foto2 {
+                    background-image: url(../Assets/Images/OkkoCaseImages/3DynamicFoto2.webp);
+                    @media screen and (max-width: 768px) {
+                        background-image: url(../Assets/Images/OkkoCaseImages/3DynamicFoto2Mobile.webp);
+                    }
+                }
+            }
+        }
+        &__rightSection {
+            width: 49%;
+            height: 100%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            transition-duration: 0.3s;
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+                height: 49.3%;
+            }
+            &__rightSectionFoto1 {
+                background-image: url(../Assets/Images/OkkoCaseImages/1DynamicFoto1.webp);
+                @media screen and (max-width: 1024px) {
+                }
+                @media screen and (max-width: 768px) {
+                }
+            }
+            &__rightSectionFoto2 {
+                background-image: url(../Assets/Images/OkkoCaseImages/1DynamicFoto2.webp);
+                @media screen and (max-width: 1024px) {
+                }
+                @media screen and (max-width: 768px) {
+                    background-image: url(../Assets/Images/OkkoCaseImages/1DynamicFoto2Mobile.webp);
+                }
+            }
+            &__rightSectionFoto3 {
+                background-image: url(../Assets/Images/OkkoCaseImages/1DynamicFoto3.webp);
+                @media screen and (max-width: 1024px) {
+                }
+                @media screen and (max-width: 768px) {
+                    background-image: url(../Assets/Images/OkkoCaseImages/1DynamicFoto3Mobile.webp);
+
+                }
+            }
+
+            &_card {
+                position: absolute;
+                width: 19.2vw;
+                height: 11.7vw;
+                position: absolute;
+                border-radius: 1.5vw;
+                cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+                background: #a967dd;
+                top: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-in-out;
+                img {
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease-in-out;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    width: 45.5%;
+                    height: 27.6%;
+                    border-radius: 4vw;
+                    img {
+                        width: 8.3vw;
+                        height: 8.3vw;
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    width: 34vw;
+                    border-radius: 8.3vw;
+                }
+            }
+            &_text {
+                background-color: rgba(85, 102, 183, 0.5);
+                height: 25%;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                border-radius: 1.6vw;
+                padding: 2vw;
+                color: var(--ffffff, #fff);
+                font-family: Unbounded;
+                font-size: 1vw;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.25vw; /* 120% */
+                letter-spacing: 0.03vw;
+                @media screen and (max-width: 1024px) {
+                    border-radius: 3.7vw;
+                    padding: 4.1vw;
+                    font-size: 2.6vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 3.125vw; /* 120% */
+                    letter-spacing: 0.07vw;
+                }
+                @media screen and (max-width: 768px) {
+                    border-radius: 3.3vw;
+                    padding: 4.4vw 6.6vw;
+                    font-size: 2.2vw;
+                    font-family: Unbounded-Blond;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 3.3vw; /* 150% */
+                    letter-spacing: 0.066vw;
+                }
+            }
+        }
+    }
+}
+.text {
+    width: 100%;
+    padding: 3.3vw 6.6vw;
+    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+    background-color: #a967dd;
+    color: #fff;
+    font-family: Gilroy-SemiBold;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    @media screen and (max-width: 1024px) {
+        font-size: 6.25vw;
+        line-height: 6.25vw;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 5.5vw;
+        line-height: 5.5vw;
+    }
+}
+.okkoStereotypesSection {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    &__header {
+        color: var(--000000, #000);
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.45vw;
+        letter-spacing: 0.0375vw;
+        padding-left: 6.6vw;
+        padding-right: 19.5vw;
+        margin-top: 6.6vw;
+        margin-bottom: 10.2vw;
+        position: relative;
+        img {
+            position: absolute;
+            right: 6.6vw;
+            top: -11vw;
+            width: 8.8vw;
+            height: 17.2vw;
+        }
+        span {
+            color: #a967dd;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 2.6vw;
+            line-height: 3.125vw;
+            letter-spacing: 0.07vw;
+            padding-right: 21.5vw;
+            img {
+                right: 6.6vw;
+                top: 0vw;
+                width: 7.8vw;
+                height: 14.2vw;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            margin-top: 13.3vw;
+            font-family: Unbounded-Blond;
+            font-size: 2.2vw;
+            font-weight: 300;
+            line-height: 3.3vw;
+            letter-spacing: 0.06vw;
+            margin-bottom: 16vw;
+            span {
+                font-family: Unbounded;
+            }
+        }
+    }
+    &__title {
+        color: var(--000000, #000);
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.45vw;
+        letter-spacing: 0.0375vw;
+        padding-left: 6.6vw;
+        padding-right: 6.6vw;
+        margin-bottom: 6.6vw;
+        position: relative;
+        span {
+            color: #a967dd;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 2.6vw;
+            line-height: 3.125vw;
+            letter-spacing: 0.07vw;
+        }
+        @media screen and (max-width: 768px) {
+            margin-top: 13.3vw;
+            font-family: Unbounded-Blond;
+            font-size: 2.2vw;
+            font-weight: 300;
+            line-height: 3.3vw;
+            letter-spacing: 0.06vw;
+            margin-bottom: 13.3vw;
+            span {
+                font-family: Unbounded;
+            }
+        }
+    }
+    &__title2 {
+        color: var(--000000, #000);
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.45vw;
+        letter-spacing: 0.0375vw;
+        padding-left: 6.6vw;
+        padding-right: 6.6vw;
+        margin-top: 6.6vw;
+        margin-bottom: 6.6vw;
+        position: relative;
+        span {
+            color: #a967dd;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 2.6vw;
+            line-height: 3.125vw;
+            letter-spacing: 0.07vw;
+        }
+        @media screen and (max-width: 768px) {
+            font-family: Unbounded-Blond;
+            font-size: 2.2vw;
+            font-weight: 300;
+            line-height: 3.3vw;
+            letter-spacing: 0.06vw;
+            margin-bottom: 13.3vw;
+            margin-top: 13.3vw;
+        }
+    }
+
+    &__fotoContainer {
+        width: 100%;
+        height: 45.5vw;
+        margin-left: 6.6vw;
+        overflow: scroll;
+        @media screen and (max-width: 1024px) {
+            height: 56.6vw;
+        }
+        @media screen and (max-width: 768px) {
+            height: 63.5vw;
+        }
+        &__foto {
+            margin-right: 13.3vw;
+            width: 158vw;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/StereotypesDesctop.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            @media screen and (max-width: 1024px) {
+                width: 195vw;
+            }
+            @media screen and (max-width: 480px) {
+                width: 217vw;
+            }
+        }
+    }
+
+    &__footer {
+        cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+        color: var(--000000, #000);
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.45vw;
+        letter-spacing: 0.0375vw;
+        padding-left: 6.6vw;
+        padding-right: 6.6vw;
+        margin-top: 6.6vw;
+        margin-bottom: 6.6vw;
+        span {
+            color: #a967dd;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 2.6vw;
+            line-height: 3.125vw;
+            letter-spacing: 0.07vw;
+        }
+        @media screen and (max-width: 480px) {
+            margin-top: 13.3vw;
+            margin-bottom: 13.3vw;
+            font-size: 2.2vw;
+            font-weight: 300;
+            line-height: 3.3vw;
+            font-family: Unbounded-Blond;
+        }
+    }
+}
+.okkoStereotypesSection__fotoContainer::-webkit-scrollbar {
+    display: none;
+}
+.whatTodoSection {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    padding: 0 6.6vw;
+    &__text {
+        color: #000;
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.45vw;
+        letter-spacing: 0.0375vw;
+        margin-top: 6.6vw;
+        margin-bottom: 6.6vw;
+        span {
+            color: #a967dd;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 2.6vw;
+            line-height: 3.125vw;
+            letter-spacing: 0.07vw;
+        }
+        @media screen and (max-width: 1024px) {
+            margin-top: 10.2vw;
+            margin-bottom: 13.3vw;
+        }
+    }
+    &__swiper {
+        overflow: visible !important;
+        margin-bottom: 6.6vw;
+        height: 30.5vw;
+        width: 109vw;
+        margin-left: 0 !important;
+        @media screen and (max-width: 1024px) {
+            min-width: 154.5vw;
+            height: 39.8vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 84.5vw;
+            min-width: 84.5vw;
+            height: 47.5vw;
+        }
+
+        &_slide1 {
+            width: 54.5vw;
+            min-width: 54.5vw;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/OkkoSlide1Desctop.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-right: 2.5vw;
+            @media screen and (max-width: 1024px) {
+                min-width: 70.9vw;
+                width: 70.9vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 84.5vw;
+                min-width: 84.5vw;
+                height: 47.5vw;
+                background-image: url(../Assets/Images/OkkoCaseImages/InstSlide1Mobile.webp);
+                margin-right: 0vw;
+            }
+        }
+        &_slide2 {
+            width: 54.5vw;
+            min-width: 54.5vw;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/OkkoSlide2Desctop.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-right: 2.5vw;
+            @media screen and (max-width: 1024px) {
+                min-width: 70.9vw;
+                width: 70.9vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 84.5vw;
+                height: 47.5vw;
+                margin-right: 0vw;
+                background-image: url(../Assets/Images/OkkoCaseImages/InstSlide2Mobile.webp);
+            }
+        }
+        &_slide3 {
+            width: 54.5vw;
+            min-width: 54.5vw;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/OkkoSlide3Desctop.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-right: 2.5vw;
+            @media screen and (max-width: 1024px) {
+                min-width: 70.9vw;
+                width: 70.9vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 84.5vw;
+                height: 47.5vw;
+                margin-right: 0vw;
+                background-image: url(../Assets/Images/OkkoCaseImages/InstSlide3Mobile.webp);
+            }
+        }
+        &_slide4 {
+            width: 54.5vw;
+            min-width: 54.5vw;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/OkkoSlide4Desctop.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-right: 2.5vw;
+            @media screen and (max-width: 1024px) {
+                min-width: 70.9vw;
+                width: 70.9vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 84.5vw;
+                height: 47.5vw;
+                margin-right: 0vw;
+                background-image: url(../Assets/Images/OkkoCaseImages/InstSlide4Mobile.webp);
+            }
+        }
+        &_slide5 {
+            width: 54.5vw;
+            min-width: 54.5vw;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/OkkoSlide5Desctop.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-right: 2.5vw;
+            @media screen and (max-width: 1024px) {
+                min-width: 70.9vw;
+                width: 70.9vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 84.5vw;
+                height: 47.5vw;
+                margin-right: 0vw;
+                background-image: url(../Assets/Images/OkkoCaseImages/InstSlide5Mobile.webp);
+            }
+        }
+    }
+    &__swiper2 {
+        overflow: visible !important;
+        margin-bottom: 6.6vw;
+        height: 37.7vw;
+        width: 94.5vw;
+        margin-left: 0 !important;
+        @media screen and (max-width: 1024px) {
+            width: 234vw;
+            min-width: 234vw;
+            height: 94.5vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 116.9vw;
+            min-width: 116.9vw;
+            height: 83.3vw;
+            margin-bottom: 13.3vw;
+        }
+
+        &_slide1 {
+            width: 23.5vw;
+            min-width: 23.5vw;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/InstSlide1Desctop.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-right: 2.5vw;
+            @media screen and (max-width: 1024px) {
+                min-width: 59vw;
+                width: 59vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 51.85vw;
+                min-width: 51.85vw;
+                margin-right: 6.6vw;
+                background-image: url(../Assets/Images/OkkoCaseImages/Inst2Slide1Mobile.webp);
+            }
+        }
+        &_slide2 {
+            width: 23.5vw;
+            min-width: 23.5vw;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/InstSlide2Desctop.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-right: 2.5vw;
+            @media screen and (max-width: 1024px) {
+                width: 59vw;
+                min-width: 59vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 51.85vw;
+                min-width: 51.85vw;
+                margin-right: 6.6vw;
+                background-image: url(../Assets/Images/OkkoCaseImages/Inst2Slide2Mobile.webp);
+            }
+        }
+        &_slide3 {
+            width: 23.5vw;
+            min-width: 23.5vw;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/InstSlide3Desctop.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-right: 2.5vw;
+            @media screen and (max-width: 1024px) {
+                width: 59vw;
+                min-width: 59vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 51.85vw;
+                min-width: 51.85vw;
+                margin-right: 6.6vw;
+                background-image: url(../Assets/Images/OkkoCaseImages/Inst2Slide3Mobile.webp);
+            }
+        }
+        &_slide4 {
+            width: 23.5vw;
+            min-width: 23.5vw;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/InstSlide4Desctop.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-right: 2.5vw;
+            @media screen and (max-width: 1024px) {
+                width: 59vw;
+                min-width: 59vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 51.85vw;
+                min-width: 51.85vw;
+                margin-right: 6.6vw;
+                background-image: url(../Assets/Images/OkkoCaseImages/Inst2Slide4Mobile.webp);
+            }
+        }
+        &_slide5 {
+            width: 23.5vw;
+            min-width: 23.5vw;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/InstSlide5Desctop.webp);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-right: 2.5vw;
+            @media screen and (max-width: 1024px) {
+                width: 59vw;
+                min-width: 59vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 51.85vw;
+                min-width: 51.85vw;
+                margin-right: 6.6vw;
+                background-image: url(../Assets/Images/OkkoCaseImages/Inst2Slide5Mobile.webp);
+            }
+        }
+    }
+}
+.fuelTruckSlider {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    height: 67vw;
+    position: relative;
+    user-select: none;
+    @media screen and (max-width: 768px) {
+        height: 70.5vw;
+    }
+    &__truck {
+        position: absolute;
+        left: 6.6vw;
+        bottom: 5.8vw;
+        width: 43.5vw;
+        height: 20.8vw;
+        z-index: 5;
+        user-select: none;
+        -webkit-user-drag: none;
+        @media screen and (max-width: 1024px) {
+            width: 42vw;
+            height: 18vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 45vw;
+            height: 19.7vw;
+        }
+    }
+    &__roadSign {
+        position: absolute;
+        left: 48%;
+        bottom: 9vw;
+        width: 10.8vw;
+        height: 25.6vw;
+        z-index: 5;
+        user-select: none;
+        -webkit-user-drag: none;
+        @media screen and (max-width: 1024px) {
+            width: 10.4vw;
+            height: 24.4vw;
+        }
+    }
+    &__videoContainer {
+        position: relative;
+        width: 21.4vw;
+        height: 46.3vw;
+        position: absolute;
+        right: 11vw;
+        bottom: 7.8vw;
+        z-index: 5;
+        @media screen and (max-width: 1024px) {
+        }
+
+        img {
+            width: 111%;
+            height: 102%;
+            position: absolute;
+            left: -1vw;
+            top: -0.5vw;
+            -webkit-user-drag: none;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 3vw;
+        }
+    }
+    &__swiper {
+        overflow: visible !important;
+        height: 67vw;
+        width: 100%;
+        margin-left: 0 !important;
+        @media screen and (max-width: 768px) {
+            height: 70.5vw;
+        }
+
+        &_slide1 {
+            width: 100%;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/RoadSlide.svg);
+            background-size: 100% 9.2vw;
+            background-position: center bottom;
+
+            background-repeat: no-repeat;
+            @media screen and (max-width: 480px) {
+                width: 64vw;
+                height: 49vw;
+                font-size: 6.6vw;
+                line-height: 6.6vw;
+            }
+        }
+        &_slide2 {
+            width: 100%;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/RoadSlide.svg);
+            background-size: 100% 9.2vw;
+            background-position: center bottom;
+
+            background-repeat: no-repeat;
+            @media screen and (max-width: 480px) {
+                width: 86.6vw;
+                height: 49vw;
+            }
+        }
+        &_slide3 {
+            width: 100%;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/RoadSlide.svg);
+            background-size: 100% 9.2vw;
+            background-position: center bottom;
+
+            background-repeat: no-repeat;
+            @media screen and (max-width: 480px) {
+                width: 86.6vw;
+                height: 49vw;
+            }
+        }
+        &_slide4 {
+            width: 100%;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/RoadSlide.svg);
+            background-size: 100% 9.2vw;
+            background-position: center bottom;
+
+            background-repeat: no-repeat;
+            @media screen and (max-width: 480px) {
+                width: 86.6vw;
+                height: 49vw;
+            }
+        }
+        &_slide5 {
+            width: 100%;
+            height: 100%;
+            background-image: url(../Assets/Images/OkkoCaseImages/RoadSlide.svg);
+            background-size: 100% 9.2vw;
+            background-position: center bottom;
+
+            background-repeat: no-repeat;
+            @media screen and (max-width: 480px) {
+                width: 86.6vw;
+                height: 49vw;
+            }
+        }
+    }
+}
+.okkoPostsSection {
+    padding: 6.6vw;
+    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+    background-color: #a967dd;
+    display: flex;
+    &__container {
+        width: 100%;
+        height: 65vw;
+        display: flex;
+        justify-content: space-between;
+        &_left {
+            width: 56%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &_upper {
+                width: 100%;
+                height: 57.5%;
+                display: flex;
+                justify-content: space-between;
+                &_card1 {
+                    height: 100%;
+                    width: 40.3%;
+                    border-radius: 1vw;
+                    background-image: url(../Assets/Images/OkkoCaseImages/PulsarPhoto1Desktop.webp);
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+                &_card2 {
+                    width: 57.2%;
+                    height: 100%;
+                    border-radius: 1vw;
+                    background-image: url(../Assets/Images/OkkoCaseImages/PulsarPhoto2Desktop.webp);
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+            &_lower {
+                height: 40.5%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                &_card1 {
+                    height: 100%;
+                    width: 49%;
+                    border-radius: 1vw;
+                    background-image: url(../Assets/Images/OkkoCaseImages/PulsarPhoto3Desktop.webp);
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+                &_card2 {
+                    width: 48.3%;
+                    height: 100%;
+                    border-radius: 1vw;
+                    background-image: url(../Assets/Images/OkkoCaseImages/PulsarPhoto4Desktop.webp);
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        &_right {
+            width: 42%;
+            border-radius: 1vw;
+            height: 100%;
+            @media screen and (max-width: 1024px) {
+                width: 43%;
+                border-radius: 2vw;
+            }
+        }
+    }
+}
+.projectDetailsContainer {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100%;
+    padding-left: 6.6vw;
+    padding-right: 6.6vw;
+    color: black;
+    margin-bottom: 6vw;
+    @media screen and (max-width: 1024px) {
+        padding-left: 6.25vw;
+        padding-right: 6.25vw;
+    }
+    @media screen and (max-width: 768px) {
+        margin-bottom: 18vw;
+    }
+    &_header {
+        color: #5566b7;
+        font-family: Gilroy-SemiBold;
+        font-size: 3.125vw;
+        line-height: 3.125vw;
+        margin-bottom: 1.25vw;
+        margin-top: 6.6vw;
+        @media screen and (max-width: 1024px) {
+            font-size: 6.25vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 6.25vw;
+            margin-bottom: 3.125vw;
+            color: var(--A967DD, #a967dd);
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 5.5vw;
+            line-height: 5.5vw;
+            margin-top: 13.3vw;
+            margin-bottom: 6.6vw;
+        }
+    }
+    &_text {
+        color: #5566b7;
+        font-family: Unbounded-Blond;
+        font-size: 1.25vw;
+        line-height: 1.45vw;
+        letter-spacing: 0.0375vw;
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.25vw;
+        position: relative;
+        img {
+            width: 1.25vw;
+            height: 1.25vw;
+            margin-right: 0.4vw;
+            @media screen and (max-width: 1024px) {
+                width: 2.6vw;
+                height: 2.6vw;
+                margin-right: 0.7vw;
+                color: #a967dd;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                fill: #a967dd;
+                stroke: #a967dd;
+            }
+            @media screen and (max-width: 768px) {
+                width: 4.4vw;
+                height: 4.4vw;
+            }
+        }
+        span {
+            color: #a967dd;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 2.6vw;
+            line-height: 4.1vw;
+            letter-spacing: 0.07vw;
+            padding-left: 6.3vw;
+            margin-bottom: 3.3vw;
+        }
+    }
+    &_job {
+        width: 17.2vw;
+        color: var(--5566B7, #5566b7);
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.45vw;
+        letter-spacing: 0.0375vw;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 1024px) {
+            font-family: Unbounded-Blond;
+            color: #a967dd;
+            font-size: 2.6vw;
+            line-height: 4.125vw; /* 160% */
+            letter-spacing: 0.07vw;
+            width: 26.2vw;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 23.2vw;
+            font-family: Unbounded;
+            font-size: 2.2vw;
+            font-weight: 500;
+            line-height: 2.7vw; /* 125% */
+            letter-spacing: 0.06vw;
+        }
+    }
+    &_name {
+        color: #a967dd;
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.45vw;
+        letter-spacing: 0.0375vw;
+        width: 35vw;
+        text-align: left;
+        @media screen and (max-width: 1024px) {
+            color: var(--000000, #000);
+            font-family: Unbounded-Blond;
+            font-size: 2.6vw;
+            line-height: 4.125vw; /* 160% */
+            letter-spacing: 0.07vw;
+            width: 49vw;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-family: Unbounded;
+            font-size: 2.2vw;
+            font-weight: 500;
+            line-height: 2.7vw; /* 125% */
+            letter-spacing: 0.06vw;
+        }
+    }
+    a {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 1024px) {
+            margin-top: 6.25vw;
+        }
+        @media screen and (max-width: 768px) {
+            margin-top: 13.3vw;
+            button {
+                font-family: Unbounded !important ;
+            }
+        }
+    }
+}
+
+.okkoCaseContainer::before {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 27vw;
+    height: 32.7vw;
+    background-image: url("../Assets/Images/OkkoCaseImages/OkkoCaseDesctop.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: brightness(0.7);
+    @media screen and (max-width: 1024px) {
+        background-image: url("../Assets/Images/OkkoCaseImages/OkkoCaseTablet.webp");
+        width: 87vw;
+        height: 82vw;
+    }
+    @media screen and (max-width: 480px) {
+        background-image: url("../Assets/Images/OkkoCaseImages/OkkoCaseMobile.webp");
+        width: 86vw;
+        height: 89vw;
+        padding-top: 11.4vw;
+        border-radius: 14vw;
+    }
+}
+.okkoCaseContainer {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 27vw;
+    height: 32.7vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3.6vw;
+    padding-top: 3.5vw;
+    margin-bottom: 3.3vw;
+    button {
+        transition-duration: 0.3s;
+        opacity: 0 !important;
+    }
+    @media screen and (max-width: 1024px) {
+        width: 87vw;
+        height: 82vw;
+        padding-top: 10.4vw;
+        border-radius: 6.5vw;
+        padding-left: 10.5vw;
+    }
+    @media screen and (max-width: 480px) {
+        width: 86vw;
+        height: 100vw;
+        padding-top: 8.8vw;
+        border-radius: 14vw;
+        padding-left: 9.9vw;
+    }
+    &__logo {
+        position: relative;
+        margin-bottom: 1vw;
+        width: 9.2vw;
+        height: 2.15vw;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        @media screen and (max-width: 1024px) {
+            width: 22.2vw;
+            height: 5.4vw;
+            margin-bottom: 2vw;
+            margin-left: unset;
+        }
+        @media screen and (max-width: 480px) {
+            width: 24vw;
+            min-height: 3.8vw;
+            margin-right: 11.3vw;
+            margin-bottom: 2vw;
+        }
+    }
+    &__header {
+        position: relative;
+        width: 93%;
+        font-family: Unbounded;
+        font-size: 2.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.5vw;
+        margin-bottom: 1.25vw;
+        margin-left: 3.5%;
+        @media screen and (max-width: 1024px) {
+            margin-left: 12.7vw;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 5.5vw;
+            line-height: 5.5vw;
+        }
+    }
+    &__text {
+        position: relative;
+        width: 21.7vw;
+        font-family: Unbounded;
+        font-size: 1.66vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875vw;
+        margin-bottom: 13.6vw;
+        color: white !important;
+        transition-duration: 0.3s;
+        @media screen and (max-width: 1024px) {
+            font-family: Unbounded;
+            font-size: 4.1vw;
+            line-height: 4.1vw;
+            width: 63.5vw;
+            margin-bottom: 35vw;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 4.4vw;
+            line-height: 4.4vw;
+            margin-bottom: 34vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Unbounded-Blond;
+            font-size: 4.2vw;
+            line-height: 4.6vw;
+            margin-bottom: 24vw;
+            width: 61.3vw;
+            text-align: left;
+            font-style: normal;
+            font-weight: 300;
+            padding-right: 9vw;
+            margin-bottom: 41vw;
+        }
+    }
+    &__desctopContent {
+        width: 87%;
+        // margin-left: 3.5%;
+        border-top: 1px solid white;
+        padding-top: 0.5vw;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        @media screen and (max-width: 1024px) {
+            width: 72%;
+            padding-top: 1vw;
+            display: none;
+        }
+    }
+
+    &__desctopContentItem {
+        font-family: Unbounded;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 2.6vw;
+        box-shadow: 0.2vw 0.2vw 0.2vw 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1vw;
+        line-height: 1.25vw;
+        padding: 0.2vw 0.8vw;
+        color: white !important;
+        @media screen and (max-width: 1024px) {
+            font-size: 2.6vw;
+            line-height: 3.125vw;
+            border-radius: 2.6vw;
+            border-radius: 6.5vw;
+            padding: 0.5vw 2vw;
+            box-shadow: 0.5vw 0.5vw 0.5vw 0px rgba(0, 0, 0, 0.25);
+        }
+        @media screen and (max-width: 480px) {
+        }
+    }
+    &__mobileContent {
+        display: none;
+        @media screen and (max-width: 1024px) {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2vw;
+            width: 66.5vw;
+            border-top: 1px solid white;
+            padding-top: 2.2vw;
+        }
+        @media screen and (max-width: 480px) {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 87%;
+            border-top: 2px solid #fff;
+            padding-top: 2.2vw;
+            :nth-child(1) {
+                order: 1;
+            }
+            :nth-child(2) {
+                order: 3;
+            }
+            :nth-child(3) {
+                order: 2;
+            }
+            :nth-child(4) {
+                order: 4;
+            }
+        }
+    }
+    &__mobileContentItem {
+        display: none;
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            font-family: Unbounded;
+            font-size: 2.6vw;
+            line-height: 3.125vw;
+            border-radius: 2.6vw;
+            border-radius: 6.5vw;
+            padding: 0.5vw 2vw;
+            box-shadow: 0.5vw 0.5vw 0.5vw 0px rgba(0, 0, 0, 0.25);
+            background: rgba(255, 255, 255, 0.3);
+            margin: 0;
+            color: white !important;
+        }
+        @media screen and (max-width: 480px) {
+            color: white !important;
+            margin: 1vw;
+            font-size: 4.1vw;
+            font-family: Unbounded-Blond;
+            border-radius: 14.7vw;
+            padding: 1.2vw 4.8vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .okkoCaseContainer:hover .okkoCaseContainer__text {
+        margin-bottom: 12vw;
+    }
+    .okkoCaseContainer:hover button {
+        opacity: 1 !important;
+    }
+}

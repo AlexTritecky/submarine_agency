@@ -1,0 +1,521 @@
+.burgerContainer {
+  width: 5.6vw;
+  height: 5.6vw;
+  min-width: 5.6vw;
+  min-height: 5.6vw;
+  border-radius: 50%;
+  background-color: #a967dd;
+  position: relative;
+  transition-duration: 0.25s;
+  position: fixed;
+  z-index: 50;
+  right: 6.6vw;
+  top: 3.125vw;
+  cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+}
+@media screen and (max-width: 1024px) {
+  .burgerContainer {
+    width: 14vw;
+    height: 14vw;
+    min-width: 14vw;
+    min-height: 14vw;
+    top: 14vw;
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 480px) {
+  .burgerContainer {
+    top: 17.7vw;
+    width: 12.2vw;
+    height: 12.2vw;
+    min-width: 12.2vw;
+    min-height: 12.2vw;
+  }
+}
+.burgerContainer__lineOne {
+  height: 12%;
+  width: 32%;
+  background-color: white;
+  border-radius: 93vw;
+  position: absolute;
+  right: 16%;
+  transform: rotate(15deg);
+  top: 25.5%;
+  transition-duration: 0.25s;
+}
+.burgerContainer__lineOneHide {
+  width: 0%;
+  height: 0%;
+}
+.burgerContainer__lineTwo {
+  height: 12%;
+  width: 50%;
+  background-color: white;
+  border-radius: 93vw;
+  position: absolute;
+  right: 16%;
+  top: 44%;
+}
+.burgerContainer__lineTwoMoved {
+  top: 50%;
+  left: 50%;
+  width: 68%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: white;
+}
+@media screen and (max-width: 1024px) {
+  .burgerContainer__lineTwoMoved {
+    background-color: #5566b7;
+  }
+}
+.burgerContainer__lineThree {
+  height: 12%;
+  width: 68%;
+  background-color: white;
+  border-radius: 93vw;
+  position: absolute;
+  top: 60%;
+  left: 16%;
+  transition-duration: 0.25s;
+}
+.burgerContainer__lineThreeMoved {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: white;
+}
+@media screen and (max-width: 1024px) {
+  .burgerContainer__lineThreeMoved {
+    background-color: #5566b7;
+  }
+}
+
+.burgerContainerOpened {
+  transform: rotate(90deg);
+  background-color: #5566b7;
+  cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+}
+@media screen and (max-width: 1024px) {
+  .burgerContainerOpened {
+    background-color: white;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1024px) {
+  .burgerContainerOpened {
+    width: 14vw;
+    height: 14vw;
+    min-width: 14vw;
+    min-height: 14vw;
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 480px) {
+  .burgerContainerOpened {
+    width: 12.2vw;
+    height: 12.2vw;
+    min-width: 12.2vw;
+    min-height: 12.2vw;
+    top: 17.7vw;
+  }
+}
+
+.burgerContainer:hover .burgerContainer__lineOne {
+  transform: rotate(0deg);
+}
+
+@media screen and (max-width: 1024px) {
+  .burgerToRightSide {
+    left: 87%;
+    top: 5vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .burgerToRightSide {
+    left: 90%;
+    top: 5vw;
+  }
+}
+
+.burgerMenuContainer {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 30;
+}
+
+.burgerMenuContainerRightSide {
+  background-color: #fff;
+  width: 70vw;
+  height: 100%;
+  bottom: -100%;
+  position: absolute;
+  right: 0;
+  transition-duration: 0.5s;
+  -webkit-animation: slideCloseRight 0.5s forwards;
+          animation: slideCloseRight 0.5s forwards;
+}
+@media screen and (max-width: 1024px) {
+  .burgerMenuContainerRightSide {
+    background-color: #5566b7;
+    width: 100vw;
+  }
+}
+
+.burgerMenuContainerRightSideOpen {
+  -webkit-animation: slideOpenRight 0.5s forwards;
+          animation: slideOpenRight 0.5s forwards;
+}
+
+@-webkit-keyframes slideOpenRight {
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes slideOpenRight {
+  to {
+    bottom: 0;
+  }
+}
+@-webkit-keyframes slideCloseRight {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -100%;
+  }
+}
+@keyframes slideCloseRight {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -100%;
+  }
+}
+.burgerMenuContainerLeftSide {
+  background-color: #5566b7;
+  width: 30vw;
+  height: 100vh;
+  top: -100vh;
+  position: absolute;
+  left: 0;
+  -webkit-animation: slideCloseLeft 0.5s forwards;
+          animation: slideCloseLeft 0.5s forwards;
+}
+@media screen and (max-width: 1024px) {
+  .burgerMenuContainerLeftSide {
+    display: none;
+  }
+}
+
+.burgerMenuContainerLeftSideOpen {
+  -webkit-animation: slideOpenLeft 0.5s forwards;
+          animation: slideOpenLeft 0.5s forwards;
+}
+
+@-webkit-keyframes slideOpenLeft {
+  to {
+    top: 0;
+  }
+}
+
+@keyframes slideOpenLeft {
+  to {
+    top: 0;
+  }
+}
+@-webkit-keyframes slideCloseLeft {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100vh;
+  }
+}
+@keyframes slideCloseLeft {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100vh;
+  }
+}
+@-webkit-keyframes changeColor {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #5566b7;
+  }
+}
+@keyframes changeColor {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #5566b7;
+  }
+}
+@-webkit-keyframes changeColorBack {
+  from {
+    color: #5566b7;
+  }
+  to {
+    color: transparent;
+  }
+}
+@keyframes changeColorBack {
+  from {
+    color: #5566b7;
+  }
+  to {
+    color: transparent;
+  }
+}
+.none {
+  display: none;
+}
+
+.navigationContainer {
+  color: transparent;
+  position: absolute;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  top: 5.4vw;
+  left: 32vw;
+  z-index: 31;
+}
+@media screen and (max-width: 1024px) {
+  .navigationContainer {
+    top: 31.5vw;
+    left: 6.25vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navigationContainer {
+    top: 41vw;
+    left: 4.4vw;
+  }
+}
+.navigationContainer__navigationHeader {
+  color: #5566b7;
+  font-family: Unbounded;
+  font-size: 1.25vw;
+  margin-left: 1vw;
+}
+@media screen and (max-width: 1024px) {
+  .navigationContainer__navigationHeader {
+    color: white;
+    font-size: 3.125vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navigationContainer__navigationHeader {
+    color: white;
+    font-size: 2.3vw;
+  }
+}
+.navigationContainer__navigationItem {
+  color: #5566b7;
+  font-family: "Gilroy-Black";
+  line-height: 5.2vw;
+  font-size: 3.3vw;
+  transition-duration: 0.5s;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition-delay: 0.3s;
+}
+@media screen and (max-width: 1024px) {
+  .navigationContainer__navigationItem {
+    color: white;
+    font-size: 6.125vw;
+    line-height: 8.3vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navigationContainer__navigationItem {
+    color: white;
+    font-size: 5.5vw;
+    line-height: 12vw;
+  }
+}
+.navigationContainer__navigationItem::before {
+  content: "";
+  transition-delay: 0.3s;
+  transition-duration: 0.5s;
+  width: 0;
+  height: 0.8vw;
+  background-color: #5566b7;
+  transition: width 0.5s;
+  margin-left: 1vw;
+  border-right: 1vw solid white;
+}
+@media screen and (max-width: 1024px) {
+  .navigationContainer__navigationItem::before {
+    background-color: white;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigationContainer__navigationItem::before {
+    border-right: 1vw solid #5566b7;
+  }
+}
+.navigationContainer__navigationItem:hover::before {
+  transition-delay: 0.3s;
+  width: 8vw;
+}
+
+.navigationContainerHide {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  color: transparent;
+  display: none;
+}
+
+.waterMarkContainer {
+  color: #5566b7;
+  font-family: "Unbounded";
+  position: absolute;
+  z-index: 31;
+  bottom: 1.4vw;
+  right: 6.6vw;
+  font-size: 1vw;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+@media screen and (max-width: 1024px) {
+  .waterMarkContainer {
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2.6vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 3.5vw;
+  }
+}
+
+.waterMarkContainerHide {
+  display: none;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  color: white;
+}
+
+.burgerMenuLogo {
+  position: absolute;
+  width: 20.5vw;
+  z-index: 31;
+  top: 3.8vw;
+  left: 6.6vw;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 1024px) {
+  .burgerMenuLogo {
+    top: 2vw;
+    left: 50%;
+    transform: translate(-50%);
+    width: 36vw;
+    height: 8.2vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .burgerMenuLogo {
+    width: 27.2vw;
+    top: 8.5vw;
+  }
+}
+
+.burgerMenuLogoHide {
+  display: none;
+}
+
+.socialMediaLinksContainer {
+  position: absolute;
+  z-index: 31;
+  bottom: 3vw;
+  left: 6.6vw;
+  color: white;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+@media screen and (max-width: 1024px) {
+  .socialMediaLinksContainer {
+    display: none;
+  }
+}
+.socialMediaLinksContainer__header {
+  font-size: 1vw;
+  font-family: "Unbounded";
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+.socialMediaLinksContainer__link {
+  font-size: 1vw;
+  line-height: 1.25vw;
+  font-family: "Unbounded";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5vw;
+  width: 8.2vw;
+  color: white;
+  text-decoration: none;
+}
+.socialMediaLinksContainer__link img {
+  transition-duration: 0.5s;
+}
+.socialMediaLinksContainer__link:hover img {
+  transform: rotate(90deg);
+}
+
+.socialMediaLinksContainerHide {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  color: #5566b7;
+  display: none;
+}
+.socialMediaLinksContainerHide img {
+  display: none;
+}
+
+.socialMediaLinksTabletContainer {
+  position: absolute;
+  z-index: 31;
+  bottom: 13.6vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .socialMediaLinksTabletContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.socialMediaLinksTabletContainer img {
+  width: 10.4vw;
+  height: 10.4vw;
+}
+
+.socialMediaLinksTabletContainerHide {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  display: none;
+}/*# sourceMappingURL=menuBurger.module.css.map */

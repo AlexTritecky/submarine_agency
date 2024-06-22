@@ -1,0 +1,2834 @@
+.recoverUkraineHeaderSection {
+    width: 100%;
+    height: 49.3vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../Assets/Images/RikotaCaseImages/RikotaDesctop.webp");
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    position: relative;
+    color: black;
+    &__mobileBackgroundFoto {
+        display: none;
+    }
+    &__headerLogo {
+        position: absolute;
+        left: 6.9vw;
+        top: 4.1vw;
+        width: 20.5vw;
+        height: 4.6vw;
+        @media screen and (max-width: 1024px) {
+            width: 36vw;
+            height: 8vw;
+            left: 50%;
+            transform: translate(-50%);
+            top: 2.2vw;
+        }
+        @media screen and (max-width: 768px) {
+            top: 11.9vw;
+            width: 27.2vw;
+            height: 5.8vw;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        background-image: url("../Assets/Images/RikotaCaseImages/RikotaTablet.webp");
+        height: 57.4vw;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        height: 63vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: none;
+        &__mobileBackgroundFoto {
+            display: block;
+            width: 87vw;
+            height: 50.2vw;
+            box-shadow: 0.83vw 0.83vw 1.1vw -0.55vw #5566b7;
+            border-radius: 13.8vw;
+        }
+    }
+}
+.recoverUkraineHeaderInfoSection {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100%;
+    height: 30vw;
+    padding-left: 6.6vw;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        height: 94vw;
+        padding-left: 6.5vw;
+    }
+    &__leftPart {
+        &__logo {
+            margin-top: 3.3vw;
+            width: 35vw;
+            height: 9vw;
+            margin-bottom: 0.8vw;
+            @media screen and (max-width: 1024px) {
+                width: 87.2vw;
+                height: 22.5vw;
+                margin-top: 6.25vw;
+                margin-bottom: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                margin-top: 6.6vw;
+                height: 14.7vw;
+                width: 57vw;
+                margin-bottom: 2.5vw;
+            }
+        }
+        &__text {
+            font-family: Unbounded-Blond;
+            font-size: 1.25vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 1.6vw;
+            letter-spacing: 0.0375vw;
+            br {
+                display: none;
+            }
+            @media screen and (max-width: 1024px) {
+                font-family: Unbounded;
+                font-size: 3.125vw;
+                font-style: normal;
+                line-height: 3.6vw; /* 116.667% */
+                letter-spacing: 0.009vw;
+            }
+            @media screen and (max-width: 768px) {
+                font-family: Unbounded-Blond;
+                font-size: 3.8vw;
+                line-height: 4.4vw;
+                letter-spacing: 0.011vw;
+                br {
+                    display: block;
+                }
+            }
+        }
+    }
+    &__rightPart {
+        width: 49.5vw;
+        height: 100%;
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+        }
+        &_header {
+            width: 100%;
+            margin-top: 3.3vw;
+            margin-bottom: 0.8vw;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 7.1vw;
+            color: #000;
+            text-align: right;
+            font-family: Unbounded;
+            font-size: 1.25vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.45vw;
+            letter-spacing: 0.0375vw;
+            img {
+                margin-right: 0.4vw;
+                @media screen and (max-width: 1024px) {
+                    width: 3.125vw;
+                    height: 3.125vw;
+                    margin-right: 1vw;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 4.7vw;
+                    height: 4.7vw;
+                    margin-right: 2.2vw;
+                }
+            }
+            @media screen and (max-width: 1024px) {
+                margin-top: 6.25vw;
+                padding-right: 6.25vw;
+                font-size: 3.125vw;
+                line-height: 3.6vw;
+                letter-spacing: 0.009vw;
+            }
+            @media screen and (max-width: 768px) {
+                font-family: Unbounded-Blond;
+                margin-top: 6.8vw;
+                padding-right: 6.4vw;
+                font-size: 3.8vw;
+                line-height: 4.4vw;
+                letter-spacing: 0.011vw;
+                margin-bottom: 2.3vw;
+            }
+        }
+        &_content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: relative;
+            @media screen and (max-width: 1024px) {
+                height: 35vw;
+            }
+            @media screen and (max-width: 768px) {
+                height: 41.1vw;
+            }
+
+            &_image {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 26vw;
+                height: 100%;
+                background-image: url("../Assets/Images/RecoverUkraineCaseImages/recoverUkraineDamage.webp");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                @media screen and (max-width: 1024px) {
+                    background-image: url("../Assets/Images/RecoverUkraineCaseImages/recoverUkraineDamageTablet.webp");
+                    width: 29vw;
+                }
+                @media screen and (max-width: 768px) {
+                    background-image: url("../Assets/Images/RecoverUkraineCaseImages/recoverUkraineDamageMobile.webp");
+                    width: 33.8vw;
+                    box-shadow: 0.83vw 0.83vw 1.1vw -0.55vw #5566b7;
+                    border-bottom-left-radius: 2.7vw;
+                }
+            }
+            &_item {
+                width: 95%;
+                height: 4.58vw;
+                padding-left: 2.58vw;
+                border-top-left-radius: 4.58vw;
+                border-bottom-left-radius: 4.58vw;
+                cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+                background-color: #a967dd;
+                transition-duration: 0.4s;
+                margin-bottom: 0.78vw;
+                display: flex;
+                align-items: center;
+                color: #fff;
+                font-family: Unbounded;
+                font-size: 1.25vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.25vw;
+                letter-spacing: 0.0375vw;
+                transition-duration: 0.3s;
+                @media screen and (max-width: 1024px) {
+                    height: 7.3vw;
+                    border-top-left-radius: 7.3vw;
+                    border-bottom-left-radius: 7.3vw;
+                    margin-bottom: 2vw;
+                    width: 77.3vw;
+                    font-size: 3.125vw;
+                    line-height: 3.125vw;
+                    letter-spacing: 0.009vw;
+                }
+                @media screen and (max-width: 768px) {
+                    height: 9.4vw;
+                    border-top-left-radius: 9.4vw;
+                    border-bottom-left-radius: 9.4vw;
+                    margin-bottom: 1.1vw;
+                    width: 74.1vw;
+                    font-size: 2.2vw;
+                    line-height: 2.2vw;
+                    letter-spacing: 0.011vw;
+                }
+                img {
+                    transition-duration: 0.3s;
+                    margin-right: 0.4vw;
+                    @media screen and (max-width: 1024px) {
+                        width: 2.9vw;
+                        height: 2.9vw;
+                        margin-right: 1vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 4vw;
+                        height: 4vw;
+                        margin-right: 2.2vw;
+                    }
+                }
+            }
+            &_item:hover {
+                width: 100%;
+                @media screen and (max-width: 1024px) {
+                    width: 79.5vw;
+                }
+                @media screen and (max-width: 1024px) {
+                    width: 78.5vw;
+                }
+            }
+            &_itemClicked {
+                width: 100%;
+                font-size: 1.15vw;
+                line-height: 1.25vw;
+                letter-spacing: 0.034vw;
+                img {
+                    margin-right: 0.3vw;
+                    width: 1.56vw;
+                    height: 1.56vw;
+                    transform: rotate(0deg) !important;
+                }
+                @media screen and (max-width: 1024px) {
+                    font-size: 3vw;
+                    line-height: 3vw;
+                    letter-spacing: 0.009vw;
+                    img {
+                        margin-right: 0.8vw;
+                        width: 2.7vw;
+                        height: 2.7vw;
+                        transform: rotate(0deg) !important;
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 2.2vw;
+                    line-height: 2.2vw;
+                    letter-spacing: 0.011vw;
+                    img {
+                        width: 4vw;
+                        height: 4vw;
+                        margin-right: 2.2vw;
+                        transform: rotate(0deg) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.recoverUkraineHeaderInfoSection__rightPart_content:last-child {
+    margin-bottom: 0;
+}
+.recoverUkraineHeaderInfoSection__rightPart_content_item:hover img {
+    transform: rotate(135deg);
+}
+.brandingSection {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    &__header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 9.8vw;
+        background-color: #a967dd;
+        cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+        color: #fff;
+        font-family: Gilroy-SemiBold;
+        font-size: 3.3vw;
+        line-height: 3.3vw;
+        padding-left: 7.2vw;
+        @media screen and (max-width: 1024px) {
+            height: 10.4vw;
+            padding-left: 6.25vw;
+            font-size: 6.25vw;
+            line-height: 6.25vw;
+        }
+        @media screen and (max-width: 768px) {
+            height: 14.4vw;
+            font-size: 5.5vw;
+            line-height: 5.5vw;
+        }
+    }
+
+    &__content {
+        margin-bottom: 3.7vw;
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 6.25vw;
+        }
+
+        &_main {
+            width: 82vw;
+            height: 33.5vw;
+            margin: 0 auto;
+            margin-top: 3.3vw;
+            margin-bottom: 7.8vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-image: url(../Assets/Images/RecoverUkraineCaseImages/BrandingContentMainBackgound.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            margin-bottom: 7.9vw;
+            @media screen and (max-width: 1024px) {
+                margin-top: 6.25vw;
+                width: 87.2vw;
+                height: 84.2vw;
+                background-image: url(../Assets/Images/RecoverUkraineCaseImages/BrandingContentMainBackgoundTablet.svg);
+                margin-bottom: 15.3vw;
+            }
+            @media screen and (max-width: 768px) {
+                margin-top: 6.6vw;
+                background-image: url(../Assets/Images/RecoverUkraineCaseImages/BrandingContentMainBackgoundMobile.svg);
+                width: 81.1vw;
+                height: 61vw;
+                margin-bottom: 11.1vw;
+            }
+            &_imageContainer {
+                margin-top: 2.5vw;
+                margin-left: 3.95vw;
+                margin-bottom: 5.4vw;
+                img {
+                    width: 7.9vw;
+                    height: 8.2vw;
+                }
+                @media screen and (max-width: 1024px) {
+                    margin-top: 3.125vw;
+                    margin-left: 11vw;
+                    img {
+                        width: 11.5vw;
+                        height: 11.8vw;
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    margin-top: 4.7vw;
+                    margin-left: 11.1vw;
+                    margin-bottom: 2.5vw;
+                    img {
+                        width: 9.1vw;
+                        height: 10.5vw;
+                    }
+                }
+            }
+            &_textContainer {
+                margin-left: 2.5vw;
+                height: 11.6vw;
+                width: 77.2vw;
+                color: #fff;
+                font-family: Unbounded-Blond;
+                font-size: 1.25vw;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.45vw;
+                letter-spacing: 0.0375vw;
+                position: relative;
+                @media screen and (max-width: 1024px) {
+                    width: 75vw;
+                    font-size: 3.125vw;
+                    line-height: 3.525vw;
+                    letter-spacing: 0.15vw;
+                    margin-left: 6.25vw;
+                    height: unset;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 68.5vw;
+                    font-size: 2.2vw;
+                    line-height: 3.3vw;
+                    letter-spacing: 0.06vw;
+                    margin-left: 7.2vw;
+                }
+                &_header {
+                    margin-bottom: 1.5vw;
+                    @media screen and (max-width: 1024px) {
+                        margin-bottom: 3.5vw;
+                    }
+                }
+            }
+            &_arrowContainer {
+                height: 8.75vw;
+                width: 8.75vw;
+                border-radius: 50%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -4.375vw;
+                background-color: #5566b7;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 5.5vw;
+                    height: 5.5vw;
+                }
+                @media screen and (max-width: 1024px) {
+                    height: 16.6vw;
+                    width: 16.6vw;
+                    bottom: -8.125vw;
+                    img {
+                        width: 8.3vw;
+                        height: 8.3vw;
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    width: 8.8vw;
+                    height: 8.8vw;
+                    bottom: -4.4vw;
+                    img {
+                        width: 4.4vw;
+                        height: 4.4vw;
+                    }
+                }
+            }
+        }
+        &_title {
+            color: #5566b7;
+            font-family: Gilroy-SemiBold;
+            font-size: 1.25vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.25vw;
+            letter-spacing: 0.0375vw;
+            margin-bottom: 0.83vw;
+            margin-left: 6.6vw;
+            @media screen and (max-width: 1024px) {
+                color: #5566b7;
+                font-family: Unbounded;
+                font-size: 2.6vw;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 2.6vw;
+                letter-spacing: 0.08vw;
+                margin-bottom: 2vw;
+                margin-left: 6.25vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 2.2vw;
+                line-height: 2.7vw; /* 125% */
+                letter-spacing: 0.06vw;
+                margin-bottom: 2.2vw;
+            }
+        }
+        &_text {
+            color: #000;
+            font-family: Unbounded;
+            font-size: 1.25vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.45vw;
+            letter-spacing: 0.0375vw;
+            margin-left: 6.6vw;
+            margin-bottom: 1.66vw;
+            @media screen and (max-width: 1024px) {
+                color: #000;
+                font-family: Unbounded;
+                font-size: 2.1vw;
+                line-height: 2.1vw;
+                letter-spacing: 0.06vw;
+                margin-left: 6.25vw;
+                margin-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                font-family: Unbounded-Blond;
+                font-size: 2.2vw;
+                line-height: 3.3vw;
+                letter-spacing: 0.06vw;
+                margin-bottom: 2.2vw;
+            }
+        }
+    }
+}
+.directionsText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 9.6vw;
+    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+    background-color: #a967dd;
+    color: #fff;
+    font-family: Unbounded-Blond;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.45vw;
+    letter-spacing: 0.0375vw;
+    padding-left: 7.2vw;
+    padding-right: 7.2vw;
+    @media screen and (max-width: 1024px) {
+        height: 11.9vw;
+        padding-left: 6.25vw;
+        padding-right: 6.25vw;
+        font-size: 2vw;
+        line-height: 2.6vw;
+        letter-spacing: 0.06vw;
+    }
+    @media screen and (max-width: 768px) {
+        height: 16.6vw;
+        font-size: 2.2vw;
+        line-height: 3.3vw;
+        letter-spacing: 0.06vw;
+    }
+}
+.brevityText {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 9.8vw;
+    background-color: #fff;
+    color: #5566b7;
+    font-family: Gilroy-SemiBold;
+    font-size: 3.3vw;
+    line-height: 3.3vw;
+    padding-left: 7.2vw;
+    @media screen and (max-width: 1024px) {
+        height: 25vw;
+        padding-left: 6.25vw;
+        padding-right: 6.25vw;
+        font-family: Gilroy-Bold;
+        font-size: 6.25vw;
+        line-height: 6.25vw;
+    }
+    @media screen and (max-width: 768px) {
+        height: 24.4vw;
+        font-size: 5.5vw;
+        line-height: 5.5vw;
+    }
+}
+
+.variantsText {
+    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 8.1vw;
+    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+    background-color: #a967dd;
+    color: #fff;
+    font-family: Unbounded-Blond;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.45vw; /* 116.667% */
+    letter-spacing: 0.72px;
+    padding-left: 7.2vw;
+    padding-right: 7.2vw;
+    @media screen and (max-width: 1024px) {
+        height: 6.8vw;
+        font-size: 2vw;
+        line-height: 2.6vw;
+        padding-left: 6.25vw;
+        padding-right: 6.25vw;
+    }
+    @media screen and (max-width: 768px) {
+        height: 7.7vw;
+        font-size: 2.2vw;
+        line-height: 3.3vw;
+        letter-spacing: 0.06vw;
+    }
+}
+.detailsText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 9.5vw;
+    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+    background-color: #a967dd;
+    color: #fff;
+    font-family: Unbounded-Blond;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.45vw; /* 116.667% */
+    letter-spacing: 0.0375vw;
+    padding-left: 7.2vw;
+    padding-right: 7.2vw;
+    margin-bottom: 3.3vw;
+    @media screen and (max-width: 1024px) {
+        padding-left: 6.25vw;
+        padding-right: 20.4vw;
+        height: 16.6vw;
+        font-size: 2.6vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 4.1vw;
+        letter-spacing: 0.07vw;
+        margin-bottom: 6.25vw;
+    }
+    @media screen and (max-width: 768px) {
+        height: 18.8vw;
+        font-size: 2.2vw;
+        line-height: 3.3vw;
+        padding-right: 13.4vw;
+    }
+}
+.recoveryProcessContainer {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__logoVideo {
+        margin-top: 3.3vw;
+        margin-bottom: 3.3vw;
+        width: 56.25vw;
+        height: 46.9vw;
+        @media screen and (max-width: 1024px) {
+            margin-top: 6.25vw;
+            width: 100vw;
+            height: 83vw;
+        }
+    }
+    &__infoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_header {
+            color: #5566b7;
+            font-family: Gilroy;
+            font-size: 3.3vw;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 3.3vw;
+            margin-bottom: 3.3vw;
+            br {
+                display: none;
+            }
+            @media screen and (max-width: 1024px) {
+                font-size: 6.25vw;
+                font-family: Gilroy-Bold;
+                line-height: 6.25vw;
+                margin-bottom: 6.25vw;
+                padding-left: 6.25vw;
+                padding-right: 6.25vw;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 5.5vw;
+                line-height: 5.5vw;
+                width: 100%;
+                padding-left: 0;
+                br {
+                    display: block;
+                }
+            }
+        }
+        &_graphicContainer {
+            height: 58.5vw;
+            width: 54.5vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            @media screen and (max-width: 1024px) {
+                width: 87.5vw;
+                height: 83.2vw;
+                margin-bottom: 6vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 72.5vw;
+                height: 95.8vw;
+                margin-bottom: 10vw;
+            }
+            &_graphic {
+                background-image: url(../Assets/Images/RecoverUkraineCaseImages/GraphicDesctop.webp);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 36vw;
+                height: 36vw;
+                @media screen and (max-width: 1024px) {
+                    width: 49.5vw;
+                    height: 49.5vw;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 51.9vw;
+                    height: 51.1vw;
+                    position: absolute;
+                    top: 24.4vw;
+                    left: 0;
+                }
+            }
+            &_graphicInfo1 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 17.6vw;
+                height: 6.1vw;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                @media screen and (max-width: 1024px) {
+                    width: 35vw;
+                    height: 13.6vw;
+                    top: -1vw;
+                    right: 1vw;
+                }
+                @media screen and (max-width: 768px) {
+                    top: 7vw;
+                    right: -6vw;
+                }
+                &_header {
+                    color: #a967dd;
+                    font-family: Gilroy-SemiBold;
+                    font-size: 3.125vw;
+                    font-style: normal;
+                    line-height: 3.125vw;
+                    @media screen and (max-width: 1024px) {
+                        font-family: Gilroy-Bold;
+                        font-size: 6.25vw;
+                        line-height: 6.25vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 6.6vw;
+                        line-height: 6.6vw;
+                    }
+                }
+                &_text {
+                    color: #000;
+                    font-family: Unbounded;
+                    font-size: 1.25vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.45vw;
+                    letter-spacing: 0.0375vw;
+                    @media screen and (max-width: 1024px) {
+                        font-family: Unbounded-Blond;
+                        font-size: 2.6vw;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 4.1vw;
+                        letter-spacing: 0.07vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 2.2vw;
+                        line-height: 3.3vw;
+                        letter-spacing: 0.06vw;
+                    }
+                }
+                &_line {
+                    width: 0.3125vw;
+                    height: 8.5vw;
+                    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+                    background-color: #a967dd;
+                    position: absolute;
+                    left: -1vw;
+                    bottom: -8.5vw;
+                    @media screen and (max-width: 1024px) {
+                        left: 0;
+                        height: 7.4vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 0.6vw;
+                        height: 20.2vw;
+                        bottom: -21.5vw;
+                    }
+                }
+            }
+            &_graphicInfo2 {
+                position: absolute;
+                top: 7.9vw;
+                left: 2vw;
+                width: 6.6vw;
+                height: 6.1vw;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                @media screen and (max-width: 1024px) {
+                    top: 0vw;
+                    left: 8vw;
+                    width: 19vw;
+                }
+                @media screen and (max-width: 768px) {
+                    top: 11.3vw;
+                    left: 3.3vw;
+                }
+                &_header {
+                    color: #a967dd;
+                    font-family: Gilroy-SemiBold;
+                    font-size: 3.125vw;
+                    font-style: normal;
+                    line-height: 3.125vw;
+                    @media screen and (max-width: 1024px) {
+                        font-family: Gilroy-Bold;
+                        font-size: 6.25vw;
+                        line-height: 6.25vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 6.6vw;
+                        line-height: 6.6vw;
+                    }
+                }
+                &_text {
+                    color: #000;
+                    font-family: Unbounded;
+                    font-size: 1.25vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.45vw;
+                    letter-spacing: 0.0375vw;
+                    @media screen and (max-width: 1024px) {
+                        font-family: Unbounded-Blond;
+                        font-size: 2.6vw;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 4.1vw;
+                        letter-spacing: 0.07vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 2.2vw;
+                        line-height: 3.3vw;
+                        letter-spacing: 0.06vw;
+                    }
+                }
+                &_line {
+                    width: 0.3125vw;
+                    height: 8.5vw;
+                    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+                    background-color: #a967dd;
+                    position: absolute;
+                    right: -3vw;
+                    bottom: -9.5vw;
+                    @media screen and (max-width: 1024px) {
+                        right: 3.3vw;
+                        height: 12.5vw;
+                        bottom: -24vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 0.6vw;
+                        left: 0;
+                        height: 15.5vw;
+                        bottom: -25vw;
+                    }
+                }
+            }
+
+            &_graphicInfo3 {
+                position: absolute;
+                bottom: 7vw;
+                left: 11.5vw;
+                width: 6.6vw;
+                height: 6.1vw;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                @media screen and (max-width: 1024px) {
+                    bottom: 10vw;
+                    left: 19.5vw;
+                }
+                @media screen and (max-width: 768px) {
+                    bottom: 13vw;
+                    left: 2.5vw;
+                }
+                &_header {
+                    color: #a967dd;
+                    font-family: Gilroy-SemiBold;
+                    font-size: 3.125vw;
+                    font-style: normal;
+                    line-height: 3.125vw;
+                    @media screen and (max-width: 1024px) {
+                        font-family: Gilroy-Bold;
+                        font-size: 6.25vw;
+                        line-height: 6.25vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 6.6vw;
+                        line-height: 6.6vw;
+                    }
+                }
+                &_text {
+                    color: #000;
+                    font-family: Unbounded;
+                    font-size: 1.25vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.45vw;
+                    letter-spacing: 0.0375vw;
+                    @media screen and (max-width: 1024px) {
+                        font-family: Unbounded-Blond;
+                        font-size: 2.6vw;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 4.1vw;
+                        letter-spacing: 0.07vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 2.2vw;
+                        line-height: 3.3vw;
+                        letter-spacing: 0.06vw;
+                    }
+                }
+                &_line {
+                    width: 0.3125vw;
+                    height: 8.5vw;
+                    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+                    background-color: #a967dd;
+                    position: absolute;
+                    left: 0vw;
+                    top: -10.5vw;
+                    @media screen and (max-width: 1024px) {
+                        top: -22.5vw;
+                        height: 21.3vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 0.6vw;
+                        top: -14.5vw;
+                        height: 12.3vw;
+                        left: 2vw;
+                    }
+                }
+            }
+            &_graphicInfo4 {
+                position: absolute;
+                bottom: -2vw;
+                left: 22vw;
+                width: 19.6vw;
+                height: 6.1vw;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                @media screen and (max-width: 1024px) {
+                    left: 40.3vw;
+                    bottom: 6vw;
+                    width: 34.6vw;
+                }
+
+                @media screen and (max-width: 768px) {
+                    left: 23.3vw;
+                    bottom: 0vw;
+                }
+                &_header {
+                    color: #a967dd;
+                    font-family: Gilroy-SemiBold;
+                    font-size: 3.125vw;
+                    font-style: normal;
+                    line-height: 3.125vw;
+                    @media screen and (max-width: 1024px) {
+                        font-family: Gilroy-Bold;
+                        font-size: 6.25vw;
+                        line-height: 6.25vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 6.6vw;
+                        line-height: 6.6vw;
+                    }
+                }
+                &_text {
+                    color: #000;
+                    font-family: Unbounded;
+                    font-size: 1.25vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.45vw;
+                    letter-spacing: 0.0375vw;
+                    @media screen and (max-width: 1024px) {
+                        font-family: Unbounded-Blond;
+                        font-size: 2.6vw;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 4.1vw;
+                        letter-spacing: 0.07vw;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 2.2vw;
+                        line-height: 3.3vw;
+                        letter-spacing: 0.06vw;
+                    }
+                }
+                &_line {
+                    width: 0.3125vw;
+                    height: 8.5vw;
+                    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+                    background-color: #a967dd;
+                    position: absolute;
+                    left: 0vw;
+                    top: -10.5vw;
+                    @media screen and (max-width: 768px) {
+                        width: 0.6vw;
+                        height: 12.5vw;
+                        top: -15.5vw;
+                    }
+                }
+            }
+        }
+    }
+    &__recoverDetailVideo {
+        margin-top: 3.3vw;
+        margin-bottom: 3.3vw;
+        width: 86.6vw;
+        height: 52vw;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &__recoverDetailGif {
+        margin-top: 3.3vw;
+        margin-bottom: 3.3vw;
+        width: 68.6vw;
+        height: 100vw;
+    }
+
+    &__recoverDetailVideoTablet {
+        display: none;
+        @media screen and (max-width: 1024px) {
+            margin-top: 3.3vw;
+            margin-bottom: 3.3vw;
+            display: block;
+            width: 100vw;
+            height: 92.4vw;
+        }
+    }
+}
+.recoveryMockupsContainer {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    height: 3.3vw;
+    width: 70.5vw;
+    height: 81.25vw;
+    position: relative;
+    margin-bottom: 3.125vw;
+    @media screen and (max-width: 1024px) {
+        width: 82.5vw;
+        height: 95vw;
+        margin-bottom: 6.25vw;
+    }
+    @media screen and (max-width: 768px) {
+        width: 86.5vw;
+        height: 100vw;
+        margin-bottom: 6.6vw;
+    }
+    &__recoveryMockup1 {
+        top: 0;
+        left: 0;
+        width: 28vw;
+        height: 18.75vw;
+        background-image: url("../Assets/Images/RecoverUkraineCaseImages/MockupRecoverUkraine1.webp");
+        z-index: 3;
+        @media screen and (max-width: 1024px) {
+            width: 32.8vw;
+            height: 22vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 34.4vw;
+            height: 23vw;
+        }
+    }
+    &__recoveryMockup2 {
+        top: 24.1vw;
+        left: 0;
+        width: 28vw;
+        height: 20.3vw;
+        background-image: url("../Assets/Images/RecoverUkraineCaseImages/MockupRecoverUkraine2.webp");
+        z-index: 3;
+        @media screen and (max-width: 1024px) {
+            top: 28.5vw;
+            width: 33.7vw;
+            height: 23.8vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 35.2vw;
+            height: 25vw;
+            top: 29.7vw;
+        }
+    }
+    &__recoveryMockup3 {
+        bottom: 12.1vw;
+        left: 0;
+        width: 28vw;
+        height: 20.3vw;
+        z-index: 3;
+        background-image: url("../Assets/Images/RecoverUkraineCaseImages/MockupRecoverUkraine3.webp");
+        @media screen and (max-width: 1024px) {
+            bottom: 14.3vw;
+            width: 33.7vw;
+            height: 22.5vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 34.4vw;
+            height: 23vw;
+        }
+    }
+    &__recoveryMockup4 {
+        top: 11vw;
+        left: 20.8vw;
+        width: 28vw;
+        height: 19.2vw;
+        background-image: url("../Assets/Images/RecoverUkraineCaseImages/MockupRecoverUkraine4.webp");
+        z-index: 2;
+        @media screen and (max-width: 1024px) {
+            width: 33.7vw;
+            height: 22.6vw;
+            left: 24.6vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 34.4vw;
+            height: 23vw;
+            top: 13.6vw;
+            left: 25.6vw;
+        }
+    }
+    &__recoveryMockup5 {
+        top: 35.8vw;
+        left: 20.8vw;
+        width: 28vw;
+        height: 20.5vw;
+        background-image: url("../Assets/Images/RecoverUkraineCaseImages/MockupRecoverUkraine5.webp");
+        z-index: 2;
+        @media screen and (max-width: 1024px) {
+            width: 33.7vw;
+            height: 24vw;
+            left: 24.6vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 35.2vw;
+            height: 25.2vw;
+            top: 44.1vw;
+            left: 25.6vw;
+        }
+    }
+    &__recoveryMockup6 {
+        bottom: 0;
+        left: 20.8vw;
+        width: 28vw;
+        height: 19.2vw;
+        background-image: url("../Assets/Images/RecoverUkraineCaseImages/MockupRecoverUkraine6.webp");
+        z-index: 2;
+        @media screen and (max-width: 1024px) {
+            width: 33.7vw;
+            height: 22.6vw;
+            left: 24.6vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 34.4vw;
+            height: 23vw;
+        }
+    }
+    &__recoveryMockup7 {
+        top: 0;
+        right: 0;
+        width: 28vw;
+        height: 19.2vw;
+        background-image: url("../Assets/Images/RecoverUkraineCaseImages/MockupRecoverUkraine7.jpg");
+        @media screen and (max-width: 1024px) {
+            width: 33.7vw;
+            height: 22.6vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 34.4vw;
+            height: 23vw;
+        }
+    }
+    &__recoveryMockup8 {
+        top: 24.1vw;
+        right: 0;
+        width: 28vw;
+        height: 19.2vw;
+        background-image: url("../Assets/Images/RecoverUkraineCaseImages/MockupRecoverUkraine8.webp");
+        @media screen and (max-width: 1024px) {
+            width: 33.7vw;
+            height: 22.6vw;
+            top: 29.1vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 34.4vw;
+            height: 23vw;
+            top: 30.2vw;
+        }
+    }
+    &__recoveryMockup9 {
+        bottom: 12.1vw;
+        right: 0;
+        width: 28vw;
+        height: 19.2vw;
+        background-image: url("../Assets/Images/RecoverUkraineCaseImages/MockupRecoverUkraine9.webp");
+        @media screen and (max-width: 1024px) {
+            bottom: 14.3vw;
+            width: 33.7vw;
+            height: 22.6vw;
+        }
+        @media screen and (max-width: 768px) {
+            width: 34.4vw;
+            height: 23vw;
+            bottom: 15.2vw;
+        }
+    }
+}
+.recoveryMockupsContainer > * {
+    position: absolute;
+    transition-duration: 0.3s;
+    border: 0.1vw solid #a967dd;
+    border-radius: 0.5vw;
+    background-size: contain;
+    @media screen and (max-width: 1024px) {
+        border: 0.26vw solid #a967dd;
+        border-radius: 1.3vw;
+    }
+    @media screen and (max-width: 768px) {
+        border: 0.55vw solid #a967dd;
+        border-radius: 2.8vw;
+    }
+}
+.recoveryMockupsContainer > *:hover {
+    transform: scale(1.1);
+    z-index: 5;
+}
+
+.rikotaGeneralInfo {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100vw;
+    padding: 6.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__logo {
+        width: 86.8vw;
+        height: 15.4vw;
+        background-image: url(../Assets/Images/RikotaCaseImages/RikotaLogo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 3.3vw;
+        @media screen and (max-width: 1024px) {
+            height: 15.7vw;
+        }
+        @media screen and (max-width: 480px) {
+            height: 16.8vw;
+            margin-bottom: 6.6vw;
+        }
+    }
+    &__header {
+        color: #000;
+        font-family: Gilroy-SemiBold;
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+        margin-bottom: 3.3vw;
+        @media screen and (max-width: 1024px) {
+            color: #000;
+            font-family: Unbounded-Blond;
+            font-size: 2.6vw;
+            line-height: 4.1vw; /* 160% */
+            letter-spacing: 0.07vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Unbounded;
+            font-size: 2.2vw;
+            line-height: 2.5vw; /* 125% */
+            letter-spacing: 0.05vw;
+            margin-bottom: 4.4vw;
+        }
+    }
+    &__text {
+        color: #000;
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.45vw;
+        letter-spacing: 0.0375vw;
+        margin-bottom: 6.6vw;
+
+        @media screen and (max-width: 1024px) {
+            font-family: Unbounded-Blond;
+            font-size: 2.6vw;
+            line-height: 4.1vw; /* 160% */
+            letter-spacing: 0.07vw;
+            margin-bottom: 16.6vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Unbounded-Blond;
+            font-size: 2.2vw;
+            line-height: 3.5vw; /* 125% */
+            letter-spacing: 0.05vw;
+            margin-bottom: 13.3vw;
+        }
+    }
+    &__image {
+        width: 65vw;
+        height: 56vw;
+        background-image: url(../Assets/Images/RikotaCaseImages/infographics_desktop.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+        @media screen and (max-width: 1024px) {
+            width: 84vw;
+            height: 82vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/infographics_tablet.webp);
+        }
+        @media screen and (max-width: 480px) {
+            width: 79vw;
+            height: 72vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/infographics_mobile.webp);
+        }
+    }
+    &__header2 {
+        color: #000;
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.4vw;
+        letter-spacing: 0.0375vw;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1.25vw;
+        img {
+            width: 2.5vw;
+            height: 2.5vw;
+            margin-right: 0.8vw;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 2vw;
+            line-height: 2vw; /* 125% */
+            letter-spacing: 0.06vw;
+            margin-bottom: 3.125vw;
+            img {
+                width: 6.25vw;
+                height: 6.25vw;
+                margin-right: 2vw;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Unbounded-Blond;
+            font-size: 2.2vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 3.3vw; /* 150% */
+            letter-spacing: 0.24px;
+            img {
+                width: 6.6vw;
+                height: 6.6vw;
+                margin-right: 2.2vw;
+            }
+        }
+    }
+}
+.rikotaHeader {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    color: #a967dd;
+    font-family: Gilroy-Black;
+    font-size: 5vw;
+    line-height: 5vw;
+    margin-bottom: 3.3vw;
+    @media screen and (max-width: 1024px) {
+        font-size: 6.25vw;
+        line-height: 6.25vw;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 6.6vw;
+        line-height: 6.6vw;
+    }
+}
+.rikotaSubHeader {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    color: #000;
+    font-family: Unbounded;
+    font-size: 1.25vw;
+    line-height: 1.4vw;
+    letter-spacing: 0.0375vw;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.25vw;
+    img {
+        width: 2.5vw;
+        height: 2.5vw;
+        margin-right: 0.8vw;
+    }
+    @media screen and (max-width: 1024px) {
+        font-family: Unbounded-Blond;
+        font-size: 2.6vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 4.1vw;
+        letter-spacing: 0.07vw;
+    }
+    @media screen and (max-width: 480px) {
+        margin-bottom: 4.25vw;
+    }
+}
+.rikotaBrandInfo {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100vw;
+    padding: 6.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 480px) {
+        margin-bottom: 13.3vw;
+    }
+    &__conclusion {
+        color: #a967dd;
+        font-family: Gilroy-SemiBold;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 94.447%; /* 60.446px */
+        @media screen and (max-width: 1024px) {
+            margin-top: 6.25vw;
+            font-size: 6.25vw;
+            line-height: 6.25vw;
+        }
+        @media screen and (max-width: 480px) {
+            margin-top: 13.3vw;
+            color: #a967dd;
+            font-family: Unbounded-Blond;
+            font-size: 3.8vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 5vw; /* 114.286% */
+            letter-spacing: 0.1vw;
+        }
+    }
+}
+
+.rikotaResearch {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100vw;
+    padding: 6.6vw;
+    padding-top: 0;
+    @media screen and (max-width: 1024px) {
+        padding-bottom: 8.3vw;
+    }
+    @media screen and (max-width: 480px) {
+        padding-bottom: 13.3vw;
+    }
+    &__swiper {
+        padding-left: 6.6vw;
+        overflow: visible !important;
+        margin-bottom: 6.6vw;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+        @media screen and (max-width: 480px) {
+            display: block;
+        }
+        &_slide1 {
+            cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+            background-color: #a967dd;
+            width: 58vw;
+            height: 44.1vw;
+            border-radius: 5.2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-family: Gilroy-Black;
+            font-size: 5vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 5.2vw;
+            @media screen and (max-width: 480px) {
+                width: 64vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+                font-size: 6.6vw;
+                line-height: 6.6vw;
+            }
+        }
+        &_slide2 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/researchSlide2Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/researchSlide2Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+        &_slide3 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/researchSlide3Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/researchSlide3Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+        &_slide4 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/researchSlide4Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/researchSlide4Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+    }
+    &__swiperTablet {
+        display: none;
+        padding-left: 6.6vw;
+        width: 100%;
+        margin-bottom: 6.6vw;
+        height: 72.5vw;
+        overflow: scroll;
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+        &_slide1 {
+            cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+            background-color: #a967dd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-family: Gilroy-Black;
+            font-size: 5vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 5.2vw;
+            display: none;
+            margin-right: 2vw;
+            @media screen and (max-width: 1024px) {
+                width: 80vw;
+                min-width: 80vw;
+                height: 72.5vw;
+                min-height: 72.5vw;
+                border-radius: 13vw;
+                font-size: 6.2vw;
+                line-height: 6.25vw;
+                display: flex;
+            }
+        }
+        &_slide2 {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 1024px) {
+                min-height: 72.5vw;
+                min-width: 129vw;
+                height: 72.5vw;
+                width: 129vw;
+                background-image: url(../Assets/Images/RikotaCaseImages/researchSlide2Tablet.webp);
+                display: block;
+                margin-right: 2vw;
+            }
+        }
+        &_slide3 {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 1024px) {
+                min-height: 72.5vw;
+                min-width: 129vw;
+                height: 72.5vw;
+                width: 129vw;
+                background-image: url(../Assets/Images/RikotaCaseImages/researchSlide3Tablet.webp);
+                display: block;
+                margin-right: 2vw;
+            }
+        }
+        &_slide4 {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 1024px) {
+                min-height: 72.5vw;
+                min-width: 129vw;
+                height: 72.5vw;
+                width: 129vw;
+                background-image: url(../Assets/Images/RikotaCaseImages/researchSlide4Tablet.webp);
+                display: block;
+                margin-right: 2vw;
+            }
+        }
+    }
+    &__subHeader {
+        color: #000;
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.4vw;
+        letter-spacing: 0.0375vw;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1.25vw;
+        img {
+            width: 2.5vw;
+            height: 2.5vw;
+            margin-right: 0.8vw;
+        }
+        @media screen and (max-width: 1024px) {
+            font-family: Unbounded;
+            font-size: 3.125vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 3.6vw;
+            letter-spacing: 0.09vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Unbounded-Blond;
+            font-size: 2.2vw;
+            line-height: 3.3vw;
+            letter-spacing: 0.24px;
+        }
+    }
+}
+
+.rikotaResearch__swiperTablet::-webkit-scrollbar {
+    display: none;
+}
+
+.rikotaDeepAnalisis {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100vw;
+    padding: 6.6vw;
+    @media screen and (max-width: 1024px) {
+        padding: 0;
+        padding-top: 6.25vw;
+        padding-bottom: 6.25vw;
+    }
+    &__swiper1 {
+        overflow: visible !important;
+        margin-bottom: 6.6vw;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+        @media screen and (max-width: 480px) {
+            display: block;
+            padding-left: 6.6vw;
+        }
+        &_slide1 {
+            cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+            background-color: #a967dd;
+            width: 58vw;
+            height: 44.1vw;
+            border-radius: 5.2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-family: Gilroy-Black;
+            font-size: 5vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 5.2vw;
+            @media screen and (max-width: 480px) {
+                width: 64vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+                font-size: 6.6vw;
+                line-height: 6.6vw;
+            }
+        }
+        &_slide2 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSliderSlide2Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSliderSlide2Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+        &_slide3 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSliderSlide3Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSliderSlide3Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+        &_slide4 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSliderSlide4Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSliderSlide4Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+    }
+    &__swiperTablet1 {
+        display: none;
+        width: 100%;
+        margin-bottom: 6.6vw;
+        height: 72.5vw;
+        overflow: scroll;
+        padding-left: 6.6vw;
+        @media screen and (max-width: 1024px) {
+            display: flex;
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+
+        &_slide1 {
+            cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+            background-color: #a967dd;
+            border-radius: 5.2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-family: Gilroy-Black;
+            width: 80vw;
+            min-width: 80vw;
+            height: 72.5vw;
+            min-height: 72.5vw;
+            border-radius: 13vw;
+            font-size: 6.2vw;
+            line-height: 6.25vw;
+            margin-right: 2vw;
+        }
+        &_slide2 {
+            min-height: 72.5vw;
+            min-width: 129vw;
+            height: 72.5vw;
+            width: 129vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSliderSlide2Tablet.webp);
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            display: block;
+            margin-right: 2vw;
+        }
+        &_slide3 {
+            min-height: 72.5vw;
+            min-width: 129vw;
+            height: 72.5vw;
+            width: 129vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSliderSlide3Tablet.webp);
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            display: block;
+            margin-right: 2vw;
+        }
+        &_slide4 {
+            min-height: 72.5vw;
+            min-width: 129vw;
+            height: 72.5vw;
+            width: 129vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSliderSlide4Tablet.webp);
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            display: block;
+            margin-right: 2vw;
+        }
+    }
+
+    &__swiperTablet2 {
+        display: none;
+        width: 100%;
+        margin-bottom: 6.6vw;
+        height: 72.5vw;
+        overflow: scroll;
+        padding-left: 6.6vw;
+        @media screen and (max-width: 1024px) {
+            display: flex;
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+
+        &_slide1 {
+            cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+            background-color: #a967dd;
+            border-radius: 5.2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-family: Gilroy-Black;
+            width: 80vw;
+            min-width: 80vw;
+            height: 72.5vw;
+            min-height: 72.5vw;
+            border-radius: 13vw;
+            font-size: 6.2vw;
+            line-height: 6.25vw;
+            margin-right: 2vw;
+        }
+        &_slide2 {
+            min-height: 72.5vw;
+            min-width: 129vw;
+            height: 72.5vw;
+            width: 129vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSlider2Slide2Tablet.webp);
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            display: block;
+            margin-right: 2vw;
+        }
+        &_slide3 {
+            min-height: 72.5vw;
+            min-width: 129vw;
+            height: 72.5vw;
+            width: 129vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSlider2Slide3Tablet.webp);
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            display: block;
+            margin-right: 2vw;
+        }
+        &_slide4 {
+            min-height: 72.5vw;
+            min-width: 129vw;
+            height: 72.5vw;
+            width: 129vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSlider2Slide4Tablet.webp);
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            display: block;
+            margin-right: 2vw;
+        }
+    }
+
+    &__swiper2 {
+        overflow: visible !important;
+        margin-bottom: 6.6vw;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+        @media screen and (max-width: 480px) {
+            display: block;
+            padding-left: 6.6vw;
+        }
+        &_slide1 {
+            cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+            background-color: #a967dd;
+            width: 58vw;
+            height: 44.1vw;
+            border-radius: 5.2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-family: Gilroy-Black;
+            font-size: 5vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 5.2vw;
+            @media screen and (max-width: 480px) {
+                width: 64vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+                font-size: 6.6vw;
+                line-height: 6.6vw;
+            }
+        }
+        &_slide2 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSlider2Slide2Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSlider2Slide2Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+        &_slide3 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSlider2Slide3Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSlider2Slide3Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+        &_slide4 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSlider2Slide4Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/deepResearchSlider2Slide4Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+    }
+    &__header {
+        color: #a967dd;
+        font-family: Gilroy-Black;
+        font-size: 5vw;
+        line-height: 5vw;
+        margin-bottom: 3.3vw;
+        @media screen and (max-width: 1024px) {
+            padding-left: 6.6vw;
+            font-size: 6.25vw;
+            line-height: 6.25vw;
+        }
+    }
+    &__rikotaSubHeader {
+        color: #000;
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.4vw;
+        letter-spacing: 0.0375vw;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 6.25vw;
+        img {
+            width: 2.5vw;
+            height: 2.5vw;
+            margin-right: 0.8vw;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 3.125vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 3.75vw; /* 116.667% */
+            letter-spacing: 0.0375vw;
+            margin-bottom: 8.3vw;
+            padding-left: 6.6vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Unbounded-Blond;
+            font-size: 2.2vw;
+            line-height: 3.3vw;
+            letter-spacing: 0.24px;
+            padding-right: 6.6vw;
+        }
+    }
+}
+.rikotaDeepAnalisis__swiperTablet1::-webkit-scrollbar {
+    display: none;
+}
+.rikotaDeepAnalisis__swiperTablet2::-webkit-scrollbar {
+    display: none;
+}
+.rikotaCustomerJourney {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100vw;
+    padding: 6.6vw;
+    padding-top: 0;
+    &__swiper {
+        padding-left: 6.6vw;
+        overflow: visible !important;
+        margin-bottom: 6.6vw;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+        @media screen and (max-width: 480px) {
+            display: block;
+        }
+
+        &_slide1 {
+            cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+            background-color: #a967dd;
+            width: 58vw;
+            height: 44.1vw;
+            border-radius: 5.2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-family: Gilroy-Black;
+            font-size: 5vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 5.2vw;
+            @media screen and (max-width: 480px) {
+                width: 64vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+                font-size: 6.6vw;
+                line-height: 6.6vw;
+            }
+        }
+        &_slide2 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/journeySliderSlide2Desctop.webp);
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/journeySliderSlide2Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+        &_slide3 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/journeySliderSlide3Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/journeySliderSlide3Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+        &_slide4 {
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/journeySliderSlide4Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/journeySliderSlide4Mobile.webp);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+    }
+    &__swiperTablet {
+        display: none;
+        padding-left: 6.6vw;
+        width: 100%;
+        margin-bottom: 6.6vw;
+        height: 72.5vw;
+        overflow: scroll;
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+        &_slide1 {
+            cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+            background-color: #a967dd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-family: Gilroy-Black;
+            font-size: 5vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 5.2vw;
+            display: none;
+            margin-right: 2vw;
+            @media screen and (max-width: 1024px) {
+                width: 80vw;
+                min-width: 80vw;
+                height: 72.5vw;
+                min-height: 72.5vw;
+                border-radius: 13vw;
+                font-size: 6.2vw;
+                line-height: 6.25vw;
+                display: flex;
+            }
+        }
+        &_slide2 {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 1024px) {
+                min-height: 72.5vw;
+                min-width: 129vw;
+                height: 72.5vw;
+                width: 129vw;
+                background-image: url(../Assets/Images/RikotaCaseImages/researchSlide2Tablet.webp);
+                display: block;
+                margin-right: 2vw;
+            }
+        }
+        &_slide3 {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 1024px) {
+                min-height: 72.5vw;
+                min-width: 129vw;
+                height: 72.5vw;
+                width: 129vw;
+                background-image: url(../Assets/Images/RikotaCaseImages/researchSlide3Tablet.webp);
+                display: block;
+                margin-right: 2vw;
+            }
+        }
+        &_slide4 {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            @media screen and (max-width: 1024px) {
+                min-height: 72.5vw;
+                min-width: 129vw;
+                height: 72.5vw;
+                width: 129vw;
+                background-image: url(../Assets/Images/RikotaCaseImages/researchSlide4Tablet.webp);
+                display: block;
+                margin-right: 2vw;
+            }
+        }
+    }
+
+    &__swiper2 {
+        padding-left: 6.6vw;
+        overflow: visible !important;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+        @media screen and (max-width: 480px) {
+            display: block;
+        }
+        &_slide1 {
+            cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+            background-color: #a967dd;
+            width: 58vw;
+            height: 44.1vw;
+            border-radius: 5.2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-family: Gilroy-Black;
+            font-size: 5vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 5.2vw;
+            @media screen and (max-width: 480px) {
+                width: 64vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+                font-size: 6.6vw;
+                line-height: 6.6vw;
+            }
+        }
+        &_slide2 {
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/journeySlider2Slide2Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/journeySlider2Slide2Mobile.png);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+        &_slide3 {
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            width: 78.5vw;
+            height: 44.1vw;
+            background-image: url(../Assets/Images/RikotaCaseImages/journeySlider2Slide3Desctop.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            @media screen and (max-width: 480px) {
+                background-image: url(../Assets/Images/RikotaCaseImages/journeySlider2Slide3Mobile.png);
+                width: 86.6vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+            }
+        }
+    }
+    &__swiperTablet2 {
+        display: none;
+        padding-left: 6.6vw;
+        width: 100%;
+        margin-bottom: 6.6vw;
+        height: 72.5vw;
+        overflow: scroll;
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+        &_slide1 {
+            cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+            background-color: #a967dd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-family: Gilroy-Black;
+            font-size: 5vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 5.2vw;
+            display: none;
+            margin-right: 2vw;
+            @media screen and (max-width: 1024px) {
+                width: 80vw;
+                min-width: 80vw;
+                height: 72.5vw;
+                min-height: 72.5vw;
+                border-radius: 13vw;
+                font-size: 6.2vw;
+                line-height: 6.25vw;
+                display: flex;
+            }
+            @media screen and (max-width: 480px) {
+                width: 64vw;
+                height: 49vw;
+                border-radius: 8.3vw;
+                color: var(--ffffff, #fff);
+                text-align: center;
+                font-size: 6.6vw;
+                line-height: 6.6vw;
+            }
+        }
+        &_slide2 {
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+            @media screen and (max-width: 1024px) {
+                min-height: 72.5vw;
+                min-width: 129vw;
+                height: 72.5vw;
+                width: 129vw;
+                background-image: url(../Assets/Images/RikotaCaseImages/researchSlide2Tablet.webp);
+                display: block;
+                margin-right: 2vw;
+            }
+        }
+        &_slide3 {
+            cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+            @media screen and (max-width: 1024px) {
+                min-height: 72.5vw;
+                min-width: 129vw;
+                height: 72.5vw;
+                width: 129vw;
+                background-image: url(../Assets/Images/RikotaCaseImages/researchSlide3Tablet.webp);
+                display: block;
+                margin-right: 2vw;
+            }
+        }
+    }
+}
+.rikotaCustomerJourney__swiperTablet::-webkit-scrollbar {
+    display: none;
+}
+.rikotaCustomerJourney__swiperTablet2::-webkit-scrollbar {
+    display: none;
+}
+.rikotaCustomerJourney {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100vw;
+    padding: 6.6vw;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__toothImage {
+        cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+        width: 16.3vw;
+        height: 20.1vw;
+        background-image: url(../Assets/Images/RikotaCaseImages/toothDesctop.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 6.6vw;
+        @media screen and (max-width: 1024px) {
+            width: 29.8vw;
+            height: 36.8vw;
+            margin-top: 8.3vw;
+        }
+        @media screen and (max-width: 480px) {
+            width: 22.5vw;
+            height: 27.2vw;
+            margin-top: 13.3vw;
+        }
+    }
+    &__customerSteps {
+        width: 68vw;
+        height: 51vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-top: 6.6vw;
+        margin-bottom: 6.6vw;
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+            height: 100vw;
+            margin-top: 16.8vw;
+            margin-bottom: 16.8vw;
+        }
+        @media screen and (max-width: 480px) {
+            margin-top: 13.3vw;
+            height: 108vw;
+        }
+    }
+    &__customerStep {
+        width: 18.4vw;
+        height: 10.8vw;
+        @media screen and (max-width: 1024px) {
+            height: 20.05vw;
+            width: 33.3vw;
+        }
+        @media screen and (max-width: 480px) {
+            height: 22vw;
+        }
+
+        &_header {
+            color: #a967dd;
+            font-family: Gilroy-Black;
+            font-size: 5vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 5vw; /* 104.167% */
+            @media screen and (max-width: 1024px) {
+                color: #a967dd;
+                font-family: Gilroy-SemiBold;
+                font-size: 6.25vw;
+                line-height: 6.25vw;
+                width: 33.3vw;
+                height: 6.25vw;
+                text-align: left;
+            }
+            @media screen and (max-width: 480px) {
+                font-family: Gilroy;
+                font-size: 6.6vw;
+                font-weight: 700;
+                line-height: 6.6vw;
+                letter-spacing: 0.2vw;
+                height: 7.25vw;
+            }
+        }
+        &_text {
+            color: #000;
+            font-family: Unbounded;
+            font-size: 1.25vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.45vw;
+            letter-spacing: 0.0375vw;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 2vw;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 2.5vw;
+                letter-spacing: 0.0375vw;
+                height: 13.8vw;
+            }
+            @media screen and (max-width: 480px) {
+                font-family: Unbounded-Blond;
+                font-size: 2.2vw;
+                line-height: 3.3vw; /* 150% */
+                letter-spacing: 0.06vw;
+            }
+        }
+    }
+}
+.rikotaEndSection {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100vw;
+    padding: 6.6vw;
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 16.6vw;
+    }
+    &__header {
+        color: #a967dd;
+        font-family: Gilroy-Black;
+        font-size: 5vw;
+        line-height: 5vw;
+        margin-bottom: 3.3vw;
+        white-space: nowrap;
+        @media screen and (max-width: 1024px) {
+            font-size: 6.25vw;
+            line-height: 6.25vw;
+            margin-bottom: 16.8vw;
+        }
+    }
+    &__subheader {
+        color: #000;
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.45vw;
+        letter-spacing: 0.0375vw;
+        margin-bottom: 3.3vw;
+        @media screen and (max-width: 1024px) {
+            font-family: Unbounded;
+            font-size: 3.125vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 3.6vw;
+            letter-spacing: 0.09vw;
+            margin-bottom: 8.3vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Unbounded-Blond;
+            font-size: 3.8vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 4.4vw; /* 114.286% */
+            letter-spacing: 0.01vw;
+        }
+    }
+    &__text {
+        color: #a967dd;
+        font-family: Gilroy;
+        font-size: 3.3vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 3.3vw;
+        margin-bottom: 3.3vw;
+        margin-top: 3.3vw;
+        @media screen and (max-width: 1024px) {
+            color: var(--A967DD, #a967dd);
+            font-family: Gilroy;
+            font-size: 8.3vw;
+            line-height: 8.3vw; /* 60.446px */
+            margin-bottom: 8.3vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Gilroy-SemiBold;
+            font-size: 5.5vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 5.5vw; /* 100% */
+        }
+    }
+    &__subHeader {
+        color: #000;
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.4vw;
+        letter-spacing: 0.0375vw;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1.25vw;
+        img {
+            width: 2.5vw;
+            height: 2.5vw;
+            margin-right: 0.8vw;
+        }
+        @media screen and (max-width: 1024px) {
+            font-family: Unbounded;
+            font-size: 3.125vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 3.6vw;
+            letter-spacing: 0.09vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Unbounded-Blond;
+            font-size: 2.2vw;
+            line-height: 3.3vw;
+            letter-spacing: 0.24px;
+            padding-right: 6.6vw;
+        }
+    }
+}
+.rikotaBanner {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100vw;
+    height: 75vw;
+    background-image: url(../Assets/Images/RikotaCaseImages/BannerDesctop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 6.6vw;
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 16.8vw;
+    }
+    @media screen and (max-width: 480px) {
+        margin-bottom: 13.3vw;
+    }
+}
+.message {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100vw;
+    cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+    background-color: #a967dd;
+    padding-left: 6.6vw;
+    padding-right: 6.6vw;
+    height: 9.6vw;
+    color: #fff;
+    font-family: Unbounded;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.45vw; /* 116.667% */
+    letter-spacing: 0.0375vw;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+        height: 31.25vw;
+        font-size: 3.125vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.6vw;
+        letter-spacing: 0.0375vw;
+    }
+    @media screen and (max-width: 480px) {
+        height: 22.2vw;
+        font-family: Unbounded-Blond;
+        font-size: 3.8vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 4.4vw;
+        letter-spacing: 0.01vw;
+    }
+}
+.aimsSwiper {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 44.2vw;
+    overflow: visible !important;
+    margin-bottom: 6.6vw;
+    @media screen and (max-width: 1024px) {
+        margin-top: 5.5vw;
+        width: 75.6vw;
+        margin-bottom: 16.8vw;
+    }
+    &__slide {
+        width: 44.2vw;
+        height: 22vw;
+        cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+        background-color: #a967dd;
+        border-radius: 5.2vw;
+        padding: 3.3vw;
+        @media screen and (max-width: 1024px) {
+            width: 75.6vw;
+            height: 47.6vw;
+            padding: 8.3vw;
+            border-radius: 13.2vw;
+        }
+        @media screen and (max-width: 480px) {
+            width: 73.3vw;
+            height: 55vw;
+            border-radius: 8.3vw;
+            padding: 6.6vw;
+            padding-top: 2.6vw;
+        }
+    }
+    &_slideHeader {
+        color: var(--ffffff, #fff);
+        font-family: Gilroy-Black;
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 6vw; /* 104.167% */
+        border-bottom: 0.15vw solid #fff;
+        margin-bottom: 1.6vw;
+        @media screen and (max-width: 1024px) {
+            font-size: 6.25vw;
+            line-height: 9.25vw;
+            border-bottom: 0.4vw solid #fff;
+        }
+        @media screen and (max-width: 480px) {
+            font-size: 6.6vw;
+            line-height: 13.6vw;
+            margin-bottom: 4.4vw;
+        }
+    }
+    &_text {
+        color: var(--ffffff, #fff);
+        font-family: Unbounded-Blond;
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2vw; /* 116.667% */
+        letter-spacing: 0.0375vw;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.7vw;
+        img {
+            width: 1.25vw;
+            height: 1.25vw;
+            margin-right: 0.05vw;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 3.125vw;
+            line-height: 3.5vw; /* 116.667% */
+            letter-spacing: 0.0375vw;
+            margin-bottom: 1.5vw;
+            img {
+                width: 3.125vw;
+                height: 3.125vw;
+                margin-right: 1vw;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Unbounded-Blond;
+            font-size: 3.8vw;
+            line-height: 4.4vw; /* 114.286% */
+            letter-spacing: 0.1vw;
+            img {
+                width: 6.6vw;
+                height: 6.6vw;
+                margin-right: 2vw;
+            }
+        }
+    }
+    &__subHeader {
+        color: #000;
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 1.4vw;
+        letter-spacing: 0.0375vw;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1.25vw;
+        img {
+            width: 2.5vw;
+            height: 2.5vw;
+            margin-right: 0.8vw;
+        }
+        @media screen and (max-width: 1024px) {
+            font-family: Unbounded;
+            font-size: 3.125vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 3.6vw;
+            letter-spacing: 0.09vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Unbounded-Blond;
+            font-size: 3.8vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 4.4vw; /* 114.286% */
+            letter-spacing: 0.01vw;
+        }
+    }
+}
+.projectDetailsContainer {
+    cursor: url(../Assets/Images/CursorImage/CursorImage.svg), auto;
+    width: 100%;
+    height: 35vw;
+    padding: 6.6vw;
+    color: black;
+    @media screen and (max-width: 1024px) {
+        padding-left: 6.25vw;
+        padding-right: 6.25vw;
+        padding-top: 16.6vw;
+        height: 85vw;
+    }
+    &_header {
+        color: #a967dd;
+        font-family: Gilroy-SemiBold;
+        font-size: 3.3vw;
+        line-height: 4.125vw;
+        @media screen and (max-width: 1024px) {
+            font-size: 6.25vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 6.25vw;
+            margin-bottom: 3.125vw;
+        }
+        @media screen and (max-width: 480px) {
+            font-size: 5.5vw;
+            line-height: 5.5vw; /* 100% */
+        }
+    }
+    &_text {
+        color: #a967dd;
+        font-family: Unbounded;
+        font-size: 1.25vw;
+        line-height: 2vw;
+        letter-spacing: 0.0375vw;
+        display: flex;
+        align-items: center;
+        width: 28vw;
+        justify-content: space-between;
+        img {
+            width: 1.25vw;
+            height: 1.25vw;
+            margin-right: 0.4vw;
+            @media screen and (max-width: 1024px) {
+                width: 3.125vw;
+                height: 3.125vw;
+                margin-right: 1vw;
+            }
+            @media screen and (max-width: 768px) {
+                width: 4.4vw;
+                height: 4.4vw;
+                margin-right: 2vw;
+            }
+        }
+        span {
+            font-family: Unbounded;
+            color: black;
+            width: 15vw;
+            text-align: left;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 2.6vw;
+            line-height: 4.1vw;
+            letter-spacing: 0.07vw;
+            font-family: Unbounded-Blond;
+            width: 52vw;
+            margin-bottom: 1vw;
+            span {
+                font-family: Unbounded-Blond;
+                min-width: 28vw;
+                font-size: 2.6vw;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 3.3vw; /* 160% */
+                letter-spacing: 0.06vw;
+            }
+            div {
+                display: flex;
+                align-items: center;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            font-family: Unbounded;
+            font-size: 2.2vw;
+            line-height: 2.7vw;
+            letter-spacing: 0.06vw;
+            margin-bottom: 2vw;
+            span {
+                margin-left: 2.2vw;
+                font-family: Unbounded;
+                font-size: 2.2vw;
+                line-height: 2.7vw;
+                letter-spacing: 0.06vw;
+            }
+        }
+    }
+    a {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 6.6vw;
+        @media screen and (max-width: 1024px) {
+            margin-top: 16.6vw;
+        }
+    }
+}

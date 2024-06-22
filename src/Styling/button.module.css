@@ -1,0 +1,233 @@
+@-webkit-keyframes pressButtonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+@keyframes pressButtonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+@-webkit-keyframes unPressButtonAnimation {
+  0% {
+    transform: scale(0.95);
+  }
+  30% {
+    transform: scale(0.93);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes unPressButtonAnimation {
+  0% {
+    transform: scale(0.95);
+  }
+  30% {
+    transform: scale(0.93);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes pressPlusButtonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+@keyframes pressPlusButtonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+@-webkit-keyframes unPressPlusButtonAnimation {
+  0% {
+    transform: scale(0.95);
+  }
+  30% {
+    transform: scale(0.93);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes unPressPlusButtonAnimation {
+  0% {
+    transform: scale(0.95);
+  }
+  30% {
+    transform: scale(0.93);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@-webkit-keyframes rotateAnimationOut {
+  0% {
+    transform: rotate(90deg);
+  }
+  30% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotateAnimationOut {
+  0% {
+    transform: rotate(90deg);
+  }
+  30% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.button {
+  border-radius: 2.6vw;
+  display: flex;
+  align-items: center;
+  font-family: "Unbounded-Medium";
+  justify-content: center;
+  background-color: #a967dd;
+  color: white;
+  z-index: 5;
+  font-size: 1.25vw;
+  line-height: 1.25vw;
+  border: none;
+  outline: none;
+  cursor: url(../Assets/Images/CursorImage/BlueCursor.svg), auto;
+  -webkit-animation: unPressPlusButtonAnimation 0.5s forwards;
+          animation: unPressPlusButtonAnimation 0.5s forwards;
+  padding: 1.5vw 2.5vw;
+  text-align: left;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media screen and (max-width: 1024px) {
+  .button {
+    font-size: 3.25vw;
+    line-height: 3.25vw;
+    padding: 4.2vw 6.25vw;
+    border-radius: 6.5vw;
+  }
+}
+.button__plus {
+  margin-right: 3.5%;
+  width: 6%;
+  -webkit-animation: rotateAnimationOut 1s forwards;
+          animation: rotateAnimationOut 1s forwards;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 1024px) {
+  .button__plus {
+    width: 10%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .button__plus {
+    width: 7%;
+    height: auto;
+  }
+}
+.button__plusHovered {
+  -webkit-animation: rotateAnimation 1s forwards;
+          animation: rotateAnimation 1s forwards;
+}
+.button__plusClicked {
+  -webkit-animation: rotateAnimationOut 0.5s forwards;
+          animation: rotateAnimationOut 0.5s forwards;
+}
+.button__arrow {
+  margin-left: 1.25vw;
+  width: 1.9vw;
+  transition-duration: 0.5s;
+  height: 1.7vw;
+}
+@media screen and (max-width: 1024px) {
+  .button__arrow {
+    width: 4.8vw;
+    height: auto;
+    margin-left: 3.125vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button__arrow {
+    width: 3.8vw;
+    height: auto;
+    margin-left: 2.2vw;
+  }
+}
+
+.buttonPressed {
+  -webkit-animation: pressPlusButtonAnimation 0.5s forwards;
+          animation: pressPlusButtonAnimation 0.5s forwards;
+}
+
+.button:hover .button__arrow {
+  transform: rotate(90deg);
+}
+
+.whiteButton {
+  background-color: white;
+  color: #5566b7;
+}
+
+.caseButton {
+  position: absolute;
+  bottom: 2vw;
+  left: 15%;
+  height: 4.6vw;
+  width: 18.8vw;
+}/*# sourceMappingURL=button.module.css.map */
